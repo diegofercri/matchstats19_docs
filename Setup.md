@@ -110,3 +110,9 @@ git commit -m "init expo project"
 ```
 
 Subir los cambios a GitHub también sería un punto recomendable.
+
+## Bibliografía
+- [Vídeo guía (notJust.dev)](https://www.youtube.com/watch?v=rIYzLhkG9TA&t=2481s)
+- [Guía paso a paso (notJust.dev)](https://notjust.notion.site/React-Native-Supabase-Masterclass-47a69a60bc464c399b5a0df4d3c4a630)
+- [Vídeo guía - Parte 1 (midudev)](https://www.youtube.com/watch?v=U23lNFm_J70)
+- [Vídeo guía - Parte 2 (midudev)](https://www.youtube.com/watch?v=ZDoiMLqWz2Es)
