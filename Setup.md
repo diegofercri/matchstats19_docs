@@ -49,11 +49,6 @@ Como platilla elegiremos “**Navigation (TypeScript)”.**
 
 ![alt text](img/image.png)
 
-Inicializamos una nueva Expo App usando:
-```
-npx create-expo-app
-```
-
 Una vez nuestro proyecto está inicializado, procederemos a abrirlo en nuestro editor de código.
 
 Abriremos una terminal y levantaremos un servidor de desarrollo con el comando:
