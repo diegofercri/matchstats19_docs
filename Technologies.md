@@ -1,5 +1,5 @@
-# React Native Football App de 0 a producción
-Para este proyecto seguiremos algunas de las tendencias dentro de la industria tecnológica, es por ello que usaremos **React Native y Expo** para nuestro Frontend y **Supabase** para nuestro Backend.
+# React Native & Expo App - Tecnologías
+Para este proyecto seguiremos algunas de las tendencias dentro de la industria tecnológica, como son **React Native y Expo** (para nuestro Frontend) y **Supabase** (para nuestro Backend).
 
 ---
 
@@ -69,7 +69,7 @@ Las razones por las que Supabase es una opción a considerar para construir nues
 
 ## Bibliografía
 - [¿Qué es React Native?](https://openwebinars.net/blog/react-native-que-es-para-que-sirve/)
-- [¿Reducir costes con React Native?](https://richestsoft.com/es/blog/how-react-native-can-reduce-cost-of-mobile-app-development/)
+- [Reducir costes con React Native](https://richestsoft.com/es/blog/how-react-native-can-reduce-cost-of-mobile-app-development/)
 - [¿Qué es Expo?](https://es.linkedin.com/pulse/qu%C3%A9-es-expo-10-caracter%C3%ADsticas-que-tenes-saber-2023-denis-borovskoy)
 - [¿Qué es Supabase?](https://www.aplyca.com/blog/blog-supabase-una-alternativa-agil-de-codigo-abierto)
-- [¿Supabase vs Firebase?](https://openwebinars.net/blog/supabase-vs-firebase/)
+- [Supabase vs Firebase](https://openwebinars.net/blog/supabase-vs-firebase/)

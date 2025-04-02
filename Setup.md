@@ -1,5 +1,5 @@
-# React Native Expo Setup App
-Para este proyecto seguiremos algunas de las tendencias dentro de la industria tecnológica, es por ello que usaremos **React Native y Expo** para nuestro Frontend y **Supabase** para nuestro Backend.
+# React Native & Expo App - Setup
+Para este proyecto seguiremos algunas de las tendencias dentro de la industria tecnológica, como son **React Native y Expo** (para nuestro Frontend) y **Supabase** (para nuestro Backend).
 
 ## Requisitos
 
@@ -82,7 +82,7 @@ require('../../assets/fonts/SpaceMono-Regular.ttf')
 
 Abre el terminal en el que esta ejecutándose nuestro servidor de desarrollo (dónde ejecutamos `npm start`), presiona "Ctrl + C" para parar el servidor, luego ejecuta de nuevo `npm start`.
 
-### Commitea los cambios
+### Commitear los cambios
 
 Este es un buen punto para guardar nuestros cambios y establecer un punto de control al que volver si algo sale mal.
 
