@@ -1,8 +1,4 @@
-# React Native & Expo App - Tecnologías
-Para este proyecto seguiremos algunas de las tendencias dentro de la industria tecnológica, como son **React Native y Expo** (para nuestro Frontend) y **Supabase** (para nuestro Backend).
-
----
-
+# React Native & Expo App
 ## Tecnologías
 ### 1. React Native
 
@@ -68,8 +64,8 @@ Las razones por las que Supabase es una opción a considerar para construir nues
 ---
 
 ## Bibliografía
-- [¿Qué es React Native?](https://openwebinars.net/blog/react-native-que-es-para-que-sirve/)
-- [Reducir costes con React Native](https://richestsoft.com/es/blog/how-react-native-can-reduce-cost-of-mobile-app-development/)
-- [¿Qué es Expo?](https://es.linkedin.com/pulse/qu%C3%A9-es-expo-10-caracter%C3%ADsticas-que-tenes-saber-2023-denis-borovskoy)
-- [¿Qué es Supabase?](https://www.aplyca.com/blog/blog-supabase-una-alternativa-agil-de-codigo-abierto)
-- [Supabase vs Firebase](https://openwebinars.net/blog/supabase-vs-firebase/)
+- [¿Qué es React Native?](https://openwebinars.net/blog/react-native-que-es-para-que-sirve/) - 28 de marzo de 2025
+- [Reducir costes con React Native](https://richestsoft.com/es/blog/how-react-native-can-reduce-cost-of-mobile-app-development/) - 28 de marzo de 2025
+- [¿Qué es Expo?](https://es.linkedin.com/pulse/qu%C3%A9-es-expo-10-caracter%C3%ADsticas-que-tenes-saber-2023-denis-borovskoy) - 28 de marzo de 2025
+- [¿Qué es Supabase?](https://www.aplyca.com/blog/blog-supabase-una-alternativa-agil-de-codigo-abierto) - 28 de marzo de 2025
+- [Supabase vs Firebase](https://openwebinars.net/blog/supabase-vs-firebase/) - 28 de marzo de 2025

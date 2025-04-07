@@ -1,7 +1,6 @@
-# React Native & Expo App - Setup
-Para este proyecto seguiremos algunas de las tendencias dentro de la industria tecnológica, como son **React Native y Expo** (para nuestro Frontend) y **Supabase** (para nuestro Backend).
-
-## Requisitos
+# React Native & Expo App
+## Setup
+### 1. Requisitos
 
 📖 https://docs.expo.dev/get-started/installation/
 
@@ -15,19 +14,19 @@ Para usar Expo, necesitamos instalar las siguientes herramientas:
 
 - [Watchman](https://facebook.github.io/watchman/docs/install#buildinstall) (para usuarios de Linux o macOS users).
 
-### Expo go
+#### Expo go
 
 📖 https://docs.expo.dev/get-started/expo-go/
 
 La forma más fácil de ejecutar y debuggear una Expo App es usar la app [**Expo Go**](https://expo.dev/client) disponible para iOS y Android.
 
-### Editor de Código (IDE)
+#### Editor de Código (IDE)
 
 Podemos usar cualquier editor de código o IDE a nuestra elección.
 
 Mi elección: [**VSCode**](https://code.visualstudio.com/)
 
-### (Optional) Android Studio & Xcode
+#### (Optional) Android Studio & Xcode
 
 En algunos casos, es posible que tengamos que crear el proyecto nativo de Android e iOS y/o utilizar un emulador de Android o un simulador de iOS. En ese caso, tendrás que configurar Android Studio y Xcode.
 
@@ -35,7 +34,7 @@ Sigue los pasos de la documentación de React Native: https://reactnative.dev/do
 
 Si tenemos un sistema Windows o Linux podremos compilar y publicar nuestras apps para iOS utilizando compilaciones en la nube con Expo EAS.
 
-## Crear un proyecto Expo desde 0
+### 2. Crear un proyecto Expo desde 0
 
 Es tan simple como ejecutar este comando:
 
@@ -47,7 +46,7 @@ Si no tenemos instalado el paquete `create-expo-app`, npx lo hará por nosotros.
 
 Como platilla elegiremos “**Navigation (TypeScript)”.**
 
-![alt text](img/image.png)
+![alt text](../img/image.png)
 
 Una vez nuestro proyecto está inicializado, procederemos a abrirlo en nuestro editor de código.
 
@@ -59,12 +58,12 @@ npm start
 El siguiente paso es ejecutar nuestra app en un dispositivo. La forma más sencilla es descargar la app Expo Go y, a continuación, escanear el QR que aparecerá en el terminal. De esta forma, podremos seguir desarrollando la app y ver las actualizaciones en tiempo real directamente en tu dispositivo.
 Opcionalmente, puedes ejecutar la app en un Simulador iOS pulsando `i` o en un Emulador Android pulsando `a`. Pero para esto, tienes que configurar los emuladores usando Xcode o Android Studio.
 
-![alt text](img/image-1.png)
+![alt text](../img/image-1.png)
 
 Para comprobar que funcione correctamente puedes ir a
 `app/(tabs)/index.tsx` y cambiar el texto a "Hello World!". Si los cambios se aplican al momento podemos continuar.
 
-### Declarar la estructura de carpetas
+#### Declarar la estructura de carpetas
 
 No es extrictamente necesario, pero sí es muy recomendable almacenar todo el codigo fuente de la App en una carpeta separada llamada `src`. Para ello, crearemos la carpeta `src` en la carpeta root de nuestro proyecto y moveremos dentro las siguientes carpetas:
 
@@ -78,11 +77,11 @@ Abre el archivo `src/app/_layout.tsx` y actualiza la ruta relativa del import pa
 require('../../assets/fonts/SpaceMono-Regular.ttf')
 ```
 
-### Reiniciar el servidor de desarrollo
+#### Reiniciar el servidor de desarrollo
 
 Abre el terminal en el que esta ejecutándose nuestro servidor de desarrollo (dónde ejecutamos `npm start`), presiona "Ctrl + C" para parar el servidor, luego ejecuta de nuevo `npm start`.
 
-### Commitear los cambios
+#### Commitear los cambios
 
 Este es un buen punto para guardar nuestros cambios y establecer un punto de control al que volver si algo sale mal.
 
@@ -106,8 +105,8 @@ git commit -m "init expo project"
 
 Subir los cambios a GitHub también sería un punto recomendable.
 
-## Bibliografía
-- [Vídeo guía (notJust.dev)](https://www.youtube.com/watch?v=rIYzLhkG9TA&t=2481s)
-- [Guía paso a paso (notJust.dev)](https://notjust.notion.site/React-Native-Supabase-Masterclass-47a69a60bc464c399b5a0df4d3c4a630)
-- [Vídeo guía - Parte 1 (midudev)](https://www.youtube.com/watch?v=U23lNFm_J70)
-- [Vídeo guía - Parte 2 (midudev)](https://www.youtube.com/watch?v=ZDoiMLqWz2Es)
+### 3. Bibliografía
+- [Vídeo guía (notJust.dev)](https://www.youtube.com/watch?v=rIYzLhkG9TA&t=2481s) - 2 de abril de 2025
+- [Guía paso a paso (notJust.dev)](https://notjust.notion.site/React-Native-Supabase-Masterclass-47a69a60bc464c399b5a0df4d3c4a630) - 2 de abril de 2025
+- [Vídeo guía - Parte 1 (midudev)](https://www.youtube.com/watch?v=U23lNFm_J70) - 10 de abril de 2025
+- [Vídeo guía - Parte 2 (midudev)](https://www.youtube.com/watch?v=ZDoiMLqWz2Es) - 12 de abril de 2025
