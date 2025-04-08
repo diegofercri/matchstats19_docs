@@ -1,0 +1,8 @@
+# React Native & Expo App
+## Introduction
+
+Sport is a fundamental activity in today's society, not only because of its role in promoting physical and mental health, but also because of its ability to foster values such as teamwork, competitiveness, and personal growth. Among the most popular sports worldwide, soccer and futsal stand out for their widespread acceptance and participation, both at the professional and amateur levels. However, organizing sports competitions, managing teams, recording statistics, or keeping classifications updated can be a complex and tedious task, especially when done manually or using inefficient tools.
+
+In this context, there is a need for a technological solution that facilitates the comprehensive management of sports competitions. This project aims to develop a multiplatform application (iOS, Android, and web) that allows competition organizers to efficiently manage teams, players, matches, and statistics, all accessible from any device. The application will be designed to meet the specific needs of soccer and futsal leagues, offering features such as automatic classification creation, visualization of group stages and elimination brackets, as well as detailed registration of individual and collective statistics.
+
+With this proposal, we aim not only to simplify the management of sports competitions, but also to provide a tool that promotes the organization and professionalization of amateur leagues, thereby contributing to the development of sports at the local and regional levels.
