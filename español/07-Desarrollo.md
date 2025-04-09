@@ -1,112 +1,73 @@
 # React Native & Expo App
-## Desarrollo e Implementación
-### 1. Requisitos
+## Desarrollo
+### 1. Instalación de requisitos
 
-📖 https://docs.expo.dev/get-started/installation/
+Los primeros pasos para empezar a desarrollar una App con React Native y Expo pasan por instalar Node.js junto con los paquetes requeridos para el proyecto, también, creamos una cuenta en Supabase y una en Expo, aunque esta es opcional, es muy recomendable, ya que con ella tendremos acceso a servicios como Expo Application Services (EAS).
 
-Para usar Expo, necesitamos instalar las siguientes herramientas:
+Para poder probar nuestra App en las fases tempranas de desarrollo usamos un dispositivo físico iOS (iPhone 12 Pro) y un emulador Android (Pixel 8) con Expo Go, y posteriormente pasamos a un emulador iOS (iPhone SE) y un emulador Android (Pixel 8) con un Kit de Desarrollo, ya que algunas funcionalidades como usar otras fuentes de texto no están soportadas en Expo Go.
 
-- [Node.js LTS release](https://nodejs.org/en/) - Solo son recomendables las releases Node.js LTS.
-    
-    Citando a Node.js, "Las aplicaciones en producción sólo deberían utilizar [las versiones Active LTS o Maintenance LTS](https://nodejs.org/en/about/releases/) ". Puedes instalar Node.js utilizando una herramienta de gestión de versiones (como `nvm` o `volta` o cualquier otra de tu elección) para cambiar entre diferentes versiones de Node.js.
-    
-- [Git](https://git-scm.com/) para control de versiones.
+Puede surgir la pregunta de porqué dejamos de usar un dispositivo físico iOS y pasamos a un simulador, y la respuesta se basa en que Apple nos requerirá firmar nuestro Kit de Desarrollo para poder ejecutarlo en un dispositivo físico y para ello es necesario una cuenta de desarrollador y estar aderido al programa para desarrolladores de Apple con un coste de 100€/año.
 
-- [Watchman](https://facebook.github.io/watchman/docs/install#buildinstall) (para usuarios de Linux o macOS users).
+### 2. Diseño UI / UX
+Nuestro principal foco en este proyecto es tener una interfaz atractiva y simple para el usuario, para ello hemos tomado ejemplo de aplicaciones profesionales y bien posicionas en el mercado del fútbol profesoinal como son [LiveScore](https://www.livescore.com/es) y [SofaScore](https://www.sofascore.com/es-la/).
 
-#### Expo go
+Para nuestros bocetos usamos la herramienta de diseño Figma, que nos permite agilizar y profesionalizar la maquetación de las distintas pantallas de nuestra App.
 
-📖 https://docs.expo.dev/get-started/expo-go/
+Para nuestros diagramas de navegación usamos la herramietna Miro, que nos permite crear todo tipo de diagramas de una manera intuitiva y rápida.
 
-La forma más fácil de ejecutar y debuggear una Expo App es usar la app [**Expo Go**](https://expo.dev/client) disponible para iOS y Android.
+#### 2.1. Diagrama de Navegación
+Dado el limitado tiempo del que disponemos, nuestro diagrama de navegación consta de distintas fases de desarrollo, dichas fases son las siguientes:
 
-#### Editor de Código (IDE)
+- Fase 1: tonos amarillos
+- Fase 2: tonos naranjas
+- Fase 3: tonos verdes
+- Fase 4: tonos morados
+- Fase 5: tonos grises
 
-Podemos usar cualquier editor de código o IDE a nuestra elección.
+Las flechas azules indican un flujo de avance o de mismo nivel, mientras que las rojas indican un flujo de retroceso.
 
-Mi elección: [**VSCode**](https://code.visualstudio.com/)
+![diagrama de navegación](../img/nav-schema/espanol.jpg)
 
-#### (Optional) Android Studio & Xcode
+#### 2.2 Mockups / Bocetos de la interfaz
+Dado el limitado tiempo del que disponemos, solo se han realizados los bocetos de las pantallas principales hasta la fase 2. Nuestra interfaz se divide en las siguientes pantallas principales:
 
-En algunos casos, es posible que tengamos que crear el proyecto nativo de Android e iOS y/o utilizar un emulador de Android o un simulador de iOS. En ese caso, tendrás que configurar Android Studio y Xcode.
 
-Sigue los pasos de la documentación de React Native: https://reactnative.dev/docs/environment-setup
+**Inicio de Sesión:** pantalla de inicio de sesión.
 
-Si tenemos un sistema Windows o Linux podremos compilar y publicar nuestras apps para iOS utilizando compilaciones en la nube con Expo EAS.
+![inicio de sesion](../img/ui/SignIn.png)
 
-### 2. Crear un proyecto Expo desde 0
+**Inicio / Competiciones:** primera pantalla de la App después del inicio de sesión.
 
-Es tan simple como ejecutar este comando:
+![inicio](../img/ui/Competitions.png)
 
-```
-npx create-expo-app@latest <nombreApp> -t
-```
+**Detalle Competición:** detalle de una competición en la pestaña de Clasificación para una Liga.
 
-Si no tenemos instalado el paquete `create-expo-app`, npx lo hará por nosotros. Solo hay que presionar `Y` si nos lo pregunta. 
+![detalle competicion](../img/ui/CompetitionDetail.png)
 
-Como platilla elegiremos “**Navigation (TypeScript)”.**
+**Detalle Competición 2:** detalle de una competición en la pestaña de Grupos para una Copa.
 
-![alt text](../img/image.png)
+![detalle competicion 2](../img/ui/CompetitionDetail2.png)
 
-Una vez nuestro proyecto está inicializado, procederemos a abrirlo en nuestro editor de código.
+**Detalle Competición 3:** detalle de una competición en la pestaña de Eliminatoria para una Copa.
 
-Abriremos una terminal y levantaremos un servidor de desarrollo con el comando:
-```
-npm start
-```
+![detalle competicion 3](../img/ui/CompetitionDetail3.png)
 
-El siguiente paso es ejecutar nuestra app en un dispositivo. La forma más sencilla es descargar la app Expo Go y, a continuación, escanear el QR que aparecerá en el terminal. De esta forma, podremos seguir desarrollando la app y ver las actualizaciones en tiempo real directamente en tu dispositivo.
-Opcionalmente, puedes ejecutar la app en un Simulador iOS pulsando `i` o en un Emulador Android pulsando `a`. Pero para esto, tienes que configurar los emuladores usando Xcode o Android Studio.
+**Detalle Competición 4:** detalle de una competición en la pestaña de Partidos para una Copa o Liga.
 
-![alt text](../img/image-1.png)
+![detalle competicion 4](../img/ui/CompetitionDetail4.png)
 
-Para comprobar que funcione correctamente puedes ir a
-`app/(tabs)/index.tsx` y cambiar el texto a "Hello World!". Si los cambios se aplican al momento podemos continuar.
+**Detalle Parido:** detalle de un partido en la pestaña de Estadísticas.
 
-#### Declarar la estructura de carpetas
+![detalle partido](../img/ui/MatchDetail.png)
 
-No es extrictamente necesario, pero sí es muy recomendable almacenar todo el codigo fuente de la App en una carpeta separada llamada `src`. Para ello, crearemos la carpeta `src` en la carpeta root de nuestro proyecto y moveremos dentro las siguientes carpetas:
 
-- app → src/app
-- components → src/components
-- constants → src/constants
+**Detalle Parido 2:** detalle de un partido en la pestaña de Alineaciones.
 
-Abre el archivo `src/app/_layout.tsx` y actualiza la ruta relativa del import para reflejar los cambios correctamente:
+![detalle partido 2](../img/ui/MatchDetail2.png)
 
-```
-require('../../assets/fonts/SpaceMono-Regular.ttf')
-```
-
-#### Reiniciar el servidor de desarrollo
-
-Abre el terminal en el que esta ejecutándose nuestro servidor de desarrollo (dónde ejecutamos `npm start`), presiona "Ctrl + C" para parar el servidor, luego ejecuta de nuevo `npm start`.
-
-#### Commitear los cambios
-
-Este es un buen punto para guardar nuestros cambios y establecer un punto de control al que volver si algo sale mal.
-
-1. Comprueba el estado de los archivos modificados:
-
-```
-git status
-```
-
-2. Añade todos los cambios al staging area
-
-```
-git add .
-```
-
-3. Commitea todos los cambios del the staging area
-
-```
-git commit -m "init expo project"
-```
-
-Subir los cambios a GitHub también sería un punto recomendable.
-
-### 3. Bibliografía
-- [Vídeo guía (notJust.dev)](https://www.youtube.com/watch?v=rIYzLhkG9TA&t=2481s) - 2 de abril de 2025
-- [Guía paso a paso (notJust.dev)](https://notjust.notion.site/React-Native-Supabase-Masterclass-47a69a60bc464c399b5a0df4d3c4a630) - 2 de abril de 2025
-- [Vídeo guía - Parte 1 (midudev)](https://www.youtube.com/watch?v=U23lNFm_J70) - 10 de abril de 2025
-- [Vídeo guía - Parte 2 (midudev)](https://www.youtube.com/watch?v=ZDoiMLqWz2Es) - 12 de abril de 2025
+#### 2.3. Validación del diseño
+Para comprobar la usabilidad y corregir errores compartimos estos bocetos con diferentes personas y distintos grados y ámbitos de conocimientos. Algunas de estas personas son:
+ - **Diego García**, amplio conocimiento dentro del ámbito futbolítico y colaborador de [@staff19torneos](http://instagram.com/staff19torneos/).
+ - **Anastasia Datsko**, desarrolladora multiplataforma, cuenta con unas bases sólidas en diseño UI/UX.
+ - **Elena Guzmán**, desarrolladora multiplataforma, cuenta con unas buenas bases en paletas de colores.
+ - **Adrían Lopéz**, CEO de [@staff19torneos](http://instagram.com/staff19torneos/), cliente final, cuenta con un amplio conocimiento en el mundo de los eventos deportivos. 
