@@ -1,36 +1,40 @@
 # React Native & Expo App
+
 ## Desarrollo
+
 ### 1. Instalación de requisitos
 
-Los primeros pasos para empezar a desarrollar una App con React Native y Expo pasan por instalar Node.js junto con los paquetes requeridos para el proyecto, también, creamos una cuenta en Supabase y una en Expo, aunque esta es opcional, es muy recomendable, ya que con ella tendremos acceso a servicios como Expo Application Services (EAS).
+Los primeros pasos para empezar a desarrollar una App con React Native y Expo pasan por instalar Node.js junto con los paquetes requeridos para el proyecto. Además, creamos una cuenta en Supabase y una en Expo; aunque esta última es opcional, es muy recomendable, ya que con ella tendremos acceso a servicios como Expo Application Services (EAS).
 
-Para poder probar nuestra App en las fases tempranas de desarrollo usamos un dispositivo físico iOS (iPhone 12 Pro) y un emulador Android (Pixel 8) con Expo Go, y posteriormente pasamos a un emulador iOS (iPhone SE) y un emulador Android (Pixel 8) con un Kit de Desarrollo, ya que algunas funcionalidades como usar otras fuentes de texto no están soportadas en Expo Go.
+Para poder probar nuestra App en las fases tempranas de desarrollo usamos un dispositivo físico iOS (iPhone 12 Pro) y un emulador Android (Pixel 8) con Expo Go. Posteriormente, pasamos a un emulador iOS (iPhone SE) y un emulador Android (Pixel 8) con un Kit de Desarrollo, ya que algunas funcionalidades, como usar otras fuentes de texto, no están soportadas en Expo Go.
 
-Puede surgir la pregunta de porqué dejamos de usar un dispositivo físico iOS y pasamos a un simulador, y la respuesta se basa en que Apple nos requerirá firmar nuestro Kit de Desarrollo para poder ejecutarlo en un dispositivo físico y para ello es necesario una cuenta de desarrollador y estar aderido al programa para desarrolladores de Apple con un coste de 100€/año.
+Puede surgir la pregunta de por qué dejamos de usar un dispositivo físico iOS y pasamos a un simulador. La respuesta se basa en que Apple nos requerirá firmar nuestro Kit de Desarrollo para poder ejecutarlo en un dispositivo físico, y para ello es necesario una cuenta de desarrollador y estar adherido al programa para desarrolladores de Apple, con un coste de 100 €/año.
 
 ### 2. Diseño UI / UX
-Nuestro principal foco en este proyecto es tener una interfaz atractiva y simple para el usuario, para ello hemos tomado ejemplo de aplicaciones profesionales y bien posicionas en el mercado del fútbol profesoinal como son [LiveScore](https://www.livescore.com/es) y [SofaScore](https://www.sofascore.com/es-la/).
+
+Nuestro principal foco en este proyecto es tener una interfaz atractiva y simple para el usuario. Para ello, hemos tomado ejemplo de aplicaciones profesionales y bien posicionadas en el mercado del fútbol profesional como son [LiveScore](https://www.livescore.com/es) y [SofaScore](https://www.sofascore.com/es-la/).
 
 Para nuestros bocetos usamos la herramienta de diseño Figma, que nos permite agilizar y profesionalizar la maquetación de las distintas pantallas de nuestra App.
 
-Para nuestros diagramas de navegación usamos la herramietna Miro, que nos permite crear todo tipo de diagramas de una manera intuitiva y rápida.
+Para nuestros diagramas de navegación usamos la herramienta Miro, que nos permite crear todo tipo de diagramas de una manera intuitiva y rápida.
 
 #### 2.1. Diagrama de Navegación
-Dado el limitado tiempo del que disponemos, nuestro diagrama de navegación consta de distintas fases de desarrollo, dichas fases son las siguientes:
 
-- Fase 1: tonos amarillos
-- Fase 2: tonos naranjas
-- Fase 3: tonos verdes
-- Fase 4: tonos morados
-- Fase 5: tonos grises
+Dado el limitado tiempo del que disponemos, nuestro diagrama de navegación consta de distintas fases de desarrollo. Dichas fases son las siguientes:
+
+-   Fase 1: tonos amarillos
+-   Fase 2: tonos naranjas
+-   Fase 3: tonos verdes
+-   Fase 4: tonos morados
+-   Fase 5: tonos grises
 
 Las flechas azules indican un flujo de avance o de mismo nivel, mientras que las rojas indican un flujo de retroceso.
 
 ![diagrama de navegación](../img/nav-schema/espanol.jpg)
 
-#### 2.2 Mockups / Bocetos de la interfaz
-Dado el limitado tiempo del que disponemos, solo se han realizados los bocetos de las pantallas principales hasta la fase 2. Nuestra interfaz se divide en las siguientes pantallas principales:
+#### 2.2. Mockups / Bocetos de la interfaz
 
+Dado el limitado tiempo del que disponemos, solo se han realizado los bocetos de las pantallas principales hasta la fase 2. Nuestra interfaz se divide en las siguientes pantallas principales:
 
 **Inicio de Sesión:** pantalla de inicio de sesión.
 
@@ -56,18 +60,91 @@ Dado el limitado tiempo del que disponemos, solo se han realizados los bocetos d
 
 ![detalle competicion 4](../img/ui/CompetitionDetail4.png)
 
-**Detalle Parido:** detalle de un partido en la pestaña de Estadísticas.
+**Detalle Partido:** detalle de un partido en la pestaña de Estadísticas.
 
 ![detalle partido](../img/ui/MatchDetail.png)
 
-
-**Detalle Parido 2:** detalle de un partido en la pestaña de Alineaciones.
+**Detalle Partido 2:** detalle de un partido en la pestaña de Alineaciones.
 
 ![detalle partido 2](../img/ui/MatchDetail2.png)
 
 #### 2.3. Validación del diseño
-Para comprobar la usabilidad y corregir errores compartimos estos bocetos con diferentes personas y distintos grados y ámbitos de conocimientos. Algunas de estas personas son:
- - **Diego García**, amplio conocimiento dentro del ámbito futbolítico y colaborador de [@staff19torneos](http://instagram.com/staff19torneos/).
- - **Anastasia Datsko**, desarrolladora multiplataforma, cuenta con unas bases sólidas en diseño UI/UX.
- - **Elena Guzmán**, desarrolladora multiplataforma, cuenta con unas buenas bases en paletas de colores.
- - **Adrían Lopéz**, CEO de [@staff19torneos](http://instagram.com/staff19torneos/), cliente final, cuenta con un amplio conocimiento en el mundo de los eventos deportivos. 
+
+Para comprobar la usabilidad y corregir errores, compartimos estos bocetos con diferentes personas con distintos grados y ámbitos de conocimiento. Algunas de estas personas y sus aportaciones son:
+
+-   **Diego García**, amplio conocimiento dentro del ámbito futbolístico y colaborador de [@staff19torneos](https://instagram.com/staff19torneos/).
+    -   Corrección de siglas y datos a mostrar en las tablas de clasificación.
+
+        ![detalle competicion](../img/ui-v2/CompetitionDetail.png)
+        ![detalle competicion 2](../img/ui-v2/CompetitionDetail2.png)
+
+-   **Anastasia Datsko**, desarrolladora multiplataforma, cuenta con unas bases sólidas en diseño UI/UX.
+    -   Rediseño de la tarjeta de partido.
+
+        ![detalle competicion 4](../img/ui-v2/CompetitionDetail4.png)
+
+-   **Elena Guzmán**, desarrolladora multiplataforma, cuenta con unas buenas bases en paletas de colores.
+    -   Cambios de color en los botones.
+
+        ![detalle partido 2](../img/ui-v2/MatchDetail2.png)
+
+-   **Adrián López**, CEO de [@staff19torneos](https://instagram.com/staff19torneos/), cliente final, cuenta con un amplio conocimiento en el mundo de los eventos deportivos.
+    -   Rediseño de las tarjetas de eliminatoria.
+
+        ![detalle competicion 3](../img/ui-v2/CompetitionDetail3.png)
+
+    -   Redimensión del resultado y escudos de los equipos en la pantalla de detalle partido.
+
+        ![detalle partido](../img/ui-v2/MatchDetail.png)
+
+    -   Cambios de color de la tarjeta de alineaciones.
+
+        ![detalle partido 2](../img/ui-v2/MatchDetail2.png)
+
+### 3. Diseño de Base de Datos
+
+#### 3.1. Objetivo y Estructura Inicial
+
+El objetivo principal fue diseñar una estructura de base de datos relacional, escalable y mantenible para la gestión integral de competiciones de fútbol. Buscábamos poder manejar múltiples competiciones (liga, copa, etc.) con distintas temporadas, equipos participantes, jugadores en plantillas (con restricciones de participación), usuarios con roles diferenciados (Organizador, Árbitro, Entrenador/Capitán) y la gestión detallada de partidos y resultados.
+
+Para ello, identificamos las siguientes entidades principales: **Usuario**, **Rol**, **Competición**, **Temporada**, **Equipo**, **Jugador**, **Partido**, **ResultadoPartido**, **FaseCompetición**, y **GrupoCompetición**.
+
+Las relaciones clave que establecimos fueron:
+
+-   **Competición** - **Temporada**: Una competición puede tener muchas temporadas (1,N), pero una temporada pertenece a una única competición (1,1).
+-   **Temporada** - **Equipo** (**ParticipaEn**): Una relación de muchos a muchos (N:M / 0,N - 0,N) que indica los equipos inscritos en una temporada. Se gestiona mediante una tabla intermedia llamada **EquiposTemporada**.
+-   **Jugador** - **ParticipaEn** (**JuegaParaEquipoEnTemporada**): Relaciona a un jugador con su participación en un equipo específico para una temporada concreta (1,N - 0,N), definiendo así la plantilla. Se gestiona con la tabla **PlantillasEquipo**.
+-   **Usuario** - **Roles/Permisos (AsignaRol, Organiza, ArbitraPartido, etc.)**: Relaciones que asignan roles y permisos a los usuarios sobre elementos específicos como Competiciones, Equipos en una Temporada o Partidos.
+-   **Temporada** - **Partido** (**ProgramadoEnTemporada**): Una relación (0,N - 1,1) que asegura que cada partido pertenezca obligatoriamente a una temporada.
+-   **Partido** - **FaseCompetición** (**ParteDeFase**): Una relación (0,N - 0,1) que indica si un partido pertenece (o no) a una fase estructural dentro de la temporada (como fase de grupos, octavos de final, etc.).
+-   **Partido** - **ParticipaEn** (**EsEquipoLocal / EsEquipoVisitante**): Dos relaciones (1,1 - 0,N) que identifican qué equipo (en el contexto de su temporada) juega como local y cuál como visitante en un partido.
+-   **Partido** - **ResultadoPartido** (**TieneResultado**): Una relación (0,1 - 1,1) para guardar el resultado una vez que el partido ha finalizado.
+
+#### 3.2. Decisiones Clave y Justificación
+
+Durante el diseño, tomamos varias decisiones importantes, razonando el porqué de cada una:
+
+##### 3.2.1. Vinculación Equipo-Temporada vs. Equipo-Fase
+
+Decidimos que la relación fundamental para un equipo es con la **Temporada** (a través de **EquiposTemporada**), no directamente con una Fase (**FaseCompetición**). Las razones fueron:
+-   Un equipo se inscribe y es elegible para la temporada completa.
+-   Las plantillas (**PlantillasEquipo**) se definen por temporada.
+-   Vincular un equipo directamente a una fase complicaría seguir su progreso a través de distintas fases (grupos, eliminatorias) y perderíamos la visión global de la temporada.
+
+##### 3.2.2. Vinculación Partido-Temporada y Partido-Fase
+
+Mantuvimos la relación **Partido -> Temporada** como la conexión principal. La relación **Partido -> FaseCompetición** se consideró secundaria y opcional.
+Esto asegura que todo partido esté asociado a una temporada, incluso si no pertenece a una fase específica (útil para ligas simples o partidos amistosos), dando más flexibilidad.
+
+##### 3.2.3. Denormalización Controlada: Equipo Ganador
+
+Analizamos si guardar explícitamente el equipo ganador en **ResultadoPartido** (campo `id_equipo_temporada_ganador`) era redundante, ya que se puede deducir de los marcadores. Decidimos incluirlo como una **optimización de rendimiento** (denormalización controlada). Aunque introduce redundancia (que hay que gestionar para mantener la coherencia), simplifica y acelera mucho las consultas frecuentes sobre quién ganó un partido.
+
+##### 3.2.4. Denormalización Controlada: Vínculo Directo Partido-Temporada
+
+Incluso si asumiéramos que todo partido *debe* pertenecer a una fase (lo que permitiría obtener la temporada a través de **Partido -> FaseCompetición -> Temporada**), discutimos los problemas de rendimiento que causaría eliminar la clave foránea directa **Partidos.temporada_id**.
+Justificamos **mantener** esta clave foránea directa por **rendimiento**. Eliminarla obligaría a usar `JOIN` entre **Partidos** y **FasesCompetición** constantemente para cualquier consulta basada en la temporada. Esto aumentaría la latencia, el consumo de recursos y la complejidad, especialmente con muchos datos. La clave foránea directa actúa como una optimización crucial para una de las consultas más comunes.
+
+#### 3.3. Conclusión
+
+El diseño final propone un esquema de base de datos que busca un equilibrio entre un modelo conceptualmente correcto (normalizado) y las necesidades prácticas de rendimiento y flexibilidad. Partimos de una estructura normalizada para las entidades y relaciones fundamentales, pero introdujimos denormalizaciones controladas y justificadas (como `id_equipo_temporada_ganador` y `Partidos.temporada_id`) para optimizar las consultas críticas, asegurando al mismo tiempo que el sistema pueda gestionar diversos formatos de competición y requisitos funcionales.
