@@ -101,50 +101,103 @@ Para comprobar la usabilidad y corregir errores, compartimos estos bocetos con d
 
         ![detalle partido 2](../img/ui-v2/MatchDetail2.png)
 
+
 ### 3. Diseño de Base de Datos
+El objetivo principal fue diseñar una estructura de base de datos relacional, escalable y mantenible para la gestión integral de competiciones de fútbol. Permitiéndonos manejar múltiples competiciones (liga, copa, etc.) con distintas temporadas, equipos participantes, jugadores en plantillas (con restricciones de participación), usuarios con roles diferenciados (Organizador, Árbitro, Entrenador/Capitán) y la gestión detallada de partidos y resultados.
 
-#### 3.1. Objetivo y Estructura Inicial
-
-El objetivo principal fue diseñar una estructura de base de datos relacional, escalable y mantenible para la gestión integral de competiciones de fútbol. Buscábamos poder manejar múltiples competiciones (liga, copa, etc.) con distintas temporadas, equipos participantes, jugadores en plantillas (con restricciones de participación), usuarios con roles diferenciados (Organizador, Árbitro, Entrenador/Capitán) y la gestión detallada de partidos y resultados.
-
-Para ello, identificamos las siguientes entidades principales: **Usuario**, **Rol**, **Competición**, **Temporada**, **Equipo**, **Jugador**, **Partido**, **ResultadoPartido**, **FaseCompetición**, y **GrupoCompetición**.
+Para ello, identificamos las siguientes entidades principales: **Usuario**, **Rol**, **Competición**, **Temporada**, **Equipo**, **Jugador**, **Partido**, **ResultadoPartido**, **FaseCompeticion**, y **GrupoCompetición**.
 
 Las relaciones clave que establecimos fueron:
 
--   **Competición** - **Temporada**: Una competición puede tener muchas temporadas (1,N), pero una temporada pertenece a una única competición (1,1).
--   **Temporada** - **Equipo** (**ParticipaEn**): Una relación de muchos a muchos (N:M / 0,N - 0,N) que indica los equipos inscritos en una temporada. Se gestiona mediante una tabla intermedia llamada **EquiposTemporada**.
--   **Jugador** - **ParticipaEn** (**JuegaParaEquipoEnTemporada**): Relaciona a un jugador con su participación en un equipo específico para una temporada concreta (1,N - 0,N), definiendo así la plantilla. Se gestiona con la tabla **PlantillasEquipo**.
--   **Usuario** - **Roles/Permisos (AsignaRol, Organiza, ArbitraPartido, etc.)**: Relaciones que asignan roles y permisos a los usuarios sobre elementos específicos como Competiciones, Equipos en una Temporada o Partidos.
--   **Temporada** - **Partido** (**ProgramadoEnTemporada**): Una relación (0,N - 1,1) que asegura que cada partido pertenezca obligatoriamente a una temporada.
--   **Partido** - **FaseCompetición** (**ParteDeFase**): Una relación (0,N - 0,1) que indica si un partido pertenece (o no) a una fase estructural dentro de la temporada (como fase de grupos, octavos de final, etc.).
--   **Partido** - **ParticipaEn** (**EsEquipoLocal / EsEquipoVisitante**): Dos relaciones (1,1 - 0,N) que identifican qué equipo (en el contexto de su temporada) juega como local y cuál como visitante en un partido.
--   **Partido** - **ResultadoPartido** (**TieneResultado**): Una relación (0,1 - 1,1) para guardar el resultado una vez que el partido ha finalizado.
+- **Competiciones → Temporadas**
+   - Una competición puede tener muchas temporadas (1,N)
+   - Una temporada pertenece a una única competición (1,1)
 
-#### 3.2. Decisiones Clave y Justificación
+- **Usuarios ↔ Roles**
+   - Un usuario puede tener 1 o varios roles (1,N)
+   - Un rol puede ser asignado a 0 o varios usuarios (0,N)
+
+- **Equipos ↔ Temporadas**
+   - Un equipo puede participar en 0 o varias temporadas (0,N)
+   - Una temporada puede incluir 1 o varios equipos (0,N)
+
+- **Jugadores ↔ Equipos (por temporada)**
+   - Un jugador puede estar en 0 o varios equipos (0,N)
+   - Un equipo puede tener 1 o varios jugadores (1,N)
+
+- **Temporadas → Etapas**
+   - Una temporada puede tener 0 o varias etapas (0,N)
+   - Una etapa pertenece a una única temporada (1,1)
+
+- **Etapas → Grupos**
+   - Una etapa puede contener 0 o varios grupos (0,N)
+   - Un grupo pertenece a una única etapa (1,1)
+
+- **Grupos ↔ Equipos (por temporada)**
+   - Un grupo puede contener 3 o varios equipos (3,N)
+   - Un equipo puede estar en 0 o varios grupos (0,N)
+
+- **Temporadas → Partidos**
+   - Una temporada puede tener 0 o muchos partidos (0,N)
+   - Un partido pertenece a una única temporada (1,1)
+
+- **Partidos ↔ Resultados**
+   - Un partido tiene un único resultado (1,1)
+   - Un resultado pertenece a un único partido (1,1)
+
+- **Temporadas → Clasificaciones**
+    - Una temporada puede tener 1 o muchas clasificaciones (1,N)
+    - Una clasificación pertenece a una única temporada (1,1)
+
+- **Usuarios → Competiciones**
+    - Un usuario (organizador) puede organizar 0 o varias competiciones (0,N)
+    - Una competición tiene 1 o varios organizadores (1,N)
+
+- **Usuarios → Partidos**
+    - Un usuario (árbitro) puede arbitrar 0 o varios partidos (0,N)
+    - Un partido puede tener 0 o muchos árbitros (0,N)
+
+- **Usuarios ↔ Jugadores**
+    - Un usuario puede estar asociado a un único jugador o a ninguno (0,1)
+    - Un jugador puede estar asociado a un único usuario o a ninguno (0,1)
+
+- **Partidos → Equipos (local/visitante)**
+    - Un partido enfrenta a un equipo local y uno visitante (1,1 cada uno)
+    - Un equipo puede jugar 0 o muchos partidos (0,N)
+
+- **Resultados → Equipos**
+    - Un resultado puede tener 0 o 1 equipo ganador (0,1)
+    - Un equipo puede ganar 0 o muchos partidos (0,N)
+
+- **Clasificaciones → Equipos**
+    - Una clasificación corresponde a un único equipo (1,1)
+    - Un equipo puede aparecer en 0 o varias clasificaciones (0,N)
+
+#### 3.1. Decisiones Clave y Justificación
 
 Durante el diseño, tomamos varias decisiones importantes, razonando el porqué de cada una:
 
-##### 3.2.1. Vinculación Equipo-Temporada vs. Equipo-Fase
+##### 3.1.1. Vinculación Equipo-Temporada vs. Equipo-Fase
 
-Decidimos que la relación fundamental para un equipo es con la **Temporada** (a través de **EquiposTemporada**), no directamente con una Fase (**FaseCompetición**). Las razones fueron:
+Decidimos que la relación fundamental para un equipo es con la **Temporada** (a través de **EquiposTemporada**), no directamente con una Fase (**FaseCompeticion**). Las razones fueron:
 -   Un equipo se inscribe y es elegible para la temporada completa.
 -   Las plantillas (**PlantillasEquipo**) se definen por temporada.
 -   Vincular un equipo directamente a una fase complicaría seguir su progreso a través de distintas fases (grupos, eliminatorias) y perderíamos la visión global de la temporada.
 
-##### 3.2.2. Vinculación Partido-Temporada y Partido-Fase
+##### 3.1.2. Vinculación Partido-Temporada y Partido-Fase
 
-Mantuvimos la relación **Partido -> Temporada** como la conexión principal. La relación **Partido -> FaseCompetición** se consideró secundaria y opcional.
+Mantuvimos la relación **Partido -> Temporada** como la conexión principal. La relación **Partido -> FaseCompeticion** se consideró secundaria y opcional.
 Esto asegura que todo partido esté asociado a una temporada, incluso si no pertenece a una fase específica (útil para ligas simples o partidos amistosos), dando más flexibilidad.
 
-##### 3.2.3. Denormalización Controlada: Equipo Ganador
+##### 3.1.3. Denormalización Controlada: Equipo Ganador
 
-Analizamos si guardar explícitamente el equipo ganador en **ResultadoPartido** (campo `id_equipo_temporada_ganador`) era redundante, ya que se puede deducir de los marcadores. Decidimos incluirlo como una **optimización de rendimiento** (denormalización controlada). Aunque introduce redundancia (que hay que gestionar para mantener la coherencia), simplifica y acelera mucho las consultas frecuentes sobre quién ganó un partido.
+Analizamos si guardar explícitamente el equipo ganador en **ResultadoPartido** era redundante, ya que se puede deducir de los marcadores. Decidimos incluirlo como una **optimización de rendimiento** (denormalización controlada). Aunque introduce redundancia (que hay que gestionar para mantener la coherencia), simplifica y acelera mucho las consultas frecuentes sobre quién ganó un partido.
 
-##### 3.2.4. Denormalización Controlada: Vínculo Directo Partido-Temporada
+##### 3.1.4. Denormalización Controlada: Vínculo Directo Partido-Temporada
 
-Incluso si asumiéramos que todo partido *debe* pertenecer a una fase (lo que permitiría obtener la temporada a través de **Partido -> FaseCompetición -> Temporada**), discutimos los problemas de rendimiento que causaría eliminar la clave foránea directa **Partidos.temporada_id**.
-Justificamos **mantener** esta clave foránea directa por **rendimiento**. Eliminarla obligaría a usar `JOIN` entre **Partidos** y **FasesCompetición** constantemente para cualquier consulta basada en la temporada. Esto aumentaría la latencia, el consumo de recursos y la complejidad, especialmente con muchos datos. La clave foránea directa actúa como una optimización crucial para una de las consultas más comunes.
+Incluso si asumiéramos que todo partido debe pertenecer a una fase (lo que permitiría obtener la temporada a través de **Partido -> FaseCompeticion -> Temporada**), discutimos los problemas de rendimiento que causaría eliminar la clave foránea directa **Partidos.temporada_id**.
+Justificamos **mantener** esta clave foránea por **rendimiento**. Eliminarla obligaría a usar **JOIN** entre **Partidos** y **FasesCompeticion** constantemente para cualquier consulta basada en la temporada. Esto aumentaría la latencia, el consumo de recursos y la complejidad, especialmente con muchos datos. La clave foránea directa actúa como una optimización crucial para una de las consultas más comunes.
 
-#### 3.3. Conclusión
+#### 3.2. Conclusión
 
-El diseño final propone un esquema de base de datos que busca un equilibrio entre un modelo conceptualmente correcto (normalizado) y las necesidades prácticas de rendimiento y flexibilidad. Partimos de una estructura normalizada para las entidades y relaciones fundamentales, pero introdujimos denormalizaciones controladas y justificadas (como `id_equipo_temporada_ganador` y `Partidos.temporada_id`) para optimizar las consultas críticas, asegurando al mismo tiempo que el sistema pueda gestionar diversos formatos de competición y requisitos funcionales.
+El diseño final propone un esquema de base de datos que busca un equilibrio entre un modelo conceptualmente correcto (normalizado) y las necesidades prácticas de rendimiento y flexibilidad. Partimos de una estructura normalizada para las entidades y relaciones fundamentales, pero introdujimos denormalizaciones controladas y justificadas para optimizar las consultas críticas, asegurando al mismo tiempo que el sistema pueda gestionar diversos formatos de competición y requisitos funcionales.
