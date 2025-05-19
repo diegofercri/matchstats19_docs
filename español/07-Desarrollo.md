@@ -108,94 +108,96 @@ Para comprobar la usabilidad y corregir errores, compartimos estos bocetos con d
 
 El objetivo principal fue diseñar una estructura de base de datos relacional, escalable y mantenible para la gestión integral de competiciones de fútbol. Permitiéndonos manejar múltiples competiciones (liga, copa, etc.) con distintas temporadas, equipos participantes, jugadores en plantillas (con restricciones de participación), usuarios con roles diferenciados (Organizador, Árbitro, Entrenador/Capitán) y la gestión detallada de partidos y resultados.
 
-Para ello, identificamos las siguientes entidades principales: **Usuario**, **Rol** (define los tipos de roles posibles), **Competición**, **Temporada**, **Equipo**, **Jugador**, **Partido**, **Resultado**, **Fase**, **Grupo**, **EquipoTemporada** (representa la inscripción de un Equipo en una Temporada específica) y **Clasificacion** (representa la *fila* o *entrada* de un equipo en una tabla de clasificación concreta).
+Para ello, identificamos las siguientes entidades principales: **usuario**, **rol**, **competicion**, **temporada**, **equipo**, **jugador**, **partido**, **resultado**, **fase**, **grupo**, **equipoTemporada**, **jugadorEquipoTemporada** (equivalente a PlantillaEquipo), **grupoEquipoTemporada** (equivalente a GrupoEquipos) y **clasificación**. La gestión de roles y permisos se centraliza en **asignacionRolUsuario**.
 
-_Nota sobre Roles y Permisos:_ Los roles definidos en la entidad **Rol** (Organizador, Árbitro, Entrenador, Capitán, etc.) no se asignan a los usuarios de forma global. La asignación de un rol a un usuario es **contextual**, es decir, un usuario ejerce un rol sobre una entidad específica (p. ej., un usuario es Organizador *de una Competición*, o Entrenador *de un Equipo en una Temporada*). Para gestionar esto de forma flexible y precisa, se requiere una tabla asociativa (`AsignacionRolUsuario` o similar) que vincule `Usuario`, `Rol` y la entidad de contexto (`tipo_entidad` y `entidad_id`). Esta decisión se justifica en detalle en la sección 3.2.5.
+_Nota sobre Roles y Permisos:_ Los roles definidos en la entidad **rol** (Organizador, Árbitro, Entrenador, Capitán, etc.) no se asignan a los usuarios de forma global. La asignación de un rol a un usuario es **contextual**, es decir, un usuario ejerce un rol sobre una entidad específica (p. ej., un usuario es Organizador *de una competicion*, o Entrenador *de un equipoTemporada*). Para gestionar esto de forma flexible y precisa, se utiliza la tabla asignacionRolUsuario que vincula usuario, rol y la entidad de contexto (tipo_entidad y entidad_id). Esta decisión se justifica en detalle en la sección 3.2.5.
 
 Las relaciones clave que establecimos, implementadas a través de claves foráneas o tablas asociativas, fueron:
 
-- **Competición → Temporada**
-    - Una competición puede tener muchas temporadas (1,N)
-    - Una temporada pertenece a una única competición (1,1)
+- **competicion → temporada**
+    - Una competicion puede tener muchas temporada (1,N)
+    - Una temporada pertenece a una única competicion (1,1)
 
-- **Equipo ↔ Temporada (`EquipoTemporada`)**
+- **equipo ↔ temporada (Implementado por equipoTemporada)**
     - Un equipo puede participar en 0 o varias temporadas (0,N)
     - Una temporada puede incluir 0 o varios equipos (0,N)
-    - *Implementado a través de la tabla `EquipoTemporada` con PK `equipo_temporada_id`, FK a `Equipo`, FK a `Temporada`.*
 
-- **Jugador ↔ EquipoTemporada (`JugadorEquipoTemporada`)**
-    - Un jugador puede estar en 0 o varias inscripciones de equipo-temporada (0,N)
-    - Una inscripción de equipo-temporada (un equipo en una temporada) puede tener **0** o varios jugadores (0,N) _[Permite equipos sin jugadores iniciales]_
-    - *Implementado a través de `JugadorEquipoTemporada` que enlaza `Jugador` con `EquipoTemporada`.*
+- **jugador ↔ equipoTemporada (Implementado por jugadorEquipoTemporada)**
+    - Un jugador puede estar en 0 o varias inscripciones de equipoTemporada (0,N)
+    - Un equipoTemporada puede tener 0 o varios jugadores (0,N)
 
-- **Temporada → Fase**
+- **temporada → fase**
     - Una temporada puede tener 0 o varias fases (0,N)
     - Una fase pertenece a una única temporada (1,1)
 
-- **Fase → Grupo**
+- **fase → grupo**
     - Una fase puede contener 0 o varios grupos (0,N)
     - Un grupo pertenece a una única fase (1,1)
 
-- **Grupo ↔ EquipoTemporada (`GrupoEquipoTemporada`)**
-    - Un grupo puede contener 0 o varios equipos inscritos en la temporada (0,N)
-    - Un equipo inscrito en la temporada puede estar en 0 o 1 grupo dentro de la misma fase (0,1)
-    - *Implementado a través de `GrupoEquipoTemporada` que enlaza `Grupo` con `EquipoTemporada`.*
+- **grupo ↔ equipoTemporada (Implementado por grupoEquipoTemporada)**
+    - Un grupo puede contener 0 o varios equipoTemporada (0,N)
+    - Un equipoTemporada puede estar en 0 o 1 grupo dentro de la misma fase (0,1)
 
-- **Temporada → Partido**
+- **temporada → partido**
     - Una temporada puede tener 0 o muchos partidos (0,N)
     - Un partido pertenece a una única temporada (1,1)
 
-- **Partido ↔ Resultado**
+- **partido ↔ resultado**
     - Un partido puede tener 0 o 1 único resultado si se ha jugado (0,1)
     - Un resultado pertenece a un único partido (1,1)
 
-- **Usuario → Partido (`Arbitra`)**
-    - Un usuario (árbitro) puede arbitrar 0 o varios partidos (0,N)
-    - Un partido puede tener 0 o 1 árbitro asignado directamente (0,1)
-    - *Implementado con FK opcional `arbitro_usuario_id` en `Partido`. Roles más complejos (asistentes, VAR) o asignaciones a nivel de Temporada requerirían el modelo contextual de roles.*
+- **usuario → partido (Arbitra - gestionado por asignacionRolUsuario)**
+    - Un usuario (árbitro) puede arbitrar 0 o varios partidos (0,N).
+    - Un partido puede tener 0 o varios árbitros asignados.
+    - *Implementado a través de asignacionRolUsuario donde rol_id corresponde al rol arbitral específico.*
 
-- **Usuario ↔ Jugador**
-    - Un usuario puede estar asociado a un único jugador o a ninguno (0,1)
-    - Un jugador puede estar asociado a un único usuario o a ninguno (0,1)
+- **partido → equipoTemporada (local/visitante)**
+    - Un partido enfrenta a un equipoTemporada local y uno visitante (local_id, visitante_id en partido).
+    - Un equipoTemporada puede jugar 0 o muchos partido (0,N)
 
-- **Partido → EquipoTemporada (local/visitante)**
-    - Un partido enfrenta a un equipo local y uno visitante (inscritos en la temporada), pero estos podrían no estar definidos inicialmente (0,1 cada uno)
-    - Un equipo inscrito en la temporada puede jugar 0 o muchos partidos (0,N)
+- **resultado → equipoTemporada (ganador)**
+    - Un resultado puede tener 0 o 1 equipo ganador.
+    - Un equipoTemporada puede ganar 0 o muchos partidos (0,N)
 
-- **Resultado → EquipoTemporada (ganador)**
-    - Un resultado puede tener 0 o 1 equipo ganador (inscrito en la temporada) (0,1)
-    - Un equipo inscrito en la temporada puede ganar 0 o muchos partidos (0,N)
-
-- **Clasificacion ↔ Temporada**
+- **clasificación ↔ temporada**
     - Un registro de clasificación pertenece a una única temporada (1,1)
     - Una temporada tiene 0 o muchos registros de clasificación (0,N)
 
-- **Clasificacion ↔ Fase**
+- **clasificación ↔ fase**
     - Un registro de clasificación pertenece opcionalmente a una única fase (0,1)
     - Una fase tiene 0 o muchos registros de clasificación (0,N)
 
-- **Clasificacion ↔ Grupo**
+- **clasificación ↔ grupo**
     - Un registro de clasificación pertenece opcionalmente a un único grupo (0,1)
     - Un grupo tiene 0 o muchos registros de clasificación (0,N)
 
-- **Clasificacion ↔ EquipoTemporada**
-    - Un registro de clasificación pertenece a un único equipo inscrito en la temporada (1,1)
-    - Un equipo inscrito en la temporada puede tener 0 o muchos registros de clasificación (0,N)
+- **clasificación ↔ equipoTemporada**
+    - Un registro de clasificación pertenece a un único equipoTemporada (1,1)
+    - Un equipoTemporada puede tener 0 o muchos registros de clasificación (0,N)
 
 #### 3.1. Modelo de Clasificación Unificado (Ligas y Grupos)
 
-Para gestionar las tablas de clasificación de manera flexible tanto para ligas completas como para fases de grupos, se optó por una entidad única `Clasificacion`. Esta entidad no representa la tabla de clasificación completa, sino **una fila individual** dentro de ella, detallando la posición y estadísticas de un equipo específico en un contexto determinado.
+Para gestionar las tablas de clasificación de manera flexible tanto para ligas completas como para fases de grupos, se optó por una entidad (tabla) única **clasificación**. Esta tabla no representa la tabla de clasificación completa, sino **una fila individual** dentro de ella, detallando la posición y estadísticas de un equipo específico en un contexto determinado.
 
-Los atributos clave de `Clasificacion` son:
-- `clasificacion_id` (PK)
-- `temporada_id` (FK a `Temporada`, Obligatorio)
-- `fase_id` (FK a `Fase`, Nulable): Opcional, para vincular a una fase.
-- `grupo_id` (FK a `Grupo`, Nulable): **Diferenciador clave**. Si es `NULL`, la fila pertenece a la clasificación general (liga/fase). Si tiene valor, pertenece a la clasificación de ese grupo específico.
-- `equipo_temporada_id` (FK a `EquipoTemporada`, Obligatorio): El equipo (en esa temporada) al que se refiere la fila.
+Los atributos clave de **clasificación** son:
+- id (PK)
+- temporada_id (FK a temporada, Obligatorio)
+- fase_id (FK a fase, Nulable)
+- grupo_id (FK a grupo, Nulable): **Diferenciador clave**. Si es NULL, la fila pertenece a la clasificación general (liga/fase). Si tiene valor, pertenece a la clasificación de ese grupo específico.
+- equipoTemporada_id (FK a equipoTemporada, Obligatorio)
+- posicion
+- puntos
+- partidos_jugados
+- partidos_ganados
+- partidos_empatados
+- partidos_perdidos
+- goles_favor
+- goles_contra
+- diferencia_goles
 
-Es fundamental la restricción `UNIQUE (temporada_id, fase_id, grupo_id, equipo_temporada_id)` para garantizar que cada equipo tenga solo una entrada por contexto clasificatorio.
+Es fundamental la restricción UNIQUE (temporada_id, fase_id, grupo_id, equipoTemporada_id) para garantizar que cada equipo tenga solo una entrada por contexto clasificatorio.
 
-Este modelo permite consultar la clasificación de una liga (`WHERE grupo_id IS NULL`) o de un grupo específico (`WHERE grupo_id = X`) usando la misma tabla `Clasificacion`. La actualización de esta tabla se realiza tras registrar/modificar el `Resultado` de cada `Partido`.
+Este modelo permite consultar la clasificación de una liga (WHERE grupo_id IS NULL) o de un grupo específico (WHERE grupo_id = X) usando la misma tabla clasificación. La actualización de esta tabla se realiza tras registrar/modificar el resultado de cada partido.
 
 #### 3.2. Decisiones Clave y Justificación
 
@@ -203,35 +205,35 @@ Durante el diseño, tomamos varias decisiones importantes, razonando el porqué 
 
 ##### 3.2.1. Vinculación Equipo-Temporada vs. Equipo-Fase
 
-Decidimos que la relación fundamental para un equipo es con la **Temporada** (a través de **EquipoTemporada**), no directamente con una Fase (**Fase**). Las razones fueron:
+Decidimos que la relación fundamental para un equipo es con la **temporada** (a través de **equipoTemporada**), no directamente con una fase. Las razones fueron:
 -   Un equipo se inscribe y es elegible para la temporada completa.
--   Las plantillas (**JugadorEquipoTemporada**) se definen por temporada.
+-   Las plantillas (gestionadas por **jugadorEquipoTemporada**) se definen por temporada.
 -   Vincular un equipo directamente a una fase complicaría seguir su progreso a través de distintas fases (grupos, eliminatorias) y perderíamos la visión global de la temporada.
 
 ##### 3.2.2. Vinculación Partido-Temporada y Partido-Fase
 
-Mantuvimos la relación **Partido -> Temporada** como la conexión principal. La relación **Partido -> Fase** se consideró secundaria y opcional.
+Mantuvimos la relación **partido -> temporada** (campo temporada_id en partido) como la conexión principal. La relación **partido -> fase** (campo fase_id en partido) se consideró secundaria y opcional.
 Esto asegura que todo partido esté asociado a una temporada, incluso si no pertenece a una fase específica (útil para ligas simples o partidos amistosos), dando más flexibilidad.
 
 ##### 3.2.3. Denormalización Controlada: Equipo Ganador
 
-Analizamos si guardar explícitamente el equipo ganador en **Resultado** era redundante, ya que se puede deducir de los marcadores. Decidimos incluirlo como una **optimización de rendimiento** (denormalización controlada). Aunque introduce redundancia (que hay que gestionar para mantener la coherencia), simplifica y acelera mucho las consultas frecuentes sobre quién ganó un partido.
+Analizamos si guardar explícitamente el equipo ganador en la tabla **resultado** era redundante, ya que se puede deducir de los marcadores (goles_local, goles_visitante). _(El PDF actual no incluye un campo equipo_ganador_id en resultado). Si se decidiera incluirlo, sería una **optimización de rendimiento** (denormalización controlada). Aunque introduce redundancia (que hay que gestionar para mantener la coherencia), simplifica y acelera mucho las consultas frecuentes sobre quién ganó un partido._
 
 ##### 3.2.4. Denormalización Controlada: Vínculo Directo Partido-Temporada
 
-Incluso si asumiéramos que todo partido debe pertenecer a una fase (lo que permitiría obtener la temporada a través de **Partido -> Fase -> Temporada**), discutimos los problemas de rendimiento que causaría eliminar la clave foránea directa **Partido.temporada_id**.
-Justificamos **mantener** esta clave foránea por **rendimiento**. Eliminarla obligaría a usar **JOIN** entre **Partido** y **Fase** constantemente para cualquier consulta basada en la temporada. Esto aumentaría la latencia, el consumo de recursos y la complejidad, especialmente con muchos datos. La clave foránea directa actúa como una optimización crucial para una de las consultas más comunes.
+Incluso si asumiéramos que todo partido debe pertenecer a una fase (lo que permitiría obtener la temporada a través de **partido -> fase -> temporada**), discutimos los problemas de rendimiento que causaría eliminar la clave foránea directa **partido.temporada_id**.
+Justificamos **mantener** esta clave foránea por **rendimiento**. Eliminarla obligaría a usar **JOIN** entre **partido** y **fase** constantemente para cualquier consulta basada en la temporada. Esto aumentaría la latencia, el consumo de recursos y la complejidad, especialmente con muchos datos. La clave foránea directa actúa como una optimización crucial para una de las consultas más comunes.
 
-##### 3.2.5. Gestión Contextual y Granulada de Roles y Permisos (`AsignacionRolUsuario`)
+##### 3.2.5. Gestión Contextual y Granulada de Roles y Permisos (asignacionRolUsuario)
 
-Se descartaron enfoques simplistas para la asignación de roles (como una relación M:N global `Usuario-Rol` o múltiples FKs de roles en tablas de entidad) debido a sus limitaciones en cuanto a precisión contextual, flexibilidad y escalabilidad.
+Se descartaron enfoques simplistas para la asignación de roles (como una relación M:N global usuario-rol o múltiples FKs de roles en tablas de entidad) debido a sus limitaciones en cuanto a precisión contextual, flexibilidad y escalabilidad.
 
-En su lugar, se adoptó un modelo de **asignación contextual**, conceptualizado mediante una tabla asociativa (`AsignacionRolUsuario`) con los campos clave: `usuario_id`, `rol_id`, `tipo_entidad` (ENUM: 'Competicion', 'EquipoTemporada', 'Temporada', 'Partido'...) y `entidad_id`.
+En su lugar, se adoptó un modelo de **asignación contextual**, implementado mediante la tabla (asignacionRolUsuario) con los campos clave: id (PK), usuario_id (FK), rol_id (FK), tipo_entidad (ENUM: 'competicion', 'equipoTemporada', 'temporada', 'partido', etc.) y entidad_id.
 
 **Justificación y Beneficios:**
-- **Precisión Contextual:** Define exactamente el ámbito de un rol (ej: Entrenador *de este EquipoTemporada*, Organizador *de esta Competición*).
+- **Precisión Contextual:** Define exactamente el ámbito de un rol (ej: Entrenador *de este equipoTemporada*, Organizador *de esta competicion*).
 - **Flexibilidad:**
-    - Permite **múltiples asignaciones** del mismo rol a una entidad (ej: varios Organizadores por Competición).
+    - Permite **múltiples asignaciones** del mismo rol a una entidad (ej: varios Organizadores por competicion).
     - Permite a un usuario tener **múltiples roles** en diferentes contextos.
 - **Centralización:** La lógica para verificar permisos ("¿Puede este usuario hacer X sobre Y?") consulta esta tabla centralizada.
 - **Escalabilidad:** Facilita añadir nuevos roles o contextos sin modificar masivamente el esquema.
@@ -245,4 +247,4 @@ Aunque requiere una tabla adicional, este enfoque proporciona la **robustez nece
 
 #### 3.4. Conclusión
 
-El diseño final propone un esquema de base de datos que busca un equilibrio entre un modelo conceptualmente correcto (normalizado) y las necesidades prácticas de rendimiento y flexibilidad. Partimos de una estructura normalizada para las entidades y relaciones fundamentales, pero introdujimos denormalizaciones controladas y justificadas (como el equipo ganador explícito y el vínculo directo `Partido.temporada_id`), un modelo de `Clasificacion` unificado, y un sistema de asignación de roles contextual para optimizar las consultas críticas, la funcionalidad y la gestión de permisos, asegurando al mismo tiempo que el sistema pueda gestionar diversos formatos de competición y requisitos funcionales complejos.
+El diseño final propone un esquema de base de datos que busca un equilibrio entre un modelo conceptualmente correcto (normalizado) y las necesidades prácticas de rendimiento y flexibilidad. Partimos de una estructura normalizada para las entidades y relaciones fundamentales, pero introdujimos denormalizaciones controladas y justificadas (como el vínculo directo partido.temporada_id), un modelo de clasificación unificado, y un sistema de asignación de roles contextual (asignacionRolUsuario) para optimizar las consultas críticas, la funcionalidad y la gestión de permisos, asegurando al mismo tiempo que el sistema pueda gestionar diversos formatos de competición y requisitos funcionales complejos.
