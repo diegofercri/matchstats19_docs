@@ -149,11 +149,6 @@ Las relaciones clave que establecimos, implementadas a través de claves foráne
     - Un partido puede tener 0 o 1 único resultado si se ha jugado (0,1)
     - Un resultado pertenece a un único partido (1,1)
 
-- **Usuario ↔ Competición (`Organiza`)**
-    - Un usuario (organizador) puede organizar 0 o varias competiciones (0,N)
-    - Una competición debe tener 1 o varios organizadores (1,N)
-    - *Implementado a través de la tabla `OrganizadorCompeticion` que enlaza `Usuario` y `Competición`, permitiendo múltiples organizadores.*
-
 - **Usuario → Partido (`Arbitra`)**
     - Un usuario (árbitro) puede arbitrar 0 o varios partidos (0,N)
     - Un partido puede tener 0 o 1 árbitro asignado directamente (0,1)
@@ -244,6 +239,10 @@ En su lugar, se adoptó un modelo de **asignación contextual**, conceptualizado
 
 Aunque requiere una tabla adicional, este enfoque proporciona la **robustez necesaria** para manejar la complejidad de permisos requerida por el sistema, donde los roles y sus ámbitos son variados y específicos.
 
-#### 3.3. Conclusión
+#### 3.3. Diagrama relacional de la base de datos
+
+![diagrama relacional](../img/db-schema/relational.png)
+
+#### 3.4. Conclusión
 
 El diseño final propone un esquema de base de datos que busca un equilibrio entre un modelo conceptualmente correcto (normalizado) y las necesidades prácticas de rendimiento y flexibilidad. Partimos de una estructura normalizada para las entidades y relaciones fundamentales, pero introdujimos denormalizaciones controladas y justificadas (como el equipo ganador explícito y el vínculo directo `Partido.temporada_id`), un modelo de `Clasificacion` unificado, y un sistema de asignación de roles contextual para optimizar las consultas críticas, la funcionalidad y la gestión de permisos, asegurando al mismo tiempo que el sistema pueda gestionar diversos formatos de competición y requisitos funcionales complejos.
