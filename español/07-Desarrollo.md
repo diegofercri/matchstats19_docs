@@ -101,7 +101,6 @@ Para comprobar la usabilidad y corregir errores, compartimos estos bocetos con d
 
         ![detalle partido 2](../img/ui-v2/MatchDetail2.png)
 
-
 # Diseño de Base de Datos para Gestión de Competiciones de Fútbol
 
 ## 3. Diseño de Base de Datos
@@ -153,10 +152,10 @@ Las relaciones clave que establecimos, implementadas a través de claves foráne
 
 - **partido → equipoTemporada (local/visitante)**
     - Un partido enfrenta a un equipoTemporada local y uno visitante (local_id, visitante_id en partido).
-    - Un equipoTemporada puede jugar 0 o muchos partido (0,N)
+    - Un equipoTemporada puede jugar 0 o muchos partidos (0,N)
 
 - **resultado → equipoTemporada (ganador)**
-    - Un resultado puede tener 0 o 1 equipo ganador.
+    - Un resultado puede tener 0 o 1 equipo ganador (a través del campo ganador_id en resultado).
     - Un equipoTemporada puede ganar 0 o muchos partidos (0,N)
 
 - **clasificación ↔ temporada**
@@ -215,31 +214,38 @@ Decidimos que la relación fundamental para un equipo es con la **temporada** (a
 Mantuvimos la relación **partido -> temporada** (campo temporada_id en partido) como la conexión principal. La relación **partido -> fase** (campo fase_id en partido) se consideró secundaria y opcional.
 Esto asegura que todo partido esté asociado a una temporada, incluso si no pertenece a una fase específica (útil para ligas simples o partidos amistosos), dando más flexibilidad.
 
-##### 3.2.3. Denormalización Controlada: Equipo Ganador
+##### 3.2.3. Denormalización Controlada: Almacenamiento del Equipo Ganador (resultado.ganador_id)
 
-Analizamos si guardar explícitamente el equipo ganador en la tabla **resultado** era redundante, ya que se puede deducir de los marcadores (goles_local, goles_visitante). _(El PDF actual no incluye un campo equipo_ganador_id en resultado). Si se decidiera incluirlo, sería una **optimización de rendimiento** (denormalización controlada). Aunque introduce redundancia (que hay que gestionar para mantener la coherencia), simplifica y acelera mucho las consultas frecuentes sobre quién ganó un partido._
+Aunque el equipo ganador de un partido se puede derivar comparando los marcadores (goles_local, goles_visitante) y los equipos participantes, se decidió **incluir un campo ganador_id (FK a equipoTemporada.id, nullable) en la tabla resultado**.
+
+**Justificación y Beneficios:**
+- **Optimización del Rendimiento:** Consultar directamente el campo ganador_id es significativamente más rápido y eficiente que calcular el ganador mediante comparaciones y uniones (JOIN) en cada consulta que lo requiera (ej: generar clasificaciones, listar victorias de un equipo).
+- **Simplificación de la Lógica:** Reduce la complejidad en la capa de aplicación y en las consultas SQL al no tener que reimplementar la lógica de determinación del ganador repetidamente.
+
+**Compromisos:**
+- **Redundancia de Datos:** Este campo introduce redundancia, ya que la información del ganador también está implícita en los marcadores.
+- **Necesidad de Consistencia:** Es crucial asegurar que el valor de ganador_id sea siempre coherente con los marcadores. Esto debe gestionarse mediante lógica en la aplicación o triggers en la base de datos que actualicen ganador_id cada vez que se modifiquen los marcadores o los equipos de un resultado.
+
+Esta denormalización es una elección deliberada para priorizar la eficiencia de las consultas para un dato frecuentemente accedido, asumiendo la responsabilidad de gestionar su consistencia.
 
 ##### 3.2.4. Denormalización Controlada: Vínculo Directo Partido-Temporada
 
 Incluso si asumiéramos que todo partido debe pertenecer a una fase (lo que permitiría obtener la temporada a través de **partido -> fase -> temporada**), discutimos los problemas de rendimiento que causaría eliminar la clave foránea directa **partido.temporada_id**.
 Justificamos **mantener** esta clave foránea por **rendimiento**. Eliminarla obligaría a usar **JOIN** entre **partido** y **fase** constantemente para cualquier consulta basada en la temporada. Esto aumentaría la latencia, el consumo de recursos y la complejidad, especialmente con muchos datos. La clave foránea directa actúa como una optimización crucial para una de las consultas más comunes.
 
-##### 3.2.5. Gestión Contextual y Granulada de Roles y Permisos (asignacionRolUsuario)
+##### 3.2.5. Gestión Contextual de Roles y Permisos (asignacionRolUsuario)
 
-Se descartaron enfoques simplistas para la asignación de roles (como una relación M:N global usuario-rol o múltiples FKs de roles en tablas de entidad) debido a sus limitaciones en cuanto a precisión contextual, flexibilidad y escalabilidad.
+Para la asignación de roles, se descartaron enfoques como una relación M:N global usuario-rol o múltiples FKs de roles en tablas de entidad, debido a sus limitaciones en precisión contextual, flexibilidad y escalabilidad.
 
-En su lugar, se adoptó un modelo de **asignación contextual**, implementado mediante la tabla (asignacionRolUsuario) con los campos clave: id (PK), usuario_id (FK), rol_id (FK), tipo_entidad (ENUM: 'competicion', 'equipoTemporada', 'temporada', 'partido', etc.) y entidad_id.
+En su lugar, se adoptó un modelo de **asignación contextual** mediante la tabla asignacionRolUsuario. Esta tabla utiliza los campos clave usuario_id, rol_id, tipo_entidad (ENUM: 'competicion', 'equipoTemporada', 'temporada', 'partido', etc.) y entidad_id (ID de la instancia específica de tipo_entidad).
 
 **Justificación y Beneficios:**
-- **Precisión Contextual:** Define exactamente el ámbito de un rol (ej: Entrenador *de este equipoTemporada*, Organizador *de esta competicion*).
-- **Flexibilidad:**
-    - Permite **múltiples asignaciones** del mismo rol a una entidad (ej: varios Organizadores por competicion).
-    - Permite a un usuario tener **múltiples roles** en diferentes contextos.
-- **Centralización:** La lógica para verificar permisos ("¿Puede este usuario hacer X sobre Y?") consulta esta tabla centralizada.
-- **Escalabilidad:** Facilita añadir nuevos roles o contextos sin modificar masivamente el esquema.
-- **Normalización:** Mantiene la información de asignación separada de las tablas principales de negocio.
+- **Precisión Contextual:** Permite definir con exactitud el ámbito de un rol (ej: Organizador *de esta competicion específica*, Entrenador *de este equipoTemporada concreto*).
+- **Flexibilidad y Escalabilidad:** Facilita asignar múltiples roles a un usuario en diversos contextos, o múltiples usuarios a un mismo rol sobre una entidad (ej: varios Organizadores por competicion). Añadir nuevos roles o contextos es más sencillo.
+- **Centralización:** La lógica para verificar permisos se centraliza en consultas a esta tabla.
+- **Normalización Relativa:** Aunque la integridad referencial del campo entidad_id (que apunta a diferentes tablas según tipo_entidad) debe ser gestionada por la lógica de aplicación o triggers, este enfoque evita la proliferación de tablas de enlace específicas para cada rol y contexto, manteniendo la asignación de roles separada de las tablas de negocio principales.
 
-Aunque requiere una tabla adicional, este enfoque proporciona la **robustez necesaria** para manejar la complejidad de permisos requerida por el sistema, donde los roles y sus ámbitos son variados y específicos.
+Este modelo, si bien requiere una gestión cuidadosa de la integridad para entidad_id, ofrece la robustez y adaptabilidad necesarias para un sistema con una estructura de permisos compleja y variada.
 
 #### 3.3. Diagrama relacional de la base de datos
 
@@ -247,4 +253,4 @@ Aunque requiere una tabla adicional, este enfoque proporciona la **robustez nece
 
 #### 3.4. Conclusión
 
-El diseño final propone un esquema de base de datos que busca un equilibrio entre un modelo conceptualmente correcto (normalizado) y las necesidades prácticas de rendimiento y flexibilidad. Partimos de una estructura normalizada para las entidades y relaciones fundamentales, pero introdujimos denormalizaciones controladas y justificadas (como el vínculo directo partido.temporada_id), un modelo de clasificación unificado, y un sistema de asignación de roles contextual (asignacionRolUsuario) para optimizar las consultas críticas, la funcionalidad y la gestión de permisos, asegurando al mismo tiempo que el sistema pueda gestionar diversos formatos de competición y requisitos funcionales complejos.
+El diseño final propone un esquema de base de datos que busca un equilibrio entre un modelo conceptualmente correcto (normalizado) y las necesidades prácticas de rendimiento y flexibilidad. Partimos de una estructura normalizada para las entidades y relaciones fundamentales, pero introdujimos denormalizaciones controladas y justificadas (como el almacenamiento explícito del ganador_id en resultado y el vínculo directo partido.temporada_id), un modelo de clasificacion unificado, y un sistema de asignación de roles contextual (asignacionRolUsuario) para optimizar las consultas críticas, la funcionalidad y la gestión de permisos, asegurando al mismo tiempo que el sistema pueda gestionar diversos formatos de competición y requisitos funcionales complejos.
