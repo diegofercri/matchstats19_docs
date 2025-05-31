@@ -332,65 +332,13 @@ Para un desarrollo profesional y completo del proyecto, la planificación óptim
 
 El siguiente diagrama muestra la planificación extremadamente comprimida que ejecutada debido a las limitaciones temporales:
 
-```mermaid
-gantt
-   title Planificación Ejecutada - Proyecto MatchStats19 (80 horas)
-   dateFormat  DD-MM-YYYY
-   todayMarker off
-   section Investigación
-   Tecnologías     :done, inv1, 17-05-2025, 2d
-   Competencia      :done, inv2, 18-05-2025, 1d
-   Definición MVP              :done, inv3, 19-05-2025, 1d
-   section Diseño
-   Arquitectura   :done, des1, 20-05-2025, 1d
-   UX/UI Básica           :done, des2, 21-05-2025, 1d
-   section Desarrollo
-   Setup Inicial          :done, dev1, 22-05-2025, 1d
-   UX/UI Básica       :done, dev3, 23-05-2025, 2d
-   Integración API    :done, dev2, 25-05-2025, 1d
-   Sistema de fases           :done, dev4, 26-05-2025, 2d
-   section Testing
-   Testing             :done, test1, 28-05-2025, 1d
-   section Documentación
-   Documentación             :done, doc1, 29-05-2025, 2d
-
-```
+![diagrama de gantt - versión ejecutada](/img/gantt/gantt-short.png)
 
 #### 4.6.2. Diagrama de Gantt - Versión Óptima (480 horas)
 
 Este diagrama representa la planificación ideal que permitiría desarrollar un producto completo y robusto, con todas las funcionalidades necesarias para un entorno de producción:
 
-```mermaid
-gantt
-   title Planificación Óptima - Proyecto MatchStats19 (480 horas)
-   dateFormat  DD-MM-YYYY
-   todayMarker off
-   section Investigación (2 sem)
-   Tecnologías    :done, inv1, 07-11-2024, 12d
-   Competencia           :done, inv2, 14-11-2024, 5d
-   section Diseño (3 sem)
-   Arquitectura              :done, des1, 21-11-2024, 5d
-   UX/UI completo             :done, des2, 28-11-2024, 5d
-   Testing usabilidad                :done, des3, 05-12-2024, 3d
-   section Backend (6 sem)
-   Base de datos          :done, back1, 09-12-2024, 13d
-   APIs RESTful            :done, back2, 26-12-2024, 10d
-   Autenticación             :done, back3, 09-01-2025, 10d
-   section Frontend (6 sem)
-   UX/UI completo    :done, front1, 23-01-2025, 10d
-   Integración Backend        :done, front2, 06-02-2025, 10d
-   Funcionalidades Offline           :done, front3, 20-02-2025, 10d
-   section Testing (3 sem)
-   Tests Automatizados             :done, test1, 06-03-2025, 5d
-   Tests Rendimiento               :done, test2, 13-03-2025, 5d
-   Tests Seguridad                :done, test3, 20-03-2025, 5d
-   section Deployment (2 sem)
-   Infraestructura producción        :done, deploy1, 27-03-2025, 5d
-   CI/CD y monitorización           :done, deploy2, 03-04-2025, 5d
-   section Documentación (2 sem)
-   Documentación técnica completa    :done, doc1, 10-04-2025, 5d
-   Lanzamiento y marketing           :done, doc2, 17-04-2025, 5d
-```
+![diagrama de gantt - versión ejecutada](/img/gantt/gantt-long.png)
 
 #### 4.6.3. Análisis Comparativo de los Diagramas
 
@@ -568,7 +516,7 @@ Dado el limitado tiempo disponible, el diagrama de navegación consta de distint
 
 Las flechas azules indican un flujo de avance o de mismo nivel, mientras que las rojas indican un flujo de retroceso.
 
-![diagrama de navegación](../img/nav-schema/english.jpg)
+![diagrama de navegación](/img/nav-schema/english.jpg)
 
 #### 8.2.2. Mockups / Bocetos de la Interfaz
 
@@ -576,35 +524,35 @@ Dado el limitado tiempo disponible, solo realizamos los bocetos de parte del pro
 
 **Inicio de Sesión:** pantalla de inicio de sesión.
 
-![inicio de sesion](../img/ui/SignIn.png)
+![inicio de sesion](/img/ui/small/SignIn.png)
 
 **Inicio / Competiciones:** pantalla de inicio de la aplicación.
 
-![inicio](../img/ui/Competitions.png)
+![inicio](/img/ui/small/Competitions.png)
 
 **Detalle Competición:** detalle de una competición en la pestaña de Clasificación para una Liga.
 
-![detalle competicion](../img/ui/CompetitionDetail.png)
+![detalle competicion](/img/ui/small/CompetitionDetail.png)
 
 **Detalle Competición 2:** detalle de una competición en la pestaña de Grupos para una Copa.
 
-![detalle competicion 2](../img/ui/CompetitionDetail2.png)
+![detalle competicion 2](/img/ui/small/CompetitionDetail2.png)
 
 **Detalle Competición 3:** detalle de una competición en la pestaña de Eliminatoria para una Copa.
 
-![detalle competicion 3](../img/ui/CompetitionDetail3.png)
+![detalle competicion 3](/img/ui/small/CompetitionDetail3.png)
 
 **Detalle Competición 4:** detalle de una competición en la pestaña de Partidos para una Copa o Liga.
 
-![detalle competicion 4](../img/ui/CompetitionDetail4.png)
+![detalle competicion 4](/img/ui/small/CompetitionDetail4.png)
 
 **Detalle Partido:** detalle de un partido en la pestaña de Estadísticas.
 
-![detalle partido](../img/ui/MatchDetail.png)
+![detalle partido](/img/ui/small/MatchDetail.png)
 
 **Detalle Partido 2:** detalle de un partido en la pestaña de Alineaciones.
 
-![detalle partido 2](../img/ui/MatchDetail2.png)
+![detalle partido 2](/img/ui/small/MatchDetail2.png)
 
 #### 8.2.3. Validación del Diseño
 
@@ -613,26 +561,26 @@ Para comprobar la usabilidad y corregir errores, compartimos estos bocetos con d
 - **Diego García**, amplio conocimiento dentro del ámbito futbolístico y colaborador de [@staff19torneos](https://instagram.com/staff19torneos/).
 
   - Corrección de siglas y datos a mostrar en las tablas de clasificación.
-    ![detalle competicion](../img/ui-v2/CompetitionDetail.png)
-    ![detalle competicion 2](../img/ui-v2/CompetitionDetail2.png)
+    ![detalle competicion](/img/ui-v2/small/CompetitionDetail.png)
+    ![detalle competicion 2](/img/ui-v2/small/CompetitionDetail2.png)
 
 - **Anastasia Datsko**, desarrolladora multiplataforma, cuenta con unas bases sólidas en diseño UI/UX.
 
   - Rediseño de la tarjeta de partido.
-    ![detalle competicion 4](../img/ui-v2/CompetitionDetail4.png)
+    ![detalle competicion 4](/img/ui-v2/small/CompetitionDetail4.png)
 
 - **Elena Guzmán**, desarrolladora multiplataforma, cuenta con buenas bases en paletas de colores.
 
   - Cambios de color en los botones.
-    ![detalle partido 2](../img/ui-v2/MatchDetail2.png)
+    ![detalle partido 2](/img/ui-v2/small/MatchDetail2.png)
 
 - **Adrián López**, CEO de [@staff19torneos](https://instagram.com/staff19torneos/), cliente final, cuenta con un amplio conocimiento en el mundo de los eventos deportivos.
   - Rediseño de las tarjetas de eliminatoria.
-    ![detalle competicion 3](../img/ui-v2/CompetitionDetail3.png)
+    ![detalle competicion 3](/img/ui-v2/small/CompetitionDetail3.png)
   - Redimensión del resultado y escudos de los equipos en la pantalla de detalle partido.
-    ![detalle partido](../img/ui-v2/MatchDetail.png)
+    ![detalle partido](/img/ui-v2/small/MatchDetail.png)
   - Cambios de color de la tarjeta de alineaciones.
-    ![detalle partido 2](../img/ui-v2/MatchDetail2.png)
+    ![detalle partido 2](/img/ui-v2/small/MatchDetail2.png)
 
 ### 8.3. Implementación con React Native + TypeScript
 
@@ -920,7 +868,7 @@ Las relaciones clave establecidas, implementadas a través de claves foráneas o
 
 En este diagrama relacional se muestra la relación de las tablas de la base de datos, con los campos clave y las relaciones directas entre las tablas.
 
-![esquema relacional](../img/db-schema/english.png)
+![esquema relacional](/img/db-schema/english.png)
 
 ###### Nota: este diagrama está parcialmente desactualizado conforme a esta documentación. Faltando tablas para las fases eliminatorias y las reglas de desempate avanzadas.
 
