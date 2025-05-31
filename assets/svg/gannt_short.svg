@@ -2,16 +2,16 @@
 <svg
    aria-roledescription="gantt"
    role="graphics-document document"
-   viewBox="0 0 828.43042 347.86258"
-   width="828.43042"
+   viewBox="0 0 739.85407 283.79321"
+   width="739.85406"
    id="my-svg"
    version="1.1"
-   sodipodi:docname="1.svg"
-   height="347.86258"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   inkscape:export-filename="1.png"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
+   sodipodi:docname="gannt_short.svg"
+   height="283.79321"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   inkscape:export-filename="gantt-short.png"
+   inkscape:export-xdpi="284.15057"
+   inkscape:export-ydpi="284.15057"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -27,243 +27,285 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="452.19477"
-     inkscape:cy="250.66935"
-     inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="1912"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
+     inkscape:zoom="1.0310599"
+     inkscape:cx="360.79378"
+     inkscape:cy="128.50854"
+     inkscape:window-width="1472"
+     inkscape:window-height="844"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
      inkscape:current-layer="my-svg" />
   <style
      id="style1">#my-svg{font-family:arial,sans-serif;font-size:14px;fill:#000000;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#my-svg .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#my-svg .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#my-svg .error-icon{fill:#552222;}#my-svg .error-text{fill:#552222;stroke:#552222;}#my-svg .edge-thickness-normal{stroke-width:1px;}#my-svg .edge-thickness-thick{stroke-width:3.5px;}#my-svg .edge-pattern-solid{stroke-dasharray:0;}#my-svg .edge-thickness-invisible{stroke-width:0;fill:none;}#my-svg .edge-pattern-dashed{stroke-dasharray:3;}#my-svg .edge-pattern-dotted{stroke-dasharray:2;}#my-svg .marker{fill:#666;stroke:#666;}#my-svg .marker.cross{stroke:#666;}#my-svg svg{font-family:arial,sans-serif;font-size:14px;}#my-svg p{margin:0;}#my-svg .mermaid-main-font{font-family:arial,sans-serif;}#my-svg .exclude-range{fill:#eeeeee;}#my-svg .section{stroke:none;opacity:0.2;}#my-svg .section0{fill:hsl(0, 0%, 73.9215686275%);}#my-svg .section2{fill:hsl(0, 0%, 73.9215686275%);}#my-svg .section1,#my-svg .section3{fill:white;opacity:0.2;}#my-svg .sectionTitle0{fill:#333;}#my-svg .sectionTitle1{fill:#333;}#my-svg .sectionTitle2{fill:#333;}#my-svg .sectionTitle3{fill:#333;}#my-svg .sectionTitle{text-anchor:start;font-family:arial,sans-serif;}#my-svg .grid .tick{stroke:hsl(0, 0%, 90%);opacity:0.8;shape-rendering:crispEdges;}#my-svg .grid .tick text{font-family:arial,sans-serif;fill:#000000;}#my-svg .grid path{stroke-width:0;}#my-svg .today{fill:none;stroke:#d42;stroke-width:2px;}#my-svg .task{stroke-width:2;}#my-svg .taskText{text-anchor:middle;font-family:arial,sans-serif;}#my-svg .taskTextOutsideRight{fill:#333;text-anchor:start;font-family:arial,sans-serif;}#my-svg .taskTextOutsideLeft{fill:#333;text-anchor:end;}#my-svg .task.clickable{cursor:pointer;}#my-svg .taskText.clickable{cursor:pointer;fill:#003163!important;font-weight:bold;}#my-svg .taskTextOutsideLeft.clickable{cursor:pointer;fill:#003163!important;font-weight:bold;}#my-svg .taskTextOutsideRight.clickable{cursor:pointer;fill:#003163!important;font-weight:bold;}#my-svg .taskText0,#my-svg .taskText1,#my-svg .taskText2,#my-svg .taskText3{fill:white;}#my-svg .task0,#my-svg .task1,#my-svg .task2,#my-svg .task3{fill:#707070;stroke:hsl(0, 0%, 33.9215686275%);}#my-svg .taskTextOutside0,#my-svg .taskTextOutside2{fill:#333;}#my-svg .taskTextOutside1,#my-svg .taskTextOutside3{fill:#333;}#my-svg .active0,#my-svg .active1,#my-svg .active2,#my-svg .active3{fill:#eee;stroke:hsl(0, 0%, 33.9215686275%);}#my-svg .activeText0,#my-svg .activeText1,#my-svg .activeText2,#my-svg .activeText3{fill:#333!important;}#my-svg .done0,#my-svg .done1,#my-svg .done2,#my-svg .done3{stroke:#666;fill:#bbb;stroke-width:2;}#my-svg .doneText0,#my-svg .doneText1,#my-svg .doneText2,#my-svg .doneText3{fill:#333!important;}#my-svg .crit0,#my-svg .crit1,#my-svg .crit2,#my-svg .crit3{stroke:hsl(10.9090909091, 73.3333333333%, 40%);fill:#d42;stroke-width:2;}#my-svg .activeCrit0,#my-svg .activeCrit1,#my-svg .activeCrit2,#my-svg .activeCrit3{stroke:hsl(10.9090909091, 73.3333333333%, 40%);fill:#eee;stroke-width:2;}#my-svg .doneCrit0,#my-svg .doneCrit1,#my-svg .doneCrit2,#my-svg .doneCrit3{stroke:hsl(10.9090909091, 73.3333333333%, 40%);fill:#bbb;stroke-width:2;cursor:pointer;shape-rendering:crispEdges;}#my-svg .milestone{transform:rotate(45deg) scale(0.8,0.8);}#my-svg .milestoneText{font-style:italic;}#my-svg .doneCritText0,#my-svg .doneCritText1,#my-svg .doneCritText2,#my-svg .doneCritText3{fill:#333!important;}#my-svg .activeCritText0,#my-svg .activeCritText1,#my-svg .activeCritText2,#my-svg .activeCritText3{fill:#333!important;}#my-svg .titleText{text-anchor:middle;font-size:18px;fill:#333;font-family:arial,sans-serif;}#my-svg .node .neo-node{stroke:#999;}#my-svg [data-look=&quot;neo&quot;].node rect,#my-svg [data-look=&quot;neo&quot;].cluster rect,#my-svg [data-look=&quot;neo&quot;].node polygon{stroke:url(#my-svg-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#my-svg [data-look=&quot;neo&quot;].node path{stroke:url(#my-svg-gradient);stroke-width:1;}#my-svg [data-look=&quot;neo&quot;].node .outer-path{filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#my-svg [data-look=&quot;neo&quot;].node .neo-line path{stroke:#999;filter:none;}#my-svg [data-look=&quot;neo&quot;].node circle{stroke:url(#my-svg-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#my-svg [data-look=&quot;neo&quot;].node circle .state-start{fill:#000000;}#my-svg [data-look=&quot;neo&quot;].statediagram-cluster rect{fill:#eee;stroke:url(#my-svg-gradient);stroke-width:1;}#my-svg [data-look=&quot;neo&quot;].icon-shape .icon{fill:url(#my-svg-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#my-svg [data-look=&quot;neo&quot;].icon-shape .icon-neo path{stroke:url(#my-svg-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#my-svg :root{--mermaid-font-family:&quot;trebuchet ms&quot;,verdana,arial,sans-serif;}</style>
   <g
-     id="g1"
-     transform="translate(44.43042)" />
-  <g
-     id="g4"
-     transform="translate(0,-4)">
-    <g
-       id="g3"
-       transform="translate(0,2)">
-      <text
-         style="font-family:sans-serif;text-anchor:middle"
-         font-size="10px"
-         stroke="none"
-         y="322.57285"
-         fill="#000000"
-         id="text2"
-         x="179.78773">18-05</text>
-      <text
-         style="font-family:sans-serif;text-anchor:middle"
-         font-size="10px"
-         stroke="none"
-         y="322.57285"
-         fill="#000000"
-         id="text3"
-         x="225.78773">19-05</text>
-      <text
-         style="font-family:sans-serif;text-anchor:middle"
-         font-size="10px"
-         stroke="none"
-         y="322.57285"
-         fill="#000000"
-         id="text4"
-         x="270.78775">20-05</text>
-      <text
-         style="font-family:sans-serif;text-anchor:middle"
-         font-size="10px"
-         stroke="none"
-         y="322.57285"
-         fill="#000000"
-         id="text5"
-         x="315.78775">21-05</text>
-      <text
-         style="font-family:sans-serif;text-anchor:middle"
-         font-size="10px"
-         stroke="none"
-         y="322.57285"
-         fill="#000000"
-         id="text6"
-         x="360.78775">22-05</text>
-      <text
-         style="font-family:sans-serif;text-anchor:middle"
-         font-size="10px"
-         stroke="none"
-         y="322.57285"
-         fill="#000000"
-         id="text7"
-         x="406.78775">23-05</text>
-      <text
-         style="font-family:sans-serif;text-anchor:middle"
-         font-size="10px"
-         stroke="none"
-         y="322.57285"
-         fill="#000000"
-         id="text8"
-         x="451.78775">24-05</text>
-      <text
-         style="font-family:sans-serif;text-anchor:middle"
-         font-size="10px"
-         stroke="none"
-         y="322.57285"
-         fill="#000000"
-         id="text9"
-         x="496.78775">25-05</text>
-      <text
-         style="font-family:sans-serif;text-anchor:middle"
-         font-size="10px"
-         stroke="none"
-         y="322.57285"
-         fill="#000000"
-         id="text10"
-         x="542.78772">26-05</text>
-      <text
-         style="font-family:sans-serif;text-anchor:middle"
-         font-size="10px"
-         stroke="none"
-         y="322.57285"
-         fill="#000000"
-         id="text11"
-         x="587.78772">27-05</text>
-      <text
-         style="font-family:sans-serif;text-anchor:middle"
-         font-size="10px"
-         stroke="none"
-         y="322.57285"
-         fill="#000000"
-         id="text12"
-         x="632.78772">28-05</text>
-      <text
-         style="font-family:sans-serif;text-anchor:middle"
-         font-size="10px"
-         stroke="none"
-         y="322.57285"
-         fill="#000000"
-         id="text13"
-         x="677.78772">29-05</text>
-      <text
-         style="font-family:sans-serif;text-anchor:middle"
-         font-size="10px"
-         stroke="none"
-         y="322.57285"
-         fill="#000000"
-         id="text14"
-         x="723.78772">30-05</text>
-      <text
-         style="font-family:sans-serif;text-anchor:middle"
-         font-size="10px"
-         stroke="none"
-         y="322.57285"
-         fill="#000000"
-         id="text15"
-         x="768.78772">31-05</text>
-    </g>
+     id="g3"
+     transform="matrix(1.0083152,0,0,1,-58.522755,-36.945648)">
     <rect
        style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.975614"
        id="rect42"
        width="45.188641"
        height="263.9761"
        x="204.34065"
-       y="41.94302" />
+       y="37.94302" />
     <rect
        style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.975614"
        id="rect43"
        width="45.188641"
        height="263.9761"
        x="249.5293"
-       y="41.94302" />
+       y="37.94302" />
     <rect
        style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.975614"
        id="rect44"
        width="45.188641"
        height="263.9761"
        x="294.71796"
-       y="41.94302" />
+       y="37.94302" />
     <rect
        style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.975614"
        id="rect45"
        width="45.188641"
        height="263.9761"
        x="339.90662"
-       y="41.94302" />
+       y="37.94302" />
     <rect
        style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.975614"
        id="rect46"
        width="45.188625"
        height="263.9761"
        x="385.09525"
-       y="41.94302" />
+       y="37.94302" />
     <rect
        style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.975614"
        id="rect47"
        width="45.188656"
        height="263.9761"
        x="430.28387"
-       y="41.94302" />
+       y="37.94302" />
     <rect
        style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.975614"
        id="rect48"
        width="45.188625"
        height="263.9761"
        x="475.47253"
-       y="41.94302" />
+       y="37.94302" />
     <rect
        style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.975614"
        id="rect49"
        width="45.188656"
        height="263.9761"
        x="520.66113"
-       y="41.94302" />
+       y="37.94302" />
     <rect
        style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.975614"
        id="rect50"
        width="45.188625"
        height="263.9761"
        x="565.84979"
-       y="41.94302" />
+       y="37.94302" />
     <rect
        style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.975614"
        id="rect51"
        width="45.188625"
        height="263.9761"
        x="611.03839"
-       y="41.94302" />
+       y="37.94302" />
     <rect
        style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.975615"
        id="rect52"
        width="45.188686"
        height="263.9761"
        x="656.22705"
-       y="41.94302" />
+       y="37.94302" />
     <rect
        style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.975614"
        id="rect53"
        width="45.188625"
        height="263.9761"
        x="701.41571"
-       y="41.94302" />
+       y="37.94302" />
     <rect
        style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.975612"
        id="rect54"
        width="45.188595"
        height="263.9761"
        x="746.60431"
-       y="41.94302" />
+       y="37.94302" />
     <rect
        style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.985084"
        id="rect56"
        width="46.070206"
        height="263.9761"
        x="158.27046"
-       y="41.94302" />
+       y="37.94302" />
+    <rect
+       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.09877"
+       id="rect35"
+       width="633.52246"
+       height="0.99737239"
+       x="158.27046"
+       y="107.92654" />
+    <rect
+       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.09877"
+       id="rect36"
+       width="633.52246"
+       height="0.99737239"
+       x="158.27046"
+       y="156.42468" />
+    <rect
+       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.09877"
+       id="rect37"
+       width="633.5224"
+       height="0.99737239"
+       x="158.27046"
+       y="249.88832" />
+    <rect
+       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.09877"
+       id="rect38"
+       width="633.5224"
+       height="0.99737239"
+       x="158.27046"
+       y="275.90372" />
+    <rect
+       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.098771"
+       id="rect39"
+       width="633.52246"
+       height="0.99737239"
+       x="158.27046"
+       y="301.91913" />
+    <rect
+       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.09877"
+       id="rect57"
+       width="633.5224"
+       height="0.99737239"
+       x="158.27046"
+       y="36.945648" />
+  </g>
+  <g
+     id="g1"
+     transform="translate(-10.800866,-36.945648)" />
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     y="283.6272"
+     fill="#000000"
+     id="text2"
+     x="124.55645">18-05</text>
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     y="283.6272"
+     fill="#000000"
+     id="text3"
+     x="170.55644">19-05</text>
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     y="283.6272"
+     fill="#000000"
+     id="text4"
+     x="215.55646">20-05</text>
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     y="283.6272"
+     fill="#000000"
+     id="text5"
+     x="260.55646">21-05</text>
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     y="283.6272"
+     fill="#000000"
+     id="text6"
+     x="305.55646">22-05</text>
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     y="283.6272"
+     fill="#000000"
+     id="text7"
+     x="351.55646">23-05</text>
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     y="283.6272"
+     fill="#000000"
+     id="text8"
+     x="396.55646">24-05</text>
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     y="283.6272"
+     fill="#000000"
+     id="text9"
+     x="441.55646">25-05</text>
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     y="283.6272"
+     fill="#000000"
+     id="text10"
+     x="487.55643">26-05</text>
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     y="283.6272"
+     fill="#000000"
+     id="text11"
+     x="532.55646">27-05</text>
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     y="283.6272"
+     fill="#000000"
+     id="text12"
+     x="577.55646">28-05</text>
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     y="283.6272"
+     fill="#000000"
+     id="text13"
+     x="622.55646">29-05</text>
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     y="283.6272"
+     fill="#000000"
+     id="text14"
+     x="668.55646">30-05</text>
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     y="283.6272"
+     fill="#000000"
+     id="text15"
+     x="713.55646">31-05</text>
+  <g
+     id="g2"
+     transform="translate(-55.231286,-36.945648)">
     <rect
        class="task done3"
        transform-origin="595.5px 276px"
        height="19.947447"
        width="45.188686"
-       y="259.78"
+       y="253.42097"
        x="656.22705"
        ry="2.9921172"
        rx="3.0125792"
@@ -274,7 +316,7 @@
        transform-origin="663.5px 300px"
        height="19.947447"
        width="90.518967"
-       y="283.72595"
+       y="279.4364"
        x="701.27399"
        ry="2.9921172"
        rx="2.9841418"
@@ -285,7 +327,7 @@
        transform-origin="120.5px 60px"
        height="19.947447"
        width="90.377281"
-       y="44.235336"
+       y="40.478313"
        x="159.15202"
        ry="2.9921172"
        rx="2.979471"
@@ -296,7 +338,7 @@
        transform-origin="143px 84px"
        height="19.947447"
        width="45.188641"
-       y="68.172272"
+       y="62.961056"
        x="204.34065"
        ry="2.9921172"
        rx="2.9470851"
@@ -307,7 +349,7 @@
        transform-origin="188.5px 108px"
        height="19.947447"
        width="45.188641"
-       y="92.109207"
+       y="85.443794"
        x="249.5293"
        ry="2.9921172"
        rx="3.0125761"
@@ -315,21 +357,21 @@
        style="fill:#1a1a1a;stroke-width:1.00077" />
     <text
        class="taskText taskText0  doneText0 width-59.2060546875"
-       y="57.565208"
+       y="53.808186"
        x="255.13954"
        font-size="10.9711px"
        id="inv1-text"
        style="stroke-width:0.997372">Tecnologías</text>
     <text
        class="taskTextOutsideRight taskTextOutside0  doneText0 width-64.828125"
-       y="81.636803"
+       y="75.89183"
        x="254.52348"
        font-size="10.9711px"
        id="inv2-text"
        style="stroke-width:0.997372">Competencia</text>
     <text
        class="taskTextOutsideRight taskTextOutside0  doneText0 width-75.203125"
-       y="105.57373"
+       y="99.823639"
        x="299.58972"
        font-size="10.9711px"
        id="inv3-text"
@@ -339,7 +381,7 @@
        transform-origin="233.5px 132px"
        height="19.947447"
        width="45.188641"
-       y="116.38864"
+       y="111.45921"
        x="294.71796"
        ry="2.9921172"
        rx="3.0125761"
@@ -350,7 +392,7 @@
        transform-origin="278.5px 156px"
        height="19.947447"
        width="45.188641"
-       y="140.32558"
+       y="133.94194"
        x="339.90662"
        ry="2.9921172"
        rx="3.0125761"
@@ -358,14 +400,14 @@
        style="fill:#1a1a1a;stroke-width:1.00077" />
     <text
        class="taskTextOutsideRight taskTextOutside1  doneText1 width-60.3125"
-       y="129.85316"
+       y="124.34446"
        x="344.4715"
        font-size="10.9711px"
        id="des1-text"
        style="stroke-width:0.997372">Arquitectura</text>
     <text
        class="taskTextOutsideRight taskTextOutside1  doneText1 width-47.078125"
-       y="153.79012"
+       y="148.32178"
        x="389.35324"
        font-size="10.9711px"
        id="des2-text"
@@ -375,7 +417,7 @@
        transform-origin="324px 180px"
        height="19.947447"
        width="45.111938"
-       y="164.29083"
+       y="159.95735"
        x="385.13361"
        ry="2.9921172"
        rx="2.9420831"
@@ -386,7 +428,7 @@
        transform-origin="392px 204px"
        height="19.947447"
        width="90.377312"
-       y="188.22778"
+       y="182.44009"
        x="430.28387"
        ry="2.9921172"
        rx="3.0125773"
@@ -397,7 +439,7 @@
        transform-origin="460px 228px"
        height="19.947447"
        width="45.265358"
-       y="212.16472"
+       y="204.92284"
        x="520.6228"
        ry="2.9921172"
        rx="2.9520886"
@@ -408,7 +450,7 @@
        transform-origin="528px 252px"
        height="19.947447"
        width="90.377251"
-       y="236.10165"
+       y="227.40558"
        x="565.84979"
        ry="2.9921172"
        rx="3.0125751"
@@ -416,147 +458,105 @@
        style="fill:#1a1a1a;stroke-width:1.00077" />
     <text
        class="taskTextOutsideRight taskTextOutside2  doneText2 width-59.9375"
-       y="177.75537"
+       y="172.99527"
        x="435.23239"
        font-size="10.9711px"
        id="dev1-text"
        style="stroke-width:0.997372">Setup Inicial</text>
     <text
        class="taskText taskText2  doneText2 width-47.078125"
-       y="202.60762"
+       y="196.81993"
        x="527.13562"
        font-size="10.9711px"
        id="dev3-text"
        style="stroke-width:0.997372">UI Básica</text>
     <text
        class="taskTextOutsideRight taskTextOutside2  doneText2 width-74.609375"
-       y="225.62924"
+       y="218.25272"
        x="570.875"
        font-size="10.9711px"
        id="dev2-text"
        style="stroke-width:0.997372">Integración API</text>
     <text
        class="taskText taskText2  doneText2 width-84.87451171875"
-       y="250.18684"
+       y="241.49078"
        x="662.77826"
        font-size="10.9711px"
        id="dev4-text"
        style="stroke-width:0.997372">Sistema de fases</text>
     <text
        class="taskText taskText3  doneText3 width-34.859375"
-       y="272.63577"
+       y="266.27676"
        x="708.32996"
        font-size="10.9711px"
        id="test1-text"
        style="stroke-width:0.997372">Testing</text>
     <text
        class="taskText taskText0  doneText0 width-76.4375"
-       y="298.1058"
+       y="293.81625"
        x="609.24066"
        font-size="10.9711px"
        id="doc1-text"
        style="stroke-width:0.997372">Documentación</text>
-    <text
-       class="sectionTitle sectionTitle0"
-       font-size="10.9711px"
-       y="81.502144"
-       x="60.31506"
-       dy="0"
-       id="text28"
-       style="stroke-width:0.997372"><tspan
-         x="60.31506"
-         alignment-baseline="central"
-         id="tspan28"
-         style="stroke-width:0.997372">Investigación</tspan></text>
-    <text
-       class="sectionTitle sectionTitle1"
-       font-size="10.9711px"
-       y="142.58427"
-       x="77.891312"
-       dy="0"
-       id="text29"
-       style="stroke-width:0.997372"><tspan
-         x="77.891312"
-         alignment-baseline="central"
-         id="tspan29"
-         style="stroke-width:0.997372">Diseño</tspan></text>
-    <text
-       class="sectionTitle sectionTitle2"
-       font-size="10.9711px"
-       y="214.25467"
-       x="68.551414"
-       dy="0"
-       id="text30"
-       style="stroke-width:0.997372"><tspan
-         x="68.551414"
-         alignment-baseline="central"
-         id="tspan30"
-         style="stroke-width:0.997372">Desarrollo</tspan></text>
-    <text
-       class="sectionTitle sectionTitle3"
-       font-size="10.9711px"
-       y="272.63577"
-       x="77.824348"
-       dy="0"
-       id="text31"
-       style="stroke-width:0.997372"><tspan
-         x="77.824348"
-         alignment-baseline="central"
-         id="tspan31"
-         style="stroke-width:0.997372">Testing</tspan></text>
-    <text
-       class="sectionTitle sectionTitle0"
-       font-size="10.9711px"
-       y="298.1058"
-       x="54.159889"
-       dy="0"
-       id="text32"
-       style="stroke-width:0.997372"><tspan
-         x="54.159889"
-         alignment-baseline="central"
-         id="tspan32"
-         style="stroke-width:0.997372">Documentación</tspan></text>
-    <rect
-       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.09877"
-       id="rect35"
-       width="633.52246"
-       height="0.99737239"
-       x="158.27046"
-       y="113.72396" />
-    <rect
-       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.09877"
-       id="rect36"
-       width="633.52246"
-       height="0.99737239"
-       x="158.27046"
-       y="161.78325" />
-    <rect
-       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.09877"
-       id="rect37"
-       width="633.5224"
-       height="0.99737239"
-       x="158.27046"
-       y="257.41586" />
-    <rect
-       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.09877"
-       id="rect38"
-       width="633.5224"
-       height="0.99737239"
-       x="158.27046"
-       y="281.22803" />
-    <rect
-       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.098771"
-       id="rect39"
-       width="633.52246"
-       height="0.99737239"
-       x="158.27046"
-       y="305.91913" />
-    <rect
-       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.09877"
-       id="rect57"
-       width="633.5224"
-       height="0.99737239"
-       x="158.27046"
-       y="40.945648" />
   </g>
+  <text
+     class="sectionTitle sectionTitle0"
+     font-size="10.9711px"
+     y="40.556496"
+     x="5.0837741"
+     dy="0"
+     id="text28"
+     style="stroke-width:0.997372"><tspan
+       x="5.0837741"
+       alignment-baseline="central"
+       id="tspan28"
+       style="stroke-width:0.997372">Investigación</tspan></text>
+  <text
+     class="sectionTitle sectionTitle1"
+     font-size="10.9711px"
+     y="101.63863"
+     x="22.660027"
+     dy="0"
+     id="text29"
+     style="stroke-width:0.997372"><tspan
+       x="22.660027"
+       alignment-baseline="central"
+       id="tspan29"
+       style="stroke-width:0.997372">Diseño</tspan></text>
+  <text
+     class="sectionTitle sectionTitle2"
+     font-size="10.9711px"
+     y="173.30902"
+     x="13.320128"
+     dy="0"
+     id="text30"
+     style="stroke-width:0.997372"><tspan
+       x="13.320128"
+       alignment-baseline="central"
+       id="tspan30"
+       style="stroke-width:0.997372">Desarrollo</tspan></text>
+  <text
+     class="sectionTitle sectionTitle3"
+     font-size="10.9711px"
+     y="231.69012"
+     x="22.593063"
+     dy="0"
+     id="text31"
+     style="stroke-width:0.997372"><tspan
+       x="22.593063"
+       alignment-baseline="central"
+       id="tspan31"
+       style="stroke-width:0.997372">Testing</tspan></text>
+  <text
+     class="sectionTitle sectionTitle0"
+     font-size="10.9711px"
+     y="257.16016"
+     x="-1.0713965"
+     dy="0"
+     id="text32"
+     style="stroke-width:0.997372"><tspan
+       x="-1.0713965"
+       alignment-baseline="central"
+       id="tspan32"
+       style="stroke-width:0.997372">Documentación</tspan></text>
 </svg>

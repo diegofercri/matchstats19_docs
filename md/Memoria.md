@@ -1,5 +1,68 @@
 # React Native & Expo App (MatchStats19)
 
+## Índice
+
+1. [Introducción](#1-introducción)
+2. [Objetivos](#2-objetivos)
+
+- 2.1. [Objetivo General](#21-objetivo-general)
+- 2.2. [Objetivos Específicos](#22-objetivos-específicos)
+
+3. [Especificación de Requisitos](#3-especificación-de-requisitos)
+
+- 3.1. [Requisitos Funcionales](#31-requisitos-funcionales)
+- 3.2. [Requisitos No Funcionales](#32-requisitos-no-funcionales)
+
+4. [Planificación Temporal](#4-planificación-temporal)
+
+- 4.1. [Contexto y Limitaciones Temporales Críticas](#41-contexto-y-limitaciones-temporales-críticas)
+- 4.2. [Planificación Ejecutada (Versión - 80 horas)](#42-planificación-ejecutada-versión---80-horas)
+- 4.3. [Planificación Óptima Recomendada (Versión Ideal - 480 horas)](#43-planificación-óptima-recomendada-versión-ideal---480-horas)
+- 4.4. [Comparativa y Impacto de las Limitaciones](#44-comparativa-y-impacto-de-las-limitaciones)
+- 4.5. [Funcionalidades Aplazadas por Limitaciones Temporales](#45-funcionalidades-aplazadas-por-limitaciones-temporales)
+- 4.6. [Diagramas de Gantt Comparativos](#46-diagramas-de-gantt-comparativos)
+
+5. [Evaluación de Costes](#5-evaluación-de-costes)
+6. [Tecnologías](#6-tecnologías)
+
+- 6.1. [React Native](#61-react-native)
+- 6.2. [Expo](#62-expo)
+- 6.3. [Supabase](#63-supabase)
+- 6.4. [API-Football para Datos de Demostración](#64-api-football-para-datos-de-demostración)
+
+7. [Casos de Éxito](#7-casos-de-éxito)
+
+- 7.1. [Xporty](#71-xporty)
+- 7.2. [MyGol](#72-mygol)
+- 7.3. [Winner](#73-winner)
+- 7.4. [Toornament](#74-toornament)
+
+8. [Desarrollo e Implementación](#8-desarrollo-e-implementación)
+
+- 8.1. [Instalación de Requisitos](#81-instalación-de-requisitos)
+- 8.2. [Diseño UI / UX](#82-diseño-ui--ux)
+- 8.3. [Implementación con React Native + TypeScript](#83-implementación-con-react-native--typescript)
+
+9. [Diseño de Base de Datos para Gestión de Competiciones de Fútbol](#9-diseño-de-base-de-datos-para-gestión-de-competiciones-de-fútbol)
+
+- 9.1. [Objetivo del Diseño](#91-objetivo-del-diseño)
+- 9.2. [Entidades y Relaciones Principales](#92-entidades-y-relaciones-principales)
+- 9.3. [Modelo de Clasificación Unificado](#93-modelo-de-clasificación-unificado)
+- 9.4. [Funcionalidades Avanzadas](#94-funcionalidades-avanzadas)
+- 9.5. [Decisiones de Diseño y Optimizaciones](#95-decisiones-de-diseño-y-optimizaciones)
+
+10. [Conclusiones](#10-conclusiones)
+
+- 10.1. [Cumplimiento de Objetivos](#101-cumplimiento-de-objetivos)
+- 10.2. [Logros Técnicos Destacados](#102-logros-técnicos-destacados)
+- 10.3. [Limitaciones y Decisiones Pragmáticas](#103-limitaciones-y-decisiones-pragmáticas)
+- 10.4. [Validación del Concepto](#104-validación-del-concepto)
+- 10.5. [Aprendizajes y Crecimiento Profesional](#105-aprendizajes-y-crecimiento-profesional)
+- 10.6. [Impacto y Líneas de Futuro](#106-impacto-y-líneas-de-futuro)
+- 10.7. [Conclusión Final](#107-conclusión-final)
+
+11. [Bibliografía](#11-bibliografía)
+
 ## 1. Introducción
 
 El deporte constituye una actividad fundamental en la sociedad actual, no solo por su papel en la promoción de la salud física y mental, sino también por su capacidad para fomentar valores esenciales como el trabajo en equipo, la competitividad y la superación personal. Entre los deportes más populares a nivel mundial, el fútbol y el fútbol sala destacan por su amplia aceptación y participación, tanto a nivel profesional como amateur. Sin embargo, la organización de competiciones deportivas, la gestión de equipos, el registro de estadísticas y el mantenimiento actualizado de clasificaciones puede resultar una tarea compleja y tediosa, especialmente cuando se realiza manualmente o mediante herramientas poco eficientes.
@@ -332,13 +395,13 @@ Para un desarrollo profesional y completo del proyecto, la planificación óptim
 
 El siguiente diagrama muestra la planificación extremadamente comprimida que ejecutada debido a las limitaciones temporales:
 
-![diagrama de gantt - versión ejecutada](/img/gantt/gantt-short.png)
+![diagrama de gantt - versión ejecutada](../img/gantt/gantt-short.png)
 
 #### 4.6.2. Diagrama de Gantt - Versión Óptima (480 horas)
 
 Este diagrama representa la planificación ideal que permitiría desarrollar un producto completo y robusto, con todas las funcionalidades necesarias para un entorno de producción:
 
-![diagrama de gantt - versión ejecutada](/img/gantt/gantt-long.png)
+![diagrama de gantt - versión ejecutada](../img/gantt/gantt-long.png)
 
 #### 4.6.3. Análisis Comparativo de los Diagramas
 
@@ -516,7 +579,7 @@ Dado el limitado tiempo disponible, el diagrama de navegación consta de distint
 
 Las flechas azules indican un flujo de avance o de mismo nivel, mientras que las rojas indican un flujo de retroceso.
 
-![diagrama de navegación](/img/nav-schema/english.jpg)
+![diagrama de navegación](../img/nav-schema/english.jpg)
 
 #### 8.2.2. Mockups / Bocetos de la Interfaz
 
@@ -524,35 +587,35 @@ Dado el limitado tiempo disponible, solo realizamos los bocetos de parte del pro
 
 **Inicio de Sesión:** pantalla de inicio de sesión.
 
-![inicio de sesion](/img/ui/small/SignIn.png)
+![inicio de sesion](../img/ui/small/SignIn.png)
 
 **Inicio / Competiciones:** pantalla de inicio de la aplicación.
 
-![inicio](/img/ui/small/Competitions.png)
+![inicio](../img/ui/small/Competitions.png)
 
 **Detalle Competición:** detalle de una competición en la pestaña de Clasificación para una Liga.
 
-![detalle competicion](/img/ui/small/CompetitionDetail.png)
+![detalle competicion](../img/ui/small/CompetitionDetail.png)
 
 **Detalle Competición 2:** detalle de una competición en la pestaña de Grupos para una Copa.
 
-![detalle competicion 2](/img/ui/small/CompetitionDetail2.png)
+![detalle competicion 2](../img/ui/small/CompetitionDetail2.png)
 
 **Detalle Competición 3:** detalle de una competición en la pestaña de Eliminatoria para una Copa.
 
-![detalle competicion 3](/img/ui/small/CompetitionDetail3.png)
+![detalle competicion 3](../img/ui/small/CompetitionDetail3.png)
 
 **Detalle Competición 4:** detalle de una competición en la pestaña de Partidos para una Copa o Liga.
 
-![detalle competicion 4](/img/ui/small/CompetitionDetail4.png)
+![detalle competicion 4](../img/ui/small/CompetitionDetail4.png)
 
 **Detalle Partido:** detalle de un partido en la pestaña de Estadísticas.
 
-![detalle partido](/img/ui/small/MatchDetail.png)
+![detalle partido](../img/ui/small/MatchDetail.png)
 
 **Detalle Partido 2:** detalle de un partido en la pestaña de Alineaciones.
 
-![detalle partido 2](/img/ui/small/MatchDetail2.png)
+![detalle partido 2](../img/ui/small/MatchDetail2.png)
 
 #### 8.2.3. Validación del Diseño
 
@@ -561,26 +624,35 @@ Para comprobar la usabilidad y corregir errores, compartimos estos bocetos con d
 - **Diego García**, amplio conocimiento dentro del ámbito futbolístico y colaborador de [@staff19torneos](https://instagram.com/staff19torneos/).
 
   - Corrección de siglas y datos a mostrar en las tablas de clasificación.
-    ![detalle competicion](/img/ui-v2/small/CompetitionDetail.png)
-    ![detalle competicion 2](/img/ui-v2/small/CompetitionDetail2.png)
+
+    ![detalle competicion](../img/ui-v2/small/CompetitionDetail.png)
+    ![detalle competicion 2](../img/ui-v2/small/CompetitionDetail2.png)
 
 - **Anastasia Datsko**, desarrolladora multiplataforma, cuenta con unas bases sólidas en diseño UI/UX.
 
   - Rediseño de la tarjeta de partido.
-    ![detalle competicion 4](/img/ui-v2/small/CompetitionDetail4.png)
+
+    ![detalle competicion 4](../img/ui-v2/small/CompetitionDetail4.png)
 
 - **Elena Guzmán**, desarrolladora multiplataforma, cuenta con buenas bases en paletas de colores.
 
   - Cambios de color en los botones.
-    ![detalle partido 2](/img/ui-v2/small/MatchDetail2.png)
+
+    ![detalle partido 2](../img/ui-v2/small/MatchDetail2.png)
 
 - **Adrián López**, CEO de [@staff19torneos](https://instagram.com/staff19torneos/), cliente final, cuenta con un amplio conocimiento en el mundo de los eventos deportivos.
+
   - Rediseño de las tarjetas de eliminatoria.
-    ![detalle competicion 3](/img/ui-v2/small/CompetitionDetail3.png)
+
+    ![detalle competicion 3](../img/ui-v2/small/CompetitionDetail3.png)
+
   - Redimensión del resultado y escudos de los equipos en la pantalla de detalle partido.
-    ![detalle partido](/img/ui-v2/small/MatchDetail.png)
+
+    ![detalle partido](../img/ui-v2/small/MatchDetail.png)
+
   - Cambios de color de la tarjeta de alineaciones.
-    ![detalle partido 2](/img/ui-v2/small/MatchDetail2.png)
+
+    ![detalle partido 2](../img/ui-v2/small/MatchDetail2.png)
 
 ### 8.3. Implementación con React Native + TypeScript
 
@@ -868,7 +940,7 @@ Las relaciones clave establecidas, implementadas a través de claves foráneas o
 
 En este diagrama relacional se muestra la relación de las tablas de la base de datos, con los campos clave y las relaciones directas entre las tablas.
 
-![esquema relacional](/img/db-schema/english.png)
+![esquema relacional](../img/db-schema/english.png)
 
 ###### Nota: este diagrama está parcialmente desactualizado conforme a esta documentación. Faltando tablas para las fases eliminatorias y las reglas de desempate avanzadas.
 

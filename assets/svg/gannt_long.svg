@@ -2,16 +2,16 @@
 <svg
    aria-roledescription="gantt"
    role="graphics-document document"
-   viewBox="0 0 838.50763 505.16299"
-   width="838.50763"
+   viewBox="0 0 787.56763 455.38766"
+   width="787.56763"
    id="my-svg"
    version="1.1"
-   sodipodi:docname="2.svg"
-   height="505.16299"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   inkscape:export-filename="2.png"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
+   sodipodi:docname="gannt_long.svg"
+   height="455.38766"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   inkscape:export-filename="gantt-long.png"
+   inkscape:export-xdpi="177.0799"
+   inkscape:export-ydpi="177.0799"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -27,427 +27,438 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="1.0805974"
-     inkscape:cx="355.8217"
-     inkscape:cy="233.66705"
-     inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
+     inkscape:zoom="1.2161599"
+     inkscape:cx="369.19487"
+     inkscape:cy="212.55429"
+     inkscape:window-width="1472"
+     inkscape:window-height="844"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
      inkscape:current-layer="my-svg" />
   <style
      id="style1">#my-svg{font-family:arial,sans-serif;font-size:14px;fill:#000000;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#my-svg .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#my-svg .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#my-svg .error-icon{fill:#552222;}#my-svg .error-text{fill:#552222;stroke:#552222;}#my-svg .edge-thickness-normal{stroke-width:1px;}#my-svg .edge-thickness-thick{stroke-width:3.5px;}#my-svg .edge-pattern-solid{stroke-dasharray:0;}#my-svg .edge-thickness-invisible{stroke-width:0;fill:none;}#my-svg .edge-pattern-dashed{stroke-dasharray:3;}#my-svg .edge-pattern-dotted{stroke-dasharray:2;}#my-svg .marker{fill:#666;stroke:#666;}#my-svg .marker.cross{stroke:#666;}#my-svg svg{font-family:arial,sans-serif;font-size:14px;}#my-svg p{margin:0;}#my-svg .mermaid-main-font{font-family:arial,sans-serif;}#my-svg .exclude-range{fill:#eeeeee;}#my-svg .section{stroke:none;opacity:0.2;}#my-svg .section0{fill:hsl(0, 0%, 73.9215686275%);}#my-svg .section2{fill:hsl(0, 0%, 73.9215686275%);}#my-svg .section1,#my-svg .section3{fill:white;opacity:0.2;}#my-svg .sectionTitle0{fill:#333;}#my-svg .sectionTitle1{fill:#333;}#my-svg .sectionTitle2{fill:#333;}#my-svg .sectionTitle3{fill:#333;}#my-svg .sectionTitle{text-anchor:start;font-family:arial,sans-serif;}#my-svg .grid .tick{stroke:hsl(0, 0%, 90%);opacity:0.8;shape-rendering:crispEdges;}#my-svg .grid .tick text{font-family:arial,sans-serif;fill:#000000;}#my-svg .grid path{stroke-width:0;}#my-svg .today{fill:none;stroke:#d42;stroke-width:2px;}#my-svg .task{stroke-width:2;}#my-svg .taskText{text-anchor:middle;font-family:arial,sans-serif;}#my-svg .taskTextOutsideRight{fill:#333;text-anchor:start;font-family:arial,sans-serif;}#my-svg .taskTextOutsideLeft{fill:#333;text-anchor:end;}#my-svg .task.clickable{cursor:pointer;}#my-svg .taskText.clickable{cursor:pointer;fill:#003163!important;font-weight:bold;}#my-svg .taskTextOutsideLeft.clickable{cursor:pointer;fill:#003163!important;font-weight:bold;}#my-svg .taskTextOutsideRight.clickable{cursor:pointer;fill:#003163!important;font-weight:bold;}#my-svg .taskText0,#my-svg .taskText1,#my-svg .taskText2,#my-svg .taskText3{fill:white;}#my-svg .task0,#my-svg .task1,#my-svg .task2,#my-svg .task3{fill:#707070;stroke:hsl(0, 0%, 33.9215686275%);}#my-svg .taskTextOutside0,#my-svg .taskTextOutside2{fill:#333;}#my-svg .taskTextOutside1,#my-svg .taskTextOutside3{fill:#333;}#my-svg .active0,#my-svg .active1,#my-svg .active2,#my-svg .active3{fill:#eee;stroke:hsl(0, 0%, 33.9215686275%);}#my-svg .activeText0,#my-svg .activeText1,#my-svg .activeText2,#my-svg .activeText3{fill:#333!important;}#my-svg .done0,#my-svg .done1,#my-svg .done2,#my-svg .done3{stroke:#666;fill:#bbb;stroke-width:2;}#my-svg .doneText0,#my-svg .doneText1,#my-svg .doneText2,#my-svg .doneText3{fill:#333!important;}#my-svg .crit0,#my-svg .crit1,#my-svg .crit2,#my-svg .crit3{stroke:hsl(10.9090909091, 73.3333333333%, 40%);fill:#d42;stroke-width:2;}#my-svg .activeCrit0,#my-svg .activeCrit1,#my-svg .activeCrit2,#my-svg .activeCrit3{stroke:hsl(10.9090909091, 73.3333333333%, 40%);fill:#eee;stroke-width:2;}#my-svg .doneCrit0,#my-svg .doneCrit1,#my-svg .doneCrit2,#my-svg .doneCrit3{stroke:hsl(10.9090909091, 73.3333333333%, 40%);fill:#bbb;stroke-width:2;cursor:pointer;shape-rendering:crispEdges;}#my-svg .milestone{transform:rotate(45deg) scale(0.8,0.8);}#my-svg .milestoneText{font-style:italic;}#my-svg .doneCritText0,#my-svg .doneCritText1,#my-svg .doneCritText2,#my-svg .doneCritText3{fill:#333!important;}#my-svg .activeCritText0,#my-svg .activeCritText1,#my-svg .activeCritText2,#my-svg .activeCritText3{fill:#333!important;}#my-svg .titleText{text-anchor:middle;font-size:18px;fill:#333;font-family:arial,sans-serif;}#my-svg .node .neo-node{stroke:#999;}#my-svg [data-look=&quot;neo&quot;].node rect,#my-svg [data-look=&quot;neo&quot;].cluster rect,#my-svg [data-look=&quot;neo&quot;].node polygon{stroke:url(#my-svg-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#my-svg [data-look=&quot;neo&quot;].node path{stroke:url(#my-svg-gradient);stroke-width:1;}#my-svg [data-look=&quot;neo&quot;].node .outer-path{filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#my-svg [data-look=&quot;neo&quot;].node .neo-line path{stroke:#999;filter:none;}#my-svg [data-look=&quot;neo&quot;].node circle{stroke:url(#my-svg-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#my-svg [data-look=&quot;neo&quot;].node circle .state-start{fill:#000000;}#my-svg [data-look=&quot;neo&quot;].statediagram-cluster rect{fill:#eee;stroke:url(#my-svg-gradient);stroke-width:1;}#my-svg [data-look=&quot;neo&quot;].icon-shape .icon{fill:url(#my-svg-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#my-svg [data-look=&quot;neo&quot;].icon-shape .icon-neo path{stroke:url(#my-svg-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#my-svg :root{--mermaid-font-family:&quot;trebuchet ms&quot;,verdana,arial,sans-serif;}</style>
   <g
-     id="g1"
-     transform="translate(236.81418)" />
-  <g
-     id="g49"
-     transform="translate(99.844168,-20.876026)">
-    <text
-       style="font-family:sans-serif;text-anchor:middle"
-       font-size="10px"
-       stroke="none"
-       dy="12"
-       y="489"
-       fill="#000000"
-       id="text1"
-       x="167.5">2024-12-01</text>
-    <text
-       style="font-family:sans-serif;text-anchor:middle"
-       font-size="10px"
-       stroke="none"
-       dy="12"
-       y="489"
-       fill="#000000"
-       id="text2"
-       x="285.5">2025-01-01</text>
-    <text
-       style="font-family:sans-serif;text-anchor:middle"
-       font-size="10px"
-       stroke="none"
-       dy="12"
-       y="489"
-       fill="#000000"
-       id="text3"
-       x="403.5">2025-02-01</text>
-    <text
-       style="font-family:sans-serif;text-anchor:middle"
-       font-size="10px"
-       stroke="none"
-       dy="12"
-       y="489"
-       fill="#000000"
-       id="text4"
-       x="510.5">2025-03-01</text>
-    <text
-       style="font-family:sans-serif;text-anchor:middle"
-       font-size="10px"
-       stroke="none"
-       dy="12"
-       y="489"
-       fill="#000000"
-       id="text5"
-       x="629.5">2025-04-01</text>
-    <g
-       id="g48">
-      <g
-         id="g38"
-         transform="matrix(0.98304612,0,0,0.99622529,8.5379523,0.17650961)">
-        <rect
-           style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:1.73334"
-           id="rect46"
-           width="86.881195"
-           height="433.38812"
-           x="629"
-           y="46.761051" />
-        <rect
-           style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:2.02004"
-           id="rect43"
-           width="118.00002"
-           height="433.38812"
-           x="285"
-           y="46.761051" />
-        <rect
-           style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:2.02004"
-           id="rect42"
-           width="118"
-           height="433.38812"
-           x="167"
-           y="46.761051" />
-        <rect
-           style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:1.92361"
-           id="rect44"
-           width="107.00002"
-           height="433.38812"
-           x="403"
-           y="46.761051" />
-        <rect
-           style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:2.02856"
-           id="rect45"
-           width="118.99998"
-           height="433.38812"
-           x="510"
-           y="46.761051" />
-        <rect
-           style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:1.86029"
-           id="rect56"
-           width="100.07494"
-           height="433.38812"
-           x="66.925064"
-           y="46.761051" />
-      </g>
-      <rect
-         class="task done0"
-         transform-origin="98px 60px"
-         height="20"
-         width="46"
-         y="48.637154"
-         x="76.305283"
-         ry="3"
-         rx="3"
-         id="inv1" />
-      <rect
-         class="task done0"
-         transform-origin="111.5px 84px"
-         height="20"
-         width="19"
-         y="72.637154"
-         x="103.30528"
-         ry="3"
-         rx="3"
-         id="inv2" />
-      <path
-         id="des1"
-         class="task done1"
-         d="m 126.30528,96.637155 c -1.662,0 -3,1.338002 -3,3 v 14.000005 c 0,1.662 1.338,3 3,3 h 6 8 6 c 1.662,0 3,-1.338 3,-3 V 99.637155 c 0,-1.661998 -1.338,-3 -3,-3 h -6 -8 z" />
-      <path
-         id="des2"
-         class="task done1"
-         d="m 152.30528,120.63716 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 7 6 7 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -7 -6 z" />
-      <path
-         id="des3"
-         class="task done1"
-         d="m 178.30528,144.63716 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 3 2 3 5 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -5 -3 -2 z" />
-      <path
-         id="back1"
-         class="task done2"
-         d="m 197.30528,168.63716 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 3 1 1 8 35 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -35 -8 -1 -1 z" />
-      <path
-         id="back2"
-         class="task done2"
-         d="m 251.30528,192.63716 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 15 17 15 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -15 -17 z" />
-      <path
-         id="back3"
-         class="task done2"
-         d="m 305.30528,216.63716 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 15 17 15 c 0.62325,0 1.20104,-0.18888 1.67969,-0.51172 0.15955,-0.10761 0.30779,-0.22967 0.44336,-0.36523 0.13556,-0.13557 0.25762,-0.28381 0.36523,-0.44336 0.32284,-0.47865 0.51172,-1.05644 0.51172,-1.67969 v -14 c 0,-0.62325 -0.18888,-1.20104 -0.51172,-1.67969 -0.10761,-0.15955 -0.22967,-0.30779 -0.36523,-0.44336 -0.13557,-0.13556 -0.28381,-0.25762 -0.44336,-0.36523 -0.47865,-0.32284 -1.05644,-0.51172 -1.67969,-0.51172 h -15 -17 z" />
-      <path
-         id="front1"
-         class="task done3"
-         d="m 358.30528,240.63716 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 15 17 15 c 0.14119,0 0.27817,-0.0126 0.41406,-0.0312 0.0295,-0.004 0.0587,-0.009 0.0879,-0.0137 0.13332,-0.0224 0.26594,-0.0506 0.39258,-0.0899 0.1271,-0.0394 0.24804,-0.0894 0.36719,-0.14453 0.0284,-0.0132 0.0561,-0.027 0.084,-0.041 0.11501,-0.0577 0.2281,-0.11999 0.33399,-0.19141 0.15955,-0.10761 0.30779,-0.22967 0.44336,-0.36523 0.13556,-0.13557 0.25762,-0.28381 0.36523,-0.44336 0.0714,-0.10589 0.13375,-0.21898 0.19141,-0.33399 0.014,-0.0279 0.0279,-0.0556 0.041,-0.084 0.0551,-0.11915 0.10517,-0.24009 0.14453,-0.36719 0.0392,-0.12664 0.0675,-0.25926 0.0899,-0.39258 0.005,-0.0292 0.01,-0.0584 0.0137,-0.0879 0.0186,-0.13584 0.0311,-0.27282 0.0311,-0.41401 v -14 c 0,-0.14119 -0.0126,-0.27817 -0.0312,-0.41406 -0.004,-0.0295 -0.009,-0.0587 -0.0137,-0.0879 -0.0224,-0.13332 -0.0506,-0.26594 -0.0899,-0.39258 -0.0394,-0.1271 -0.0894,-0.24804 -0.14453,-0.36719 -0.0132,-0.0284 -0.027,-0.0561 -0.041,-0.084 -0.0577,-0.11501 -0.11999,-0.2281 -0.19141,-0.33399 -0.10761,-0.15955 -0.22967,-0.30779 -0.36523,-0.44336 -0.13557,-0.13556 -0.28381,-0.25762 -0.44336,-0.36523 -0.10589,-0.0714 -0.21898,-0.13375 -0.33399,-0.19141 -0.0279,-0.014 -0.0556,-0.0279 -0.084,-0.041 -0.11915,-0.0551 -0.24009,-0.10517 -0.36719,-0.14453 -0.12664,-0.0392 -0.25926,-0.0675 -0.39258,-0.0899 -0.0292,-0.005 -0.0584,-0.01 -0.0879,-0.0137 -0.13584,-0.0186 -0.27282,-0.0311 -0.41401,-0.0311 h -15 -17 z" />
-      <path
-         id="front2"
-         class="task done3"
-         d="m 412.30528,264.63716 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 15 17 15 c 0.13853,0 0.27281,-0.0132 0.40625,-0.0312 0.003,-3.5e-4 0.005,3.5e-4 0.008,0 0.0295,-0.004 0.0587,-0.009 0.0879,-0.0137 0.13332,-0.0224 0.26594,-0.0506 0.39258,-0.0899 0.1271,-0.0394 0.24804,-0.0894 0.36719,-0.14453 0.0284,-0.0132 0.0561,-0.027 0.084,-0.041 0.11501,-0.0577 0.2281,-0.11999 0.33399,-0.19141 0.15955,-0.10761 0.30779,-0.22967 0.44336,-0.36523 0.13556,-0.13557 0.25762,-0.28381 0.36523,-0.44336 0.0714,-0.10589 0.13375,-0.21898 0.19141,-0.33399 0.014,-0.0279 0.0279,-0.0556 0.041,-0.084 0.0551,-0.11915 0.10517,-0.24009 0.14453,-0.36719 0.0392,-0.12664 0.0675,-0.25926 0.0899,-0.39258 0.005,-0.0292 0.01,-0.0584 0.0137,-0.0879 3.5e-4,-0.003 -3.4e-4,-0.005 0,-0.008 0.0177,-0.1332 0.031,-0.26748 0.031,-0.40601 v -14 c 0,-0.13853 -0.0132,-0.27281 -0.0312,-0.40625 -3.5e-4,-0.003 3.5e-4,-0.005 0,-0.008 -0.004,-0.0295 -0.009,-0.0587 -0.0137,-0.0879 -0.0224,-0.13332 -0.0506,-0.26594 -0.0899,-0.39258 -0.0394,-0.1271 -0.0894,-0.24804 -0.14453,-0.36719 -0.0132,-0.0284 -0.027,-0.0561 -0.041,-0.084 -0.0577,-0.11501 -0.11999,-0.2281 -0.19141,-0.33399 -0.10761,-0.15955 -0.22967,-0.30779 -0.36523,-0.44336 -0.13557,-0.13556 -0.28381,-0.25762 -0.44336,-0.36523 -0.10589,-0.0714 -0.21898,-0.13375 -0.33399,-0.19141 -0.0279,-0.014 -0.0556,-0.0279 -0.084,-0.041 -0.11915,-0.0551 -0.24009,-0.10517 -0.36719,-0.14453 -0.12664,-0.0392 -0.25926,-0.0675 -0.39258,-0.0899 -0.0292,-0.005 -0.0584,-0.01 -0.0879,-0.0137 -0.003,-3.5e-4 -0.005,3.4e-4 -0.008,0 -0.1332,-0.0177 -0.26748,-0.031 -0.40601,-0.031 h -15 -17 z" />
-      <path
-         id="front3"
-         class="task done3"
-         d="m 465.30528,288.63716 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 15 17 15 c 0.13853,0 0.27281,-0.0132 0.40625,-0.0312 0.032,-0.004 0.064,-0.008 0.0957,-0.0137 0.13332,-0.0224 0.26594,-0.0506 0.39258,-0.0899 0.1271,-0.0394 0.24804,-0.0894 0.36719,-0.14453 0.0284,-0.0132 0.0561,-0.027 0.084,-0.041 0.11501,-0.0577 0.2281,-0.11999 0.33399,-0.19141 0.15955,-0.10761 0.30779,-0.22967 0.44336,-0.36523 0.13556,-0.13557 0.25762,-0.28381 0.36523,-0.44336 0.0714,-0.10589 0.13375,-0.21898 0.19141,-0.33399 0.014,-0.0279 0.0279,-0.0556 0.041,-0.084 0.0551,-0.11915 0.10517,-0.24009 0.14453,-0.36719 0.0392,-0.12664 0.0675,-0.25926 0.0898,-0.39258 0.005,-0.0292 0.01,-0.0584 0.0137,-0.0879 3.5e-4,-0.003 -3.4e-4,-0.005 0,-0.008 0.018,-0.1332 0.0313,-0.26748 0.0313,-0.40601 v -14 c 0,-0.13853 -0.0132,-0.27281 -0.0312,-0.40625 -1.7e-4,-0.002 -9e-5,-0.003 0,-0.004 -1.7e-4,-10e-4 1.8e-4,-0.003 0,-0.004 -0.004,-0.0295 -0.009,-0.0587 -0.0137,-0.0879 -0.0224,-0.13332 -0.0506,-0.26594 -0.0898,-0.39258 -0.0394,-0.1271 -0.0894,-0.24804 -0.14453,-0.36719 -0.0132,-0.0284 -0.027,-0.0561 -0.041,-0.084 -0.0577,-0.11501 -0.11999,-0.2281 -0.19141,-0.33399 -0.10761,-0.15955 -0.22967,-0.30779 -0.36523,-0.44336 -0.13557,-0.13556 -0.28381,-0.25762 -0.44336,-0.36523 -0.10589,-0.0714 -0.21898,-0.13375 -0.33399,-0.19141 -0.0279,-0.014 -0.0556,-0.0279 -0.084,-0.041 -0.11915,-0.0551 -0.24009,-0.10517 -0.36719,-0.14453 -0.12664,-0.0392 -0.25926,-0.0675 -0.39258,-0.0899 -0.0292,-0.005 -0.0584,-0.01 -0.0879,-0.0137 -0.003,-3.5e-4 -0.005,3.5e-4 -0.008,0 -0.1333,-0.0177 -0.26758,-0.031 -0.40611,-0.031 h -15 -17 z" />
-      <path
-         id="test1"
-         class="task done0"
-         d="m 518.30528,312.63716 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 14 c 0.1711,0 0.33687,-0.0177 0.5,-0.0449 0.16313,0.0272 0.3289,0.0449 0.5,0.0449 h 14 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -14 c -0.1711,0 -0.33687,0.0177 -0.5,0.0449 -0.16313,-0.0272 -0.3289,-0.0449 -0.5,-0.0449 z" />
-      <path
-         id="test2"
-         class="task done0"
-         d="m 553.30528,336.63716 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 7 6 7 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -7 -6 z" />
-      <path
-         id="test3"
-         class="task done0"
-         d="m 580.30528,360.63716 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 7 6 7 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -7 -6 z" />
-      <path
-         id="deploy1"
-         class="task done1"
-         d="m 607.30528,384.63716 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 7 6 7 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -7 -6 z" />
-      <path
-         id="deploy2"
-         class="task done1"
-         d="m 634.30528,408.63716 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 6 1 13 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -13 -1 z" />
-      <path
-         id="doc1"
-         class="task done2"
-         d="m 660.30528,432.63716 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 6 1 13 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -13 -1 z" />
-      <path
-         id="doc2"
-         class="task done2"
-         d="m 687.30528,456.63716 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 6 1 13 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -13 -1 z" />
-      <text
-         class="taskTextOutsideRight taskTextOutside0  doneText0 width-59.2060546875"
-         y="62.137154"
-         x="127.30528"
-         font-size="11px"
-         id="inv1-text">Tecnologías</text>
-      <text
-         class="taskTextOutsideRight taskTextOutside0  doneText0 width-64.828125"
-         y="86.137154"
-         x="127.30528"
-         font-size="11px"
-         id="inv2-text">Competencia</text>
-      <text
-         class="taskTextOutsideRight taskTextOutside1  doneText1 width-60.3125"
-         y="110.13715"
-         x="154.30528"
-         font-size="11px"
-         id="des1-text">Arquitectura</text>
-      <text
-         class="taskTextOutsideRight taskTextOutside1  doneText1 width-77.03125"
-         y="134.13716"
-         x="180.30528"
-         font-size="11px"
-         id="des2-text">UX/UI completo</text>
-      <text
-         class="taskTextOutsideRight taskTextOutside1  doneText1 width-87.453125"
-         y="158.13716"
-         x="199.30528"
-         font-size="11px"
-         id="des3-text">Testing usabilidad</text>
-      <text
-         class="taskTextOutsideRight taskTextOutside2  doneText2 width-70.8291015625"
-         y="182.13716"
-         x="253.30528"
-         font-size="11px"
-         id="back1-text">Base de datos</text>
-      <text
-         class="taskTextOutsideRight taskTextOutside2  doneText2 width-68.25"
-         y="206.13716"
-         x="306.30527"
-         font-size="11px"
-         id="back2-text">APIs RESTful</text>
-      <text
-         class="taskTextOutsideRight taskTextOutside2  doneText2 width-67.046875"
-         y="230.13716"
-         x="360.30527"
-         font-size="11px"
-         id="back3-text">Autenticación</text>
-      <text
-         class="taskTextOutsideRight taskTextOutside3  doneText3 width-77.03125"
-         y="254.13716"
-         x="413.30527"
-         font-size="11px"
-         id="front1-text">UX/UI completo</text>
-      <text
-         class="taskTextOutsideRight taskTextOutside3  doneText3 width-100.296875"
-         y="278.13715"
-         x="467.30527"
-         font-size="11px"
-         id="front2-text">Integración Backend</text>
-      <text
-         class="taskTextOutsideRight taskTextOutside3  doneText3 width-114.765625"
-         y="302.13715"
-         x="520.3053"
-         font-size="11px"
-         id="front3-text">Funcionalidades Offline</text>
-      <text
-         class="taskTextOutsideRight taskTextOutside0  doneText0 width-101.38525390625"
-         y="326.13715"
-         x="555.3053"
-         font-size="11px"
-         id="test1-text">Tests Automatizados</text>
-      <text
-         class="taskTextOutsideRight taskTextOutside0  doneText0 width-90.5"
-         y="350.13715"
-         x="581.3053"
-         font-size="11px"
-         id="test2-text">Tests Rendimiento</text>
-      <text
-         class="taskTextOutsideRight taskTextOutside0  doneText0 width-78.890625"
-         y="374.13715"
-         x="608.3053"
-         font-size="11px"
-         id="test3-text">Tests Seguridad</text>
-      <text
-         class="taskTextOutsideLeft taskTextOutside1  doneText1"
-         y="398.03168"
-         x="452.08984"
-         font-size="11px"
-         id="deploy1-text">Infraestructura producción</text>
-      <text
-         class="taskTextOutsideLeft taskTextOutside1  doneText1"
-         y="422.03168"
-         x="497.06082"
-         font-size="11px"
-         id="deploy2-text">CI/CD y monitorización</text>
-      <text
-         class="taskTextOutsideLeft taskTextOutside2  doneText2"
-         y="446.03168"
-         x="469.84818"
-         font-size="11px"
-         id="doc1-text">Documentación técnica completa</text>
-      <text
-         class="taskTextOutsideLeft taskTextOutside2  doneText2"
-         y="469.38715"
-         x="538.56775"
-         font-size="11px"
-         id="doc2-text">Lanzamiento y marketing</text>
-      <text
-         class="sectionTitle sectionTitle0"
-         font-size="11px"
-         y="74"
-         x="-68.365723"
-         dy="0"
-         id="text25"><tspan
-           x="-68.365723"
-           alignment-baseline="central"
-           id="tspan25">Investigación (2 sem)</tspan></text>
-      <text
-         class="sectionTitle sectionTitle1"
-         font-size="11px"
-         y="134"
-         x="-50.55249"
-         dy="0"
-         id="text26"><tspan
-           x="-50.55249"
-           alignment-baseline="central"
-           id="tspan26">Diseño (3 sem)</tspan></text>
-      <text
-         class="sectionTitle sectionTitle2"
-         font-size="11px"
-         y="206"
-         x="-55.168945"
-         dy="0"
-         id="text27"><tspan
-           x="-55.168945"
-           alignment-baseline="central"
-           id="tspan27">Backend (6 sem)</tspan></text>
-      <text
-         class="sectionTitle sectionTitle3"
-         font-size="11px"
-         y="278"
-         x="-56.522461"
-         dy="0"
-         id="text28"><tspan
-           x="-56.522461"
-           alignment-baseline="central"
-           id="tspan28">Frontend (6 sem)</tspan></text>
-      <text
-         class="sectionTitle sectionTitle0"
-         font-size="11px"
-         y="350"
-         x="-50.831787"
-         dy="0"
-         id="text29"><tspan
-           x="-50.831787"
-           alignment-baseline="central"
-           id="tspan29">Testing (3 sem)</tspan></text>
-      <text
-         class="sectionTitle sectionTitle1"
-         font-size="11px"
-         y="410"
-         x="-65.121582"
-         dy="0"
-         id="text30"><tspan
-           x="-65.121582"
-           alignment-baseline="central"
-           id="tspan30">Deployment (2 sem)</tspan></text>
-      <text
-         class="sectionTitle sectionTitle2"
-         font-size="11px"
-         y="458"
-         x="-74.537109"
-         dy="0"
-         id="text31"><tspan
-           x="-74.537109"
-           alignment-baseline="central"
-           id="tspan31">Documentación (2 sem)</tspan></text>
-      <rect
-         style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991148"
-         id="rect57"
-         width="637.9538"
-         height="0.99737239"
-         x="74.328377"
-         y="45.76368" />
-      <rect
-         style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991148"
-         id="rect38"
-         width="637.9538"
-         height="0.99737239"
-         x="74.328377"
-         y="94.138466" />
-      <rect
-         style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991148"
-         id="rect39"
-         width="637.9538"
-         height="0.99737239"
-         x="74.328377"
-         y="142.13847" />
-      <rect
-         style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991148"
-         id="rect40"
-         width="637.9538"
-         height="0.99737239"
-         x="74.328377"
-         y="238.13847" />
-      <rect
-         style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991148"
-         id="rect41"
-         width="637.9538"
-         height="0.99737239"
-         x="74.328377"
-         y="310.13849" />
-      <rect
-         style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991148"
-         id="rect47"
-         width="637.9538"
-         height="0.99737239"
-         x="74.328377"
-         y="382.13849" />
-      <rect
-         style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991148"
-         id="rect48"
-         width="637.9538"
-         height="0.99737239"
-         x="74.328377"
-         y="478.51328" />
-    </g>
+     id="g2"
+     transform="matrix(1.0057138,0,0,1,-29.199032,-24.887653)">
+    <rect
+       style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:1.71534"
+       id="rect46"
+       width="85.408218"
+       height="431.7522"
+       x="726.71814"
+       y="25.885025" />
+    <rect
+       style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:1.99906"
+       id="rect43"
+       width="115.99947"
+       height="431.7522"
+       x="388.55026"
+       y="25.885025" />
+    <rect
+       style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:1.99906"
+       id="rect42"
+       width="115.99944"
+       height="431.7522"
+       x="272.55081"
+       y="25.885025" />
+    <rect
+       style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:1.90363"
+       id="rect44"
+       width="105.18596"
+       height="431.7522"
+       x="504.54971"
+       y="25.885025" />
+    <rect
+       style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:2.00749"
+       id="rect45"
+       width="116.98247"
+       height="431.7522"
+       x="609.73566"
+       y="25.885025" />
+    <rect
+       style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:1.84097"
+       id="rect56"
+       width="98.378288"
+       height="431.7522"
+       x="174.17255"
+       y="25.885025" />
+    <rect
+       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991148"
+       id="rect57"
+       width="637.9538"
+       height="0.99737239"
+       x="174.17255"
+       y="24.887653" />
+    <rect
+       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991148"
+       id="rect38"
+       width="637.9538"
+       height="0.99737239"
+       x="174.17255"
+       y="74.230682" />
+    <rect
+       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991148"
+       id="rect39"
+       width="637.9538"
+       height="0.99737239"
+       x="174.17255"
+       y="123.57372" />
+    <rect
+       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991148"
+       id="rect40"
+       width="637.9538"
+       height="0.99737239"
+       x="174.17255"
+       y="218.48051" />
+    <rect
+       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991148"
+       id="rect41"
+       width="637.9538"
+       height="0.99737239"
+       x="174.17255"
+       y="290.60553" />
+    <rect
+       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991148"
+       id="rect47"
+       width="637.9538"
+       height="0.99737239"
+       x="174.17255"
+       y="362.73044" />
+    <rect
+       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991148"
+       id="rect48"
+       width="637.9538"
+       height="0.99737239"
+       x="174.17255"
+       y="457.63724" />
   </g>
+  <g
+     id="g1"
+     transform="translate(210.4329,-24.887653)" />
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     dy="12"
+     y="443.2363"
+     fill="#000000"
+     id="text1"
+     x="240.96291">2024-12-01</text>
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     dy="12"
+     y="443.2363"
+     fill="#000000"
+     id="text2"
+     x="358.96289">2025-01-01</text>
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     dy="12"
+     y="443.2363"
+     fill="#000000"
+     id="text3"
+     x="476.96289">2025-02-01</text>
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     dy="12"
+     y="443.2363"
+     fill="#000000"
+     id="text4"
+     x="583.96289">2025-03-01</text>
+  <text
+     style="font-family:sans-serif;text-anchor:middle"
+     font-size="10px"
+     stroke="none"
+     dy="12"
+     y="443.2363"
+     fill="#000000"
+     id="text5"
+     x="702.96289">2025-04-01</text>
+  <rect
+     class="task done0"
+     transform-origin="98px 60px"
+     height="20"
+     width="46"
+     y="3.7792587"
+     x="149.76817"
+     ry="3"
+     rx="3"
+     id="inv1"
+     style="fill:#1a1a1a" />
+  <rect
+     class="task done0"
+     transform-origin="111.5px 84px"
+     height="20"
+     width="19"
+     y="26.561146"
+     x="176.76817"
+     ry="3"
+     rx="3"
+     id="inv2"
+     style="fill:#1a1a1a" />
+  <path
+     id="des1"
+     class="task done1"
+     d="m 199.76817,53.12229 c -1.662,0 -3,1.338002 -3,3 v 14.000005 c 0,1.662 1.338,3 3,3 h 6 8 6 c 1.662,0 3,-1.338 3,-3 V 56.12229 c 0,-1.661998 -1.338,-3 -3,-3 h -6 -8 z"
+     style="fill:#1a1a1a" />
+  <path
+     id="des2"
+     class="task done1"
+     d="m 225.76817,75.904177 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 7 6 7 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -7 -6 z"
+     style="fill:#1a1a1a" />
+  <path
+     id="des3"
+     class="task done1"
+     d="m 251.76817,102.46532 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 3 2 3 5 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -5 -3 -2 z"
+     style="fill:#1a1a1a" />
+  <path
+     id="back1"
+     class="task done2"
+     d="m 270.76817,125.24721 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 3 1 1 8 35 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -35 -8 -1 -1 z"
+     style="fill:#1a1a1a" />
+  <path
+     id="back2"
+     class="task done2"
+     d="m 324.76817,148.0291 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 15 17 15 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -15 -17 z"
+     style="fill:#1a1a1a" />
+  <path
+     id="back3"
+     class="task done2"
+     d="m 378.76817,170.81098 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 15 17 15 c 0.62325,0 1.20104,-0.18888 1.67969,-0.51172 0.15955,-0.10761 0.30779,-0.22967 0.44336,-0.36523 0.13556,-0.13557 0.25762,-0.28381 0.36523,-0.44336 0.32284,-0.47865 0.51172,-1.05644 0.51172,-1.67969 v -14 c 0,-0.62325 -0.18888,-1.20104 -0.51172,-1.67969 -0.10761,-0.15955 -0.22967,-0.30779 -0.36523,-0.44336 -0.13557,-0.13556 -0.28381,-0.25762 -0.44336,-0.36523 -0.47865,-0.32284 -1.05644,-0.51172 -1.67969,-0.51172 h -15 -17 z"
+     style="fill:#1a1a1a" />
+  <path
+     id="front1"
+     class="task done3"
+     d="m 431.76817,197.37213 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 15 17 15 c 0.14119,0 0.27817,-0.0126 0.41406,-0.0312 0.0295,-0.004 0.0587,-0.009 0.0879,-0.0137 0.13332,-0.0224 0.26594,-0.0506 0.39258,-0.0899 0.1271,-0.0394 0.24804,-0.0894 0.36719,-0.14453 0.0284,-0.0132 0.0561,-0.027 0.084,-0.041 0.11501,-0.0577 0.2281,-0.11999 0.33399,-0.19141 0.15955,-0.10761 0.30779,-0.22967 0.44336,-0.36523 0.13556,-0.13557 0.25762,-0.28381 0.36523,-0.44336 0.0714,-0.10589 0.13375,-0.21898 0.19141,-0.33399 0.014,-0.0279 0.0279,-0.0556 0.041,-0.084 0.0551,-0.11915 0.10517,-0.24009 0.14453,-0.36719 0.0392,-0.12664 0.0675,-0.25926 0.0899,-0.39258 0.005,-0.0292 0.01,-0.0584 0.0137,-0.0879 0.0186,-0.13584 0.0311,-0.27282 0.0311,-0.41401 v -14 c 0,-0.14119 -0.0126,-0.27817 -0.0312,-0.41406 -0.004,-0.0295 -0.009,-0.0587 -0.0137,-0.0879 -0.0224,-0.13332 -0.0506,-0.26594 -0.0899,-0.39258 -0.0394,-0.1271 -0.0894,-0.24804 -0.14453,-0.36719 -0.0132,-0.0284 -0.027,-0.0561 -0.041,-0.084 -0.0577,-0.11501 -0.11999,-0.2281 -0.19141,-0.33399 -0.10761,-0.15955 -0.22967,-0.30779 -0.36523,-0.44336 -0.13557,-0.13556 -0.28381,-0.25762 -0.44336,-0.36523 -0.10589,-0.0714 -0.21898,-0.13375 -0.33399,-0.19141 -0.0279,-0.014 -0.0556,-0.0279 -0.084,-0.041 -0.11915,-0.0551 -0.24009,-0.10517 -0.36719,-0.14453 -0.12664,-0.0392 -0.25926,-0.0675 -0.39258,-0.0899 -0.0292,-0.005 -0.0584,-0.01 -0.0879,-0.0137 -0.13584,-0.0186 -0.27282,-0.0311 -0.41401,-0.0311 h -15 -17 z"
+     style="fill:#1a1a1a" />
+  <path
+     id="front2"
+     class="task done3"
+     d="m 485.76817,220.15405 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 15 17 15 c 0.13853,0 0.27281,-0.0132 0.40625,-0.0312 0.003,-3.5e-4 0.005,3.5e-4 0.008,0 0.0295,-0.004 0.0587,-0.009 0.0879,-0.0137 0.13332,-0.0224 0.26594,-0.0506 0.39258,-0.0899 0.1271,-0.0394 0.24804,-0.0894 0.36719,-0.14453 0.0284,-0.0132 0.0561,-0.027 0.084,-0.041 0.11501,-0.0577 0.2281,-0.11999 0.33399,-0.19141 0.15955,-0.10761 0.30779,-0.22967 0.44336,-0.36523 0.13556,-0.13557 0.25762,-0.28381 0.36523,-0.44336 0.0714,-0.10589 0.13375,-0.21898 0.19141,-0.33399 0.014,-0.0279 0.0279,-0.0556 0.041,-0.084 0.0551,-0.11915 0.10517,-0.24009 0.14453,-0.36719 0.0392,-0.12664 0.0675,-0.25926 0.0899,-0.39258 0.005,-0.0292 0.01,-0.0584 0.0137,-0.0879 3.5e-4,-0.003 -3.4e-4,-0.005 0,-0.008 0.0177,-0.1332 0.031,-0.26748 0.031,-0.40601 v -14 c 0,-0.13853 -0.0132,-0.27281 -0.0312,-0.40625 -3.5e-4,-0.003 3.5e-4,-0.005 0,-0.008 -0.004,-0.0295 -0.009,-0.0587 -0.0137,-0.0879 -0.0224,-0.13332 -0.0506,-0.26594 -0.0899,-0.39258 -0.0394,-0.1271 -0.0894,-0.24804 -0.14453,-0.36719 -0.0132,-0.0284 -0.027,-0.0561 -0.041,-0.084 -0.0577,-0.11501 -0.11999,-0.2281 -0.19141,-0.33399 -0.10761,-0.15955 -0.22967,-0.30779 -0.36523,-0.44336 -0.13557,-0.13556 -0.28381,-0.25762 -0.44336,-0.36523 -0.10589,-0.0714 -0.21898,-0.13375 -0.33399,-0.19141 -0.0279,-0.014 -0.0556,-0.0279 -0.084,-0.041 -0.11915,-0.0551 -0.24009,-0.10517 -0.36719,-0.14453 -0.12664,-0.0392 -0.25926,-0.0675 -0.39258,-0.0899 -0.0292,-0.005 -0.0584,-0.01 -0.0879,-0.0137 -0.003,-3.5e-4 -0.005,3.4e-4 -0.008,0 -0.1332,-0.0177 -0.26748,-0.031 -0.40601,-0.031 h -15 -17 z"
+     style="fill:#1a1a1a" />
+  <path
+     id="front3"
+     class="task done3"
+     d="m 538.76817,242.93598 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 15 17 15 c 0.13853,0 0.27281,-0.0132 0.40625,-0.0312 0.032,-0.004 0.064,-0.008 0.0957,-0.0137 0.13332,-0.0224 0.26594,-0.0506 0.39258,-0.0899 0.1271,-0.0394 0.24804,-0.0894 0.36719,-0.14453 0.0284,-0.0132 0.0561,-0.027 0.084,-0.041 0.11501,-0.0577 0.2281,-0.11999 0.33399,-0.19141 0.15955,-0.10761 0.30779,-0.22967 0.44336,-0.36523 0.13556,-0.13557 0.25762,-0.28381 0.36523,-0.44336 0.0714,-0.10589 0.13375,-0.21898 0.19141,-0.33399 0.014,-0.0279 0.0279,-0.0556 0.041,-0.084 0.0551,-0.11915 0.10517,-0.24009 0.14453,-0.36719 0.0392,-0.12664 0.0675,-0.25926 0.0898,-0.39258 0.005,-0.0292 0.01,-0.0584 0.0137,-0.0879 3.5e-4,-0.003 -3.4e-4,-0.005 0,-0.008 0.018,-0.1332 0.0313,-0.26748 0.0313,-0.40601 v -14 c 0,-0.13853 -0.0132,-0.27281 -0.0312,-0.40625 -1.7e-4,-0.002 -9e-5,-0.003 0,-0.004 -1.7e-4,-0.001 1.8e-4,-0.003 0,-0.004 -0.004,-0.0295 -0.009,-0.0587 -0.0137,-0.0879 -0.0224,-0.13332 -0.0506,-0.26594 -0.0898,-0.39258 -0.0394,-0.1271 -0.0894,-0.24804 -0.14453,-0.36719 -0.0132,-0.0284 -0.027,-0.0561 -0.041,-0.084 -0.0577,-0.11501 -0.11999,-0.2281 -0.19141,-0.33399 -0.10761,-0.15955 -0.22967,-0.30779 -0.36523,-0.44336 -0.13557,-0.13556 -0.28381,-0.25762 -0.44336,-0.36523 -0.10589,-0.0714 -0.21898,-0.13375 -0.33399,-0.19141 -0.0279,-0.014 -0.0556,-0.0279 -0.084,-0.041 -0.11915,-0.0551 -0.24009,-0.10517 -0.36719,-0.14453 -0.12664,-0.0392 -0.25926,-0.0675 -0.39258,-0.0899 -0.0292,-0.005 -0.0584,-0.01 -0.0879,-0.0137 -0.003,-3.5e-4 -0.005,3.5e-4 -0.008,0 -0.1333,-0.0177 -0.26758,-0.031 -0.40611,-0.031 h -15 -17 z"
+     style="fill:#1a1a1a" />
+  <path
+     id="test1"
+     class="task done0"
+     d="m 591.76817,269.49713 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 14 c 0.1711,0 0.33687,-0.0177 0.5,-0.0449 0.16313,0.0272 0.3289,0.0449 0.5,0.0449 h 14 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -14 c -0.1711,0 -0.33687,0.0177 -0.5,0.0449 -0.16313,-0.0272 -0.3289,-0.0449 -0.5,-0.0449 z"
+     style="fill:#1a1a1a" />
+  <path
+     id="test2"
+     class="task done0"
+     d="m 626.76817,292.27901 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 7 6 7 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -7 -6 z"
+     style="fill:#1a1a1a" />
+  <path
+     id="test3"
+     class="task done0"
+     d="m 653.76817,315.0609 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 7 6 7 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -7 -6 z"
+     style="fill:#1a1a1a" />
+  <path
+     id="deploy1"
+     class="task done1"
+     d="m 680.76817,341.62205 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 7 6 7 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -7 -6 z"
+     style="fill:#1a1a1a" />
+  <path
+     id="deploy2"
+     class="task done1"
+     d="m 707.76817,364.40393 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 6 1 13 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -13 -1 z"
+     style="fill:#1a1a1a" />
+  <path
+     id="doc1"
+     class="task done2"
+     d="m 733.76817,387.18582 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 6 1 13 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -13 -1 z"
+     style="fill:#1a1a1a" />
+  <path
+     id="doc2"
+     class="task done2"
+     d="m 760.76817,409.9677 c -1.662,0 -3,1.338 -3,3 v 14 c 0,1.662 1.338,3 3,3 h 6 1 13 c 1.662,0 3,-1.338 3,-3 v -14 c 0,-1.662 -1.338,-3 -3,-3 h -13 -1 z"
+     style="fill:#1a1a1a" />
+  <text
+     class="taskTextOutsideRight taskTextOutside0  doneText0 width-59.2060546875"
+     y="17.144249"
+     x="200.76817"
+     font-size="11px"
+     id="inv1-text">Tecnologías</text>
+  <text
+     class="taskTextOutsideRight taskTextOutside0  doneText0 width-64.828125"
+     y="39.52599"
+     x="200.76817"
+     font-size="11px"
+     id="inv2-text">Competencia</text>
+  <text
+     class="taskTextOutsideRight taskTextOutside1  doneText1 width-60.3125"
+     y="66.041489"
+     x="227.76817"
+     font-size="11px"
+     id="des1-text">Arquitectura</text>
+  <text
+     class="taskTextOutsideRight taskTextOutside1  doneText1 width-77.03125"
+     y="88.97644"
+     x="253.76817"
+     font-size="11px"
+     id="des2-text">UX/UI completo</text>
+  <text
+     class="taskTextOutsideRight taskTextOutside1  doneText1 width-87.453125"
+     y="115.50804"
+     x="272.76816"
+     font-size="11px"
+     id="des3-text">Testing usabilidad</text>
+  <text
+     class="taskTextOutsideRight taskTextOutside2  doneText2 width-70.8291015625"
+     y="139.34267"
+     x="326.76816"
+     font-size="11px"
+     id="back1-text">Base de datos</text>
+  <text
+     class="taskTextOutsideRight taskTextOutside2  doneText2 width-68.25"
+     y="162.15141"
+     x="379.76816"
+     font-size="11px"
+     id="back2-text">APIs RESTful</text>
+  <text
+     class="taskTextOutsideRight taskTextOutside2  doneText2 width-67.046875"
+     y="185.2287"
+     x="433.76816"
+     font-size="11px"
+     id="back3-text">Autenticación</text>
+  <text
+     class="taskTextOutsideRight taskTextOutside3  doneText3 width-77.03125"
+     y="210.4444"
+     x="486.76813"
+     font-size="11px"
+     id="front1-text">UX/UI completo</text>
+  <text
+     class="taskTextOutsideRight taskTextOutside3  doneText3 width-100.296875"
+     y="233.51903"
+     x="540.76813"
+     font-size="11px"
+     id="front2-text">Integración Backend</text>
+  <text
+     class="taskTextOutsideRight taskTextOutside3  doneText3 width-114.765625"
+     y="257.05826"
+     x="593.76819"
+     font-size="11px"
+     id="front3-text">Funcionalidades Offline</text>
+  <text
+     class="taskTextOutsideRight taskTextOutside0  doneText0 width-101.38525390625"
+     y="283.59256"
+     x="628.76819"
+     font-size="11px"
+     id="test1-text">Tests Automatizados</text>
+  <text
+     class="taskTextOutsideRight taskTextOutside0  doneText0 width-90.5"
+     y="306.37445"
+     x="654.76819"
+     font-size="11px"
+     id="test2-text">Tests Rendimiento</text>
+  <text
+     class="taskTextOutsideRight taskTextOutside0  doneText0 width-78.890625"
+     y="328.10361"
+     x="681.76819"
+     font-size="11px"
+     id="test3-text">Tests Seguridad</text>
+  <text
+     class="taskTextOutsideLeft taskTextOutside1  doneText1"
+     y="355.01657"
+     x="525.55273"
+     font-size="11px"
+     id="deploy1-text">Infraestructura producción</text>
+  <text
+     class="taskTextOutsideLeft taskTextOutside1  doneText1"
+     y="377.79843"
+     x="570.52368"
+     font-size="11px"
+     id="deploy2-text">CI/CD y monitorización</text>
+  <text
+     class="taskTextOutsideLeft taskTextOutside2  doneText2"
+     y="400.58032"
+     x="543.31104"
+     font-size="11px"
+     id="doc1-text">Documentación técnica completa</text>
+  <text
+     class="taskTextOutsideLeft taskTextOutside2  doneText2"
+     y="423.01041"
+     x="612.03064"
+     font-size="11px"
+     id="doc2-text">Lanzamiento y marketing</text>
+  <text
+     class="sectionTitle sectionTitle0"
+     font-size="11px"
+     y="28.23632"
+     x="5.097168"
+     dy="0"
+     id="text25"><tspan
+       x="5.097168"
+       alignment-baseline="central"
+       id="tspan25">Investigación (2 sem)</tspan></text>
+  <text
+     class="sectionTitle sectionTitle1"
+     font-size="11px"
+     y="88.236328"
+     x="22.910402"
+     dy="0"
+     id="text26"><tspan
+       x="22.910402"
+       alignment-baseline="central"
+       id="tspan26">Diseño (3 sem)</tspan></text>
+  <text
+     class="sectionTitle sectionTitle2"
+     font-size="11px"
+     y="160.23633"
+     x="18.293947"
+     dy="0"
+     id="text27"><tspan
+       x="18.293947"
+       alignment-baseline="central"
+       id="tspan27">Backend (6 sem)</tspan></text>
+  <text
+     class="sectionTitle sectionTitle3"
+     font-size="11px"
+     y="232.23631"
+     x="16.940432"
+     dy="0"
+     id="text28"><tspan
+       x="16.940432"
+       alignment-baseline="central"
+       id="tspan28">Frontend (6 sem)</tspan></text>
+  <text
+     class="sectionTitle sectionTitle0"
+     font-size="11px"
+     y="304.2363"
+     x="22.631105"
+     dy="0"
+     id="text29"><tspan
+       x="22.631105"
+       alignment-baseline="central"
+       id="tspan29">Testing (3 sem)</tspan></text>
+  <text
+     class="sectionTitle sectionTitle1"
+     font-size="11px"
+     y="364.2363"
+     x="8.3413105"
+     dy="0"
+     id="text30"><tspan
+       x="8.3413105"
+       alignment-baseline="central"
+       id="tspan30">Deployment (2 sem)</tspan></text>
+  <text
+     class="sectionTitle sectionTitle2"
+     font-size="11px"
+     y="412.2363"
+     x="-1.0742188"
+     dy="0"
+     id="text31"><tspan
+       x="-1.0742188"
+       alignment-baseline="central"
+       id="tspan31">Documentación (2 sem)</tspan></text>
 </svg>
