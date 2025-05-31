@@ -338,22 +338,22 @@ gantt
    dateFormat  DD-MM-YYYY
    todayMarker off
    section Investigación
-   Análisis de tecnologías     :done, inv1, 17-05-2025, 1d
-   Estudio de competencia      :done, inv2, 18-05-2025, 1d
+   Tecnologías     :done, inv1, 17-05-2025, 2d
+   Competencia      :done, inv2, 18-05-2025, 1d
    Definición MVP              :done, inv3, 19-05-2025, 1d
    section Diseño
-   Arquitectura simplificada   :done, des1, 20-05-2025, 1d
-   Mockups básicos            :done, des2, 21-05-2025, 1d
+   Arquitectura   :done, des1, 20-05-2025, 1d
+   UX/UI Básica           :done, des2, 21-05-2025, 1d
    section Desarrollo
-   Setup React Native          :done, dev1, 22-05-2025, 1d
-   Pantallas principales       :done, dev3, 23-05-2025, 1d
-   Integración API-Football    :done, dev2, 24-05-2025, 1d
-   Sistema de fases           :done, dev4, 25-05-2025, 2d
-   Visualización datos        :done, dev5, 27-05-2025, 1d
+   Setup Inicial          :done, dev1, 22-05-2025, 1d
+   UX/UI Básica       :done, dev3, 23-05-2025, 2d
+   Integración API    :done, dev2, 25-05-2025, 1d
+   Sistema de fases           :done, dev4, 26-05-2025, 2d
    section Testing
-   Testing básico             :done, test1, 28-05-2025, 1d
+   Testing             :done, test1, 28-05-2025, 1d
    section Documentación
    Documentación             :done, doc1, 29-05-2025, 2d
+
 ```
 
 #### 4.6.2. Diagrama de Gantt - Versión Óptima (480 horas)
@@ -366,30 +366,30 @@ gantt
    dateFormat  DD-MM-YYYY
    todayMarker off
    section Investigación (2 sem)
-   Análisis exhaustivo tecnologías    :done, inv1, 07-11-2024, 7d
-   Benchmarking competencia           :done, inv2, 14-11-2024, 7d
+   Tecnologías    :done, inv1, 07-11-2024, 12d
+   Competencia           :done, inv2, 14-11-2024, 5d
    section Diseño (3 sem)
-   Arquitectura completa              :done, des1, 21-11-2024, 7d
-   Diseño UX/UI completo             :done, des2, 28-11-2024, 7d
-   Testing usabilidad                :done, des3, 05-12-2024, 7d
+   Arquitectura              :done, des1, 21-11-2024, 5d
+   UX/UI completo             :done, des2, 28-11-2024, 5d
+   Testing usabilidad                :done, des3, 05-12-2024, 3d
    section Backend (6 sem)
-   Base de datos PostgreSQL          :done, back1, 12-12-2024, 14d
-   APIs RESTful            :done, back2, 26-12-2024, 14d
-   Autenticación y roles             :done, back3, 09-01-2025, 14d
+   Base de datos          :done, back1, 09-12-2024, 13d
+   APIs RESTful            :done, back2, 26-12-2024, 10d
+   Autenticación             :done, back3, 09-01-2025, 10d
    section Frontend (6 sem)
-   Desarrollo pantallas completas    :done, front1, 23-01-2025, 14d
-   Integración backend propio        :done, front2, 06-02-2025, 14d
-   Funcionalidades offline           :done, front3, 20-02-2025, 14d
+   UX/UI completo    :done, front1, 23-01-2025, 10d
+   Integración Backend        :done, front2, 06-02-2025, 10d
+   Funcionalidades Offline           :done, front3, 20-02-2025, 10d
    section Testing (3 sem)
-   Testing automatizado              :done, test1, 06-03-2025, 7d
-   Testing rendimiento               :done, test2, 13-03-2025, 7d
-   Testing seguridad                :done, test3, 20-03-2025, 7d
+   Tests Automatizados             :done, test1, 06-03-2025, 5d
+   Tests Rendimiento               :done, test2, 13-03-2025, 5d
+   Tests Seguridad                :done, test3, 20-03-2025, 5d
    section Deployment (2 sem)
-   Infraestructura producción        :done, deploy1, 27-03-2025, 7d
-   CI/CD y monitorización           :done, deploy2, 03-04-2025, 7d
+   Infraestructura producción        :done, deploy1, 27-03-2025, 5d
+   CI/CD y monitorización           :done, deploy2, 03-04-2025, 5d
    section Documentación (2 sem)
-   Documentación técnica completa    :done, doc1, 10-04-2025, 7d
-   Lanzamiento y marketing           :done, doc2, 17-04-2025, 7d
+   Documentación técnica completa    :done, doc1, 10-04-2025, 5d
+   Lanzamiento y marketing           :done, doc2, 17-04-2025, 5d
 ```
 
 #### 4.6.3. Análisis Comparativo de los Diagramas
@@ -923,6 +923,7 @@ En este diagrama relacional se muestra la relación de las tablas de la base de 
 ![esquema relacional](../img/db-schema/english.png)
 
 ###### Nota: este diagrama está parcialmente desactualizado conforme a esta documentación. Faltando tablas para las fases eliminatorias y las reglas de desempate avanzadas.
+
 ### 9.3. Modelo de Clasificación Unificado
 
 Para gestionar las tablas de clasificación de manera flexible tanto para ligas completas como para fases de grupos, optamos por una entidad única **standing**. Esta tabla representa **una fila individual** dentro de la clasificación, detallando la posición y estadísticas de un equipo específico en un contexto determinado.
