@@ -6,20 +6,18 @@
    width="739.85406"
    id="my-svg"
    version="1.1"
-   sodipodi:docname="gannt_short.svg"
    height="283.79321"
+   sodipodi:docname="gantt-short.svg"
+   inkscape:export-filename="gantt-short.pdf"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
-   inkscape:export-filename="gantt-short.png"
-   inkscape:export-xdpi="284.15057"
-   inkscape:export-ydpi="284.15057"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs33" />
   <sodipodi:namedview
-     id="namedview33"
+     id="namedview1"
      pagecolor="#505050"
      bordercolor="#ffffff"
      borderopacity="1"
@@ -27,164 +25,159 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="1.0310599"
-     inkscape:cx="360.79378"
-     inkscape:cy="128.50854"
-     inkscape:window-width="1472"
-     inkscape:window-height="844"
+     inkscape:zoom="0.33150496"
+     inkscape:cx="1010.543"
+     inkscape:cy="212.6665"
+     inkscape:window-width="1104"
+     inkscape:window-height="250"
      inkscape:window-x="0"
      inkscape:window-y="38"
      inkscape:window-maximized="0"
      inkscape:current-layer="my-svg" />
+  <defs
+     id="defs33" />
   <style
      id="style1">#my-svg{font-family:arial,sans-serif;font-size:14px;fill:#000000;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#my-svg .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#my-svg .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#my-svg .error-icon{fill:#552222;}#my-svg .error-text{fill:#552222;stroke:#552222;}#my-svg .edge-thickness-normal{stroke-width:1px;}#my-svg .edge-thickness-thick{stroke-width:3.5px;}#my-svg .edge-pattern-solid{stroke-dasharray:0;}#my-svg .edge-thickness-invisible{stroke-width:0;fill:none;}#my-svg .edge-pattern-dashed{stroke-dasharray:3;}#my-svg .edge-pattern-dotted{stroke-dasharray:2;}#my-svg .marker{fill:#666;stroke:#666;}#my-svg .marker.cross{stroke:#666;}#my-svg svg{font-family:arial,sans-serif;font-size:14px;}#my-svg p{margin:0;}#my-svg .mermaid-main-font{font-family:arial,sans-serif;}#my-svg .exclude-range{fill:#eeeeee;}#my-svg .section{stroke:none;opacity:0.2;}#my-svg .section0{fill:hsl(0, 0%, 73.9215686275%);}#my-svg .section2{fill:hsl(0, 0%, 73.9215686275%);}#my-svg .section1,#my-svg .section3{fill:white;opacity:0.2;}#my-svg .sectionTitle0{fill:#333;}#my-svg .sectionTitle1{fill:#333;}#my-svg .sectionTitle2{fill:#333;}#my-svg .sectionTitle3{fill:#333;}#my-svg .sectionTitle{text-anchor:start;font-family:arial,sans-serif;}#my-svg .grid .tick{stroke:hsl(0, 0%, 90%);opacity:0.8;shape-rendering:crispEdges;}#my-svg .grid .tick text{font-family:arial,sans-serif;fill:#000000;}#my-svg .grid path{stroke-width:0;}#my-svg .today{fill:none;stroke:#d42;stroke-width:2px;}#my-svg .task{stroke-width:2;}#my-svg .taskText{text-anchor:middle;font-family:arial,sans-serif;}#my-svg .taskTextOutsideRight{fill:#333;text-anchor:start;font-family:arial,sans-serif;}#my-svg .taskTextOutsideLeft{fill:#333;text-anchor:end;}#my-svg .task.clickable{cursor:pointer;}#my-svg .taskText.clickable{cursor:pointer;fill:#003163!important;font-weight:bold;}#my-svg .taskTextOutsideLeft.clickable{cursor:pointer;fill:#003163!important;font-weight:bold;}#my-svg .taskTextOutsideRight.clickable{cursor:pointer;fill:#003163!important;font-weight:bold;}#my-svg .taskText0,#my-svg .taskText1,#my-svg .taskText2,#my-svg .taskText3{fill:white;}#my-svg .task0,#my-svg .task1,#my-svg .task2,#my-svg .task3{fill:#707070;stroke:hsl(0, 0%, 33.9215686275%);}#my-svg .taskTextOutside0,#my-svg .taskTextOutside2{fill:#333;}#my-svg .taskTextOutside1,#my-svg .taskTextOutside3{fill:#333;}#my-svg .active0,#my-svg .active1,#my-svg .active2,#my-svg .active3{fill:#eee;stroke:hsl(0, 0%, 33.9215686275%);}#my-svg .activeText0,#my-svg .activeText1,#my-svg .activeText2,#my-svg .activeText3{fill:#333!important;}#my-svg .done0,#my-svg .done1,#my-svg .done2,#my-svg .done3{stroke:#666;fill:#bbb;stroke-width:2;}#my-svg .doneText0,#my-svg .doneText1,#my-svg .doneText2,#my-svg .doneText3{fill:#333!important;}#my-svg .crit0,#my-svg .crit1,#my-svg .crit2,#my-svg .crit3{stroke:hsl(10.9090909091, 73.3333333333%, 40%);fill:#d42;stroke-width:2;}#my-svg .activeCrit0,#my-svg .activeCrit1,#my-svg .activeCrit2,#my-svg .activeCrit3{stroke:hsl(10.9090909091, 73.3333333333%, 40%);fill:#eee;stroke-width:2;}#my-svg .doneCrit0,#my-svg .doneCrit1,#my-svg .doneCrit2,#my-svg .doneCrit3{stroke:hsl(10.9090909091, 73.3333333333%, 40%);fill:#bbb;stroke-width:2;cursor:pointer;shape-rendering:crispEdges;}#my-svg .milestone{transform:rotate(45deg) scale(0.8,0.8);}#my-svg .milestoneText{font-style:italic;}#my-svg .doneCritText0,#my-svg .doneCritText1,#my-svg .doneCritText2,#my-svg .doneCritText3{fill:#333!important;}#my-svg .activeCritText0,#my-svg .activeCritText1,#my-svg .activeCritText2,#my-svg .activeCritText3{fill:#333!important;}#my-svg .titleText{text-anchor:middle;font-size:18px;fill:#333;font-family:arial,sans-serif;}#my-svg .node .neo-node{stroke:#999;}#my-svg [data-look=&quot;neo&quot;].node rect,#my-svg [data-look=&quot;neo&quot;].cluster rect,#my-svg [data-look=&quot;neo&quot;].node polygon{stroke:url(#my-svg-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#my-svg [data-look=&quot;neo&quot;].node path{stroke:url(#my-svg-gradient);stroke-width:1;}#my-svg [data-look=&quot;neo&quot;].node .outer-path{filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#my-svg [data-look=&quot;neo&quot;].node .neo-line path{stroke:#999;filter:none;}#my-svg [data-look=&quot;neo&quot;].node circle{stroke:url(#my-svg-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#my-svg [data-look=&quot;neo&quot;].node circle .state-start{fill:#000000;}#my-svg [data-look=&quot;neo&quot;].statediagram-cluster rect{fill:#eee;stroke:url(#my-svg-gradient);stroke-width:1;}#my-svg [data-look=&quot;neo&quot;].icon-shape .icon{fill:url(#my-svg-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#my-svg [data-look=&quot;neo&quot;].icon-shape .icon-neo path{stroke:url(#my-svg-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#my-svg :root{--mermaid-font-family:&quot;trebuchet ms&quot;,verdana,arial,sans-serif;}</style>
-  <g
-     id="g3"
-     transform="matrix(1.0083152,0,0,1,-58.522755,-36.945648)">
-    <rect
-       style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.975614"
-       id="rect42"
-       width="45.188641"
-       height="263.9761"
-       x="204.34065"
-       y="37.94302" />
-    <rect
-       style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.975614"
-       id="rect43"
-       width="45.188641"
-       height="263.9761"
-       x="249.5293"
-       y="37.94302" />
-    <rect
-       style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.975614"
-       id="rect44"
-       width="45.188641"
-       height="263.9761"
-       x="294.71796"
-       y="37.94302" />
-    <rect
-       style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.975614"
-       id="rect45"
-       width="45.188641"
-       height="263.9761"
-       x="339.90662"
-       y="37.94302" />
-    <rect
-       style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.975614"
-       id="rect46"
-       width="45.188625"
-       height="263.9761"
-       x="385.09525"
-       y="37.94302" />
-    <rect
-       style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.975614"
-       id="rect47"
-       width="45.188656"
-       height="263.9761"
-       x="430.28387"
-       y="37.94302" />
-    <rect
-       style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.975614"
-       id="rect48"
-       width="45.188625"
-       height="263.9761"
-       x="475.47253"
-       y="37.94302" />
-    <rect
-       style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.975614"
-       id="rect49"
-       width="45.188656"
-       height="263.9761"
-       x="520.66113"
-       y="37.94302" />
-    <rect
-       style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.975614"
-       id="rect50"
-       width="45.188625"
-       height="263.9761"
-       x="565.84979"
-       y="37.94302" />
-    <rect
-       style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.975614"
-       id="rect51"
-       width="45.188625"
-       height="263.9761"
-       x="611.03839"
-       y="37.94302" />
-    <rect
-       style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.975615"
-       id="rect52"
-       width="45.188686"
-       height="263.9761"
-       x="656.22705"
-       y="37.94302" />
-    <rect
-       style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.975614"
-       id="rect53"
-       width="45.188625"
-       height="263.9761"
-       x="701.41571"
-       y="37.94302" />
-    <rect
-       style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.975612"
-       id="rect54"
-       width="45.188595"
-       height="263.9761"
-       x="746.60431"
-       y="37.94302" />
-    <rect
-       style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.985084"
-       id="rect56"
-       width="46.070206"
-       height="263.9761"
-       x="158.27046"
-       y="37.94302" />
-    <rect
-       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.09877"
-       id="rect35"
-       width="633.52246"
-       height="0.99737239"
-       x="158.27046"
-       y="107.92654" />
-    <rect
-       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.09877"
-       id="rect36"
-       width="633.52246"
-       height="0.99737239"
-       x="158.27046"
-       y="156.42468" />
-    <rect
-       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.09877"
-       id="rect37"
-       width="633.5224"
-       height="0.99737239"
-       x="158.27046"
-       y="249.88832" />
-    <rect
-       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.09877"
-       id="rect38"
-       width="633.5224"
-       height="0.99737239"
-       x="158.27046"
-       y="275.90372" />
-    <rect
-       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.098771"
-       id="rect39"
-       width="633.52246"
-       height="0.99737239"
-       x="158.27046"
-       y="301.91913" />
-    <rect
-       style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.09877"
-       id="rect57"
-       width="633.5224"
-       height="0.99737239"
-       x="158.27046"
-       y="36.945648" />
-  </g>
-  <g
-     id="g1"
-     transform="translate(-10.800866,-36.945648)" />
+  <rect
+     style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.979662"
+     id="rect42"
+     width="45.564392"
+     height="263.9761"
+     x="147.51703"
+     y="0.99737185" />
+  <rect
+     style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.979662"
+     id="rect43"
+     width="45.564392"
+     height="263.9761"
+     x="193.08142"
+     y="0.99737185" />
+  <rect
+     style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.979662"
+     id="rect44"
+     width="45.564392"
+     height="263.9761"
+     x="238.64584"
+     y="0.99737185" />
+  <rect
+     style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.979662"
+     id="rect45"
+     width="45.564392"
+     height="263.9761"
+     x="284.21027"
+     y="0.99737185" />
+  <rect
+     style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.979662"
+     id="rect46"
+     width="45.564377"
+     height="263.9761"
+     x="329.77463"
+     y="0.99737185" />
+  <rect
+     style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.979662"
+     id="rect47"
+     width="45.564407"
+     height="263.9761"
+     x="375.33902"
+     y="0.99737185" />
+  <rect
+     style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.979662"
+     id="rect48"
+     width="45.564377"
+     height="263.9761"
+     x="420.90344"
+     y="0.99737185" />
+  <rect
+     style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.979662"
+     id="rect49"
+     width="45.564407"
+     height="263.9761"
+     x="466.46777"
+     y="0.99737185" />
+  <rect
+     style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.979662"
+     id="rect50"
+     width="45.564377"
+     height="263.9761"
+     x="512.03217"
+     y="0.99737185" />
+  <rect
+     style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.979662"
+     id="rect51"
+     width="45.564377"
+     height="263.9761"
+     x="557.59656"
+     y="0.99737185" />
+  <rect
+     style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.979663"
+     id="rect52"
+     width="45.564438"
+     height="263.9761"
+     x="603.16095"
+     y="0.99737185" />
+  <rect
+     style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.979662"
+     id="rect53"
+     width="45.564377"
+     height="263.9761"
+     x="648.72534"
+     y="0.99737185" />
+  <rect
+     style="fill:#4d4d4d;fill-opacity:0.279202;stroke-width:0.97966"
+     id="rect54"
+     width="45.564346"
+     height="263.9761"
+     x="694.28973"
+     y="0.99737185" />
+  <rect
+     style="fill:#b3b3b3;fill-opacity:0.279202;stroke-width:0.989171"
+     id="rect56"
+     width="46.453289"
+     height="263.9761"
+     x="101.06376"
+     y="0.99737185" />
+  <rect
+     style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991798"
+     id="rect35"
+     width="638.79034"
+     height="0.99737239"
+     x="101.06376"
+     y="70.980888" />
+  <rect
+     style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991798"
+     id="rect36"
+     width="638.79034"
+     height="0.99737239"
+     x="101.06376"
+     y="119.47903" />
+  <rect
+     style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991798"
+     id="rect37"
+     width="638.79028"
+     height="0.99737239"
+     x="101.06376"
+     y="212.94267" />
+  <rect
+     style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991798"
+     id="rect38"
+     width="638.79028"
+     height="0.99737239"
+     x="101.06376"
+     y="238.95807" />
+  <rect
+     style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991808"
+     id="rect39"
+     width="638.79034"
+     height="0.99737239"
+     x="101.06376"
+     y="264.97348" />
+  <rect
+     style="fill:#1a1a1a;fill-opacity:0.982906;stroke-width:0.0991798"
+     id="rect57"
+     width="638.79028"
+     height="0.99737239"
+     x="101.06376"
+     y="1.9335937e-07" />
   <text
      style="font-family:sans-serif;text-anchor:middle"
      font-size="10px"
@@ -297,208 +290,204 @@
      fill="#000000"
      id="text15"
      x="713.55646">31-05</text>
-  <g
-     id="g2"
-     transform="translate(-55.231286,-36.945648)">
-    <rect
-       class="task done3"
-       transform-origin="595.5px 276px"
-       height="19.947447"
-       width="45.188686"
-       y="253.42097"
-       x="656.22705"
-       ry="2.9921172"
-       rx="3.0125792"
-       id="test1"
-       style="fill:#1a1a1a;stroke-width:1.00077" />
-    <rect
-       class="task done0"
-       transform-origin="663.5px 300px"
-       height="19.947447"
-       width="90.518967"
-       y="279.4364"
-       x="701.27399"
-       ry="2.9921172"
-       rx="2.9841418"
-       id="doc1"
-       style="fill:#1a1a1a;stroke-width:0.996043" />
-    <rect
-       class="task done0"
-       transform-origin="120.5px 60px"
-       height="19.947447"
-       width="90.377281"
-       y="40.478313"
-       x="159.15202"
-       ry="2.9921172"
-       rx="2.979471"
-       id="inv1"
-       style="fill:#1a1a1a;stroke-width:0.995263" />
-    <rect
-       class="task done0"
-       transform-origin="143px 84px"
-       height="19.947447"
-       width="45.188641"
-       y="62.961056"
-       x="204.34065"
-       ry="2.9921172"
-       rx="2.9470851"
-       id="inv2"
-       style="fill:#1a1a1a;stroke-width:0.989838" />
-    <rect
-       class="task done0"
-       transform-origin="188.5px 108px"
-       height="19.947447"
-       width="45.188641"
-       y="85.443794"
-       x="249.5293"
-       ry="2.9921172"
-       rx="3.0125761"
-       id="inv3"
-       style="fill:#1a1a1a;stroke-width:1.00077" />
-    <text
-       class="taskText taskText0  doneText0 width-59.2060546875"
-       y="53.808186"
-       x="255.13954"
-       font-size="10.9711px"
-       id="inv1-text"
-       style="stroke-width:0.997372">Tecnologías</text>
-    <text
-       class="taskTextOutsideRight taskTextOutside0  doneText0 width-64.828125"
-       y="75.89183"
-       x="254.52348"
-       font-size="10.9711px"
-       id="inv2-text"
-       style="stroke-width:0.997372">Competencia</text>
-    <text
-       class="taskTextOutsideRight taskTextOutside0  doneText0 width-75.203125"
-       y="99.823639"
-       x="299.58972"
-       font-size="10.9711px"
-       id="inv3-text"
-       style="stroke-width:0.997372">Definición MVP</text>
-    <rect
-       class="task done1"
-       transform-origin="233.5px 132px"
-       height="19.947447"
-       width="45.188641"
-       y="111.45921"
-       x="294.71796"
-       ry="2.9921172"
-       rx="3.0125761"
-       id="des1"
-       style="fill:#1a1a1a;stroke-width:1.00077" />
-    <rect
-       class="task done1"
-       transform-origin="278.5px 156px"
-       height="19.947447"
-       width="45.188641"
-       y="133.94194"
-       x="339.90662"
-       ry="2.9921172"
-       rx="3.0125761"
-       id="des2"
-       style="fill:#1a1a1a;stroke-width:1.00077" />
-    <text
-       class="taskTextOutsideRight taskTextOutside1  doneText1 width-60.3125"
-       y="124.34446"
-       x="344.4715"
-       font-size="10.9711px"
-       id="des1-text"
-       style="stroke-width:0.997372">Arquitectura</text>
-    <text
-       class="taskTextOutsideRight taskTextOutside1  doneText1 width-47.078125"
-       y="148.32178"
-       x="389.35324"
-       font-size="10.9711px"
-       id="des2-text"
-       style="stroke-width:0.997372">UI Básica</text>
-    <rect
-       class="task done2"
-       transform-origin="324px 180px"
-       height="19.947447"
-       width="45.111938"
-       y="159.95735"
-       x="385.13361"
-       ry="2.9921172"
-       rx="2.9420831"
-       id="dev1"
-       style="fill:#1a1a1a;stroke-width:0.988998" />
-    <rect
-       class="task done2"
-       transform-origin="392px 204px"
-       height="19.947447"
-       width="90.377312"
-       y="182.44009"
-       x="430.28387"
-       ry="2.9921172"
-       rx="3.0125773"
-       id="dev3"
-       style="fill:#1a1a1a;stroke-width:1.00077" />
-    <rect
-       class="task done2"
-       transform-origin="460px 228px"
-       height="19.947447"
-       width="45.265358"
-       y="204.92284"
-       x="520.6228"
-       ry="2.9921172"
-       rx="2.9520886"
-       id="dev2"
-       style="fill:#1a1a1a;stroke-width:0.990679" />
-    <rect
-       class="task done2"
-       transform-origin="528px 252px"
-       height="19.947447"
-       width="90.377251"
-       y="227.40558"
-       x="565.84979"
-       ry="2.9921172"
-       rx="3.0125751"
-       id="dev4"
-       style="fill:#1a1a1a;stroke-width:1.00077" />
-    <text
-       class="taskTextOutsideRight taskTextOutside2  doneText2 width-59.9375"
-       y="172.99527"
-       x="435.23239"
-       font-size="10.9711px"
-       id="dev1-text"
-       style="stroke-width:0.997372">Setup Inicial</text>
-    <text
-       class="taskText taskText2  doneText2 width-47.078125"
-       y="196.81993"
-       x="527.13562"
-       font-size="10.9711px"
-       id="dev3-text"
-       style="stroke-width:0.997372">UI Básica</text>
-    <text
-       class="taskTextOutsideRight taskTextOutside2  doneText2 width-74.609375"
-       y="218.25272"
-       x="570.875"
-       font-size="10.9711px"
-       id="dev2-text"
-       style="stroke-width:0.997372">Integración API</text>
-    <text
-       class="taskText taskText2  doneText2 width-84.87451171875"
-       y="241.49078"
-       x="662.77826"
-       font-size="10.9711px"
-       id="dev4-text"
-       style="stroke-width:0.997372">Sistema de fases</text>
-    <text
-       class="taskText taskText3  doneText3 width-34.859375"
-       y="266.27676"
-       x="708.32996"
-       font-size="10.9711px"
-       id="test1-text"
-       style="stroke-width:0.997372">Testing</text>
-    <text
-       class="taskText taskText0  doneText0 width-76.4375"
-       y="293.81625"
-       x="609.24066"
-       font-size="10.9711px"
-       id="doc1-text"
-       style="stroke-width:0.997372">Documentación</text>
-  </g>
+  <rect
+     class="task done3"
+     transform-origin="595.5px 276px"
+     height="19.947447"
+     width="45.564415"
+     y="216.47533"
+     x="603.16095"
+     ry="2.9921172"
+     rx="3.0376275"
+     id="test1"
+     style="fill:#1a1a1a;stroke-width:1.00492" />
+  <rect
+     class="task done0"
+     transform-origin="663.5px 300px"
+     height="19.947447"
+     width="88.249863"
+     y="242.49075"
+     x="648.72534"
+     ry="2.9921172"
+     rx="2.9093363"
+     id="doc1"
+     style="fill:#1a1a1a;stroke-width:0.98348" />
+  <rect
+     class="task done0"
+     transform-origin="120.5px 60px"
+     height="19.947447"
+     width="89.160683"
+     y="3.5326655"
+     x="103.92074"
+     ry="2.9921172"
+     rx="2.9393632"
+     id="inv1"
+     style="fill:#1a1a1a;stroke-width:0.988541" />
+  <rect
+     class="task done0"
+     transform-origin="143px 84px"
+     height="19.947447"
+     width="45.564381"
+     y="26.015408"
+     x="147.51704"
+     ry="2.9921172"
+     rx="2.97159"
+     id="inv2"
+     style="fill:#1a1a1a;stroke-width:0.993945" />
+  <rect
+     class="task done0"
+     transform-origin="188.5px 108px"
+     height="19.947447"
+     width="45.564423"
+     y="48.498146"
+     x="193.08142"
+     ry="2.9921172"
+     rx="3.0376282"
+     id="inv3"
+     style="fill:#1a1a1a;stroke-width:1.00492" />
+  <text
+     class="taskText taskText0  doneText0 width-59.2060546875"
+     y="16.862537"
+     x="199.90825"
+     font-size="10.9711px"
+     id="inv1-text"
+     style="stroke-width:0.997372">Tecnologías</text>
+  <text
+     class="taskTextOutsideRight taskTextOutside0  doneText0 width-64.828125"
+     y="38.946182"
+     x="199.29219"
+     font-size="10.9711px"
+     id="inv2-text"
+     style="stroke-width:0.997372">Competencia</text>
+  <text
+     class="taskTextOutsideRight taskTextOutside0  doneText0 width-75.203125"
+     y="62.877991"
+     x="244.35843"
+     font-size="10.9711px"
+     id="inv3-text"
+     style="stroke-width:0.997372">Definición MVP</text>
+  <rect
+     class="task done1"
+     transform-origin="233.5px 132px"
+     height="19.947447"
+     width="45.564388"
+     y="74.513565"
+     x="238.64584"
+     ry="2.9921172"
+     rx="3.037626"
+     id="des1"
+     style="fill:#1a1a1a;stroke-width:1.00492" />
+  <rect
+     class="task done1"
+     transform-origin="278.5px 156px"
+     height="19.947447"
+     width="45.564365"
+     y="96.996292"
+     x="284.21027"
+     ry="2.9921172"
+     rx="3.0376241"
+     id="des2"
+     style="fill:#1a1a1a;stroke-width:1.00493" />
+  <text
+     class="taskTextOutsideRight taskTextOutside1  doneText1 width-60.3125"
+     y="87.398811"
+     x="289.2402"
+     font-size="10.9711px"
+     id="des1-text"
+     style="stroke-width:0.997372">Arquitectura</text>
+  <text
+     class="taskTextOutsideRight taskTextOutside1  doneText1 width-47.078125"
+     y="111.37613"
+     x="334.12195"
+     font-size="10.9711px"
+     id="des2-text"
+     style="stroke-width:0.997372">UI Básica</text>
+  <rect
+     class="task done2"
+     transform-origin="324px 180px"
+     height="19.947447"
+     width="45.564373"
+     y="123.0117"
+     x="329.77463"
+     ry="2.9921172"
+     rx="2.9715898"
+     id="dev1"
+     style="fill:#1a1a1a;stroke-width:0.993946" />
+  <rect
+     class="task done2"
+     transform-origin="392px 204px"
+     height="19.947447"
+     width="91.128754"
+     y="145.49445"
+     x="375.33902"
+     ry="2.9921172"
+     rx="3.0376256"
+     id="dev3"
+     style="fill:#1a1a1a;stroke-width:1.00492" />
+  <rect
+     class="task done2"
+     transform-origin="460px 228px"
+     height="19.947447"
+     width="45.564415"
+     y="167.97719"
+     x="466.46777"
+     ry="2.9921172"
+     rx="2.9715924"
+     id="dev2"
+     style="fill:#1a1a1a;stroke-width:0.993947" />
+  <rect
+     class="task done2"
+     transform-origin="528px 252px"
+     height="19.947447"
+     width="91.128754"
+     y="190.45993"
+     x="512.03217"
+     ry="2.9921172"
+     rx="3.0376253"
+     id="dev4"
+     style="fill:#1a1a1a;stroke-width:1.00492" />
+  <text
+     class="taskTextOutsideRight taskTextOutside2  doneText2 width-59.9375"
+     y="136.04962"
+     x="380.0011"
+     font-size="10.9711px"
+     id="dev1-text"
+     style="stroke-width:0.997372">Setup Inicial</text>
+  <text
+     class="taskText taskText2  doneText2 width-47.078125"
+     y="159.87428"
+     x="471.90433"
+     font-size="10.9711px"
+     id="dev3-text"
+     style="stroke-width:0.997372">UI Básica</text>
+  <text
+     class="taskTextOutsideRight taskTextOutside2  doneText2 width-74.609375"
+     y="181.30707"
+     x="515.64374"
+     font-size="10.9711px"
+     id="dev2-text"
+     style="stroke-width:0.997372">Integración API</text>
+  <text
+     class="taskText taskText2  doneText2 width-84.87451171875"
+     y="204.54514"
+     x="607.547"
+     font-size="10.9711px"
+     id="dev4-text"
+     style="stroke-width:0.997372">Sistema de fases</text>
+  <text
+     class="taskText taskText3  doneText3 width-34.859375"
+     y="229.33112"
+     x="653.09869"
+     font-size="10.9711px"
+     id="test1-text"
+     style="stroke-width:0.997372">Testing</text>
+  <text
+     class="taskText taskText0  doneText0 width-76.4375"
+     y="256.87061"
+     x="554.0094"
+     font-size="10.9711px"
+     id="doc1-text"
+     style="stroke-width:0.997372">Documentación</text>
   <text
      class="sectionTitle sectionTitle0"
      font-size="10.9711px"
